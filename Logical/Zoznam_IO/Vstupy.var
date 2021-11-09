@@ -1,0 +1,121 @@
+(*******************AB5****************************)
+VAR
+	diStol_PoruchaMotora : BOOL; (*NC*)
+	diStol_TepelnaOchranaMotora : BOOL; (*NC*)
+	diTunel_PoruchaMotora : BOOL; (*NC*)
+	diTunel_PoruchaVentilatora1 : BOOL;
+	diTunel_PoruchaVentilatora2 : BOOL;
+	diTunel_PoruchaVentilatora3 : BOOL;
+	diDvereRobotMan_DvereZavrete : BOOL;
+	diDvereRobotMan_PetlicaZasunuta : BOOL;
+	diDvereRobotMan_DvereZamknute : BOOL;
+	diDvereRobotMan_ZeleneTlacidlo : BOOL;
+	diDvereRobotMan_CerveneTlacidlo : BOOL;
+	diDvereRobotOdliev_DvereZavrete : BOOL;
+	diDvereRobotOdliev_PetlicaZasun : BOOL;
+	diDvereRobotOdliev_DvereZamkn : BOOL;
+	diDvereRobotOdliev_ZeleneTlac : BOOL;
+	diDvereRobotOdliev_CerveneTlac : BOOL;
+END_VAR
+(*******************AB6***************************)
+VAR
+	diStavBezpRele_OtocnyStol : BOOL;
+	diStavBezpRele_Centrifugy : BOOL;
+	diStavBezpRele_Tunel : BOOL;
+	diStavBezpRele_Vystupy_Vzduch : BOOL;
+	diStavBezpRele_OplotenieLinky : BOOL;
+	diStavBezpRele_StavCS_Linky : BOOL;
+	diStol_PoruchaMotoraChladenia : BOOL;
+	diStol_OhrevStavREADY : BOOL;
+	diStav_HlavPrivoduVzduchuKanalA : BOOL;
+	diStav_HlavPrivoduVzduchuKanalB : BOOL;
+	diOdsavanie_PoruchaMotora : BOOL;
+	diRobotOdliev_PoruchaMotoraChlad : BOOL;
+END_VAR
+(********************DB1.0***********************)
+VAR
+	diStol_PoziciaStola : BOOL; (*IS-1*)
+	diStol_Rotor_Vstup_VonkajsiOkruh : BOOL; (*OS-1*)
+	diStol_Rotor_Vstup_VnutornyOkruh : BOOL; (*OS-2*)
+	diStol_Rotor_Vystup_VnutornOkruh : BOOL; (*OS-3*)
+	diStol_Rotor_Vystup_VonkajOkruh : BOOL; (*OS-4*)
+	diOddelovac_PoziciaNAVAZANIE : BOOL; (*MS-1.1*)
+	diOddelovac_PoziciaVYVAZANIE : BOOL; (*MS-1.2*)
+	diOddelovac_PritomnostRotora : BOOL; (*OS-12*)
+END_VAR
+(*******************DB1.1*************************)
+VAR
+	aiStol_SnimTeploty_VonkajsiOkruh : INT; (*TS-1*)
+	aiStol_SnimTeploty_VnutornyOkruh : INT; (*TS-2*)
+END_VAR
+(********************DB1.3***********************)
+VAR
+	diVstupManipul_ZasunutyHORE : BOOL; (*MS-2.1*)
+	diVstupManipul_VysunutyDOLE : BOOL; (*MS-2.2*)
+	diVstupManipul_PrednyLimit : BOOL; (*OS-5*)
+	diVstupManipul_ZadnyLimit : BOOL; (*OS-6*)
+	diVstupManipul_PritomRotora : BOOL; (*IS-2*)
+	diVstupManipul_GriperOtvoreny : BOOL; (*MS-3.1*)
+	diVstupManipul_GriperZatvoreny : BOOL; (*MS-3.2*)
+	diOddelovac_PoziciaPredOddelovac : BOOL; (*OS - *)
+END_VAR
+(*******************DB2.0***********************)
+VAR
+	diCentrifuga1_ReferSnimacZdvihu1 : BOOL; (*OS-7.1*)
+	diCentrifuga1_ReferSnimacZdvihu2 : BOOL; (*OS-7.2*)
+	diCentrifuga1_SnimNatocVreteno1 : BOOL; (*IS-3.1*)
+	diCentrifuga1_SnimNatocVreteno2 : BOOL; (*IS-3.2*)
+END_VAR
+(*******************DB2.1************************)
+VAR
+	aiCentrifuga1_Tenzomet_Vreteno1 : DINT; (*TZ-1.1*)
+	aiCentrifuga1_Tenzomet_Vreteno2 : DINT; (*TZ-1.2*)
+END_VAR
+(********************DB3.0***********************)
+VAR
+	diCentrifuga2_ReferSnimacZdvihu1 : BOOL; (*OS-8.1*)
+	diCentrifuga2_ReferSnimacZdvihu2 : BOOL; (*OS-8.2*)
+	diCentrifuga2_SnimNatocVreteno1 : BOOL; (*IS-4.1*)
+	diCentrifuga2_SnimNatocVreteno2 : BOOL; (*IS-4.2*)
+END_VAR
+(*********************DB3.1***********************)
+VAR
+	aiCentrifuga2_Tenzomet_Vreteno1 : DINT; (*TZ-2.1*)
+	aiCentrifuga2_Tenzomet_Vreteno2 : DINT; (*TZ-2.2*)
+END_VAR
+(**********************DB4.0**********************)
+VAR
+	diRobotManip_Rotor_v_GripriPS : BOOL; (*OS-9.1*)
+	diRobotManip_Rotor_v_GripriLS : BOOL; (*OS-9.2*)
+	diRobotManip_GriperOTVORENY_PS : BOOL; (*MS-4.1*)
+	diRobotManip_GriperZATVORENY_PS : BOOL; (*MS-4.2*)
+	diRobotManip_GriperOTVORENY_LS : BOOL; (*MS-5.1*)
+	diRobotManip_GriperZATVORENY_LS : BOOL; (*MS-5.2*)
+END_VAR
+(**********************DB5.0*********************)
+VAR
+	diTunel_VstupLista_Naplnena : BOOL; (*OS-10*)
+	diTunel_VstupLista_VysunutaVPRED : BOOL; (*MS-6.1*)
+	diTunel_VstupLista_ZasunutaVZAD : BOOL; (*MS-6.2*)
+	diHlavnyPrivodVzduchu_TlakOK : BOOL;
+	diTunel_KoliziaNaVstupeDoprav : BOOL;
+	diTunel_MeranieVyskyBalikovPS : BOOL;
+	diTunel_MeranieVyskyBalikovLS : BOOL;
+END_VAR
+(**********************DB5.1*********************)
+VAR
+	diTunel_VystupLista_PoziciaPred : BOOL; (*OS-11*)
+	diTunel_VystLista_VysunutaVPRED : BOOL; (*MS-7.1*)
+	diTunel_VystLista_ZasunutaVZAD : BOOL; (*MS-7.2*)
+	diTunel_ZaplnenieVystupnejTrate : BOOL; (*OS-13*)
+	diTunel_PolohaDopravnika : BOOL; (*IS - 5*)
+	diTunel_KoliziaNaVystupeDoprav : BOOL; (*OS-*)
+END_VAR
+(***********************DB5.2*******************)
+VAR
+	diTunel_Vystup_BZ_PritomnPetlice : BOOL;
+END_VAR
+(***********************DB6.0*******************)
+VAR
+	diRobotOdliev_SnimacHladiny : BOOL;
+END_VAR

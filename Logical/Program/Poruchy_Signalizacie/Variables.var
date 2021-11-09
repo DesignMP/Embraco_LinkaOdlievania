@@ -1,0 +1,5 @@
+VAR
+	i : INT;
+	CasPotvrdeniaAlarmu : TON;
+	ZapniHukacku : BOOL;
+END_VAR

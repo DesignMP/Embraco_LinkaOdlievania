@@ -1,0 +1,13 @@
+(*
+QWS: 00010
+*)
+00001	00017	POE\Main\Variables.vbb
+00002	00000	POE\Main\Main.gb
+00003	00001	POE\Main\CentralStopy.gb
+00004	00000	POE\Main\ZamkyOplotenia.gb
+00005	00001	POE\Main\ZonaOtocnyStol.gb
+00006	00001	POE\Main\ZonaCentrifugy.gb
+00007	00000	POE\Main\ZonaTunel.gb
+00008	00001	POE\Main\ZonaVystupy_Vzduch.gb
+00009	00001	POE\Main\ZonaOplotenieLinky.gb
+00010	00001	POE\Main\Komunikacia_StavCS_Linky.gb

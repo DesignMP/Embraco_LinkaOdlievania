@@ -1,0 +1,16 @@
+VAR
+	SC_OvlDopravnika : SequenceControlTyp;
+	Dopravnik_ChodVPRED : BOOL;
+	Dopravnik_JoggVPRED : BOOL;
+	Dopravnik_JoggVZAD : BOOL;
+	SC_OvlVystupnehoOdsuvaca : SequenceControlTyp;
+	VystupnyOdsuvac_VYSUN : BOOL;
+	VystupnyOdsuvac_ZASUN : BOOL;
+	RotoryNaVystupeTunela : BOOL;
+	DobehovaRampaDopravnika : UINT;
+	CasVypnutiaVentilatorov : TON;
+	PocetPrazdnychPozicii : USINT;
+	PocetPoziciiPriZmene : USINT;
+	CasZisteniaZaplneniaTrate : TON;
+	CasZisteniaUvolneniaTrate : TON;
+END_VAR

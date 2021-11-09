@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.3.195?>
+<AcoposParameterTable>
+  <Root Name="Parameters">
+    <Parameter Name="SGEN_SW_END_IGNORE" ID="128" Value="1" Description="Limit values: Ignore SW end positions" />
+    <Group Name="8B0W0079H000.001-1 mounting vertical V1" Disabled="TRUE">
+      <Group Disabled="TRUE" Description=" DO NOT USE with ACOPOS Firmware before V2.27.0" />
+      <Parameter Name="R_BLEEDER_EXT" ID="10" Value="33" Unit="Ohm" Disabled="TRUE" Description="Bleeder: External: Resistance" />
+      <Parameter Name="TEMP_MAX_BLEEDER_EXT" ID="11" Value="673.08" Unit="°C" Disabled="TRUE" Description="Bleeder: External: Limit temperature" />
+      <Parameter Name="RTH_BLEEDER_AMB_EXT" ID="12" Value="0.852" Unit="K/W" Disabled="TRUE" Description="Bleeder: External: Thermic resistance" />
+      <Parameter Name="CTH_BLEEDER_EXT" ID="13" Value="40.68" Unit="Ws/K" Disabled="TRUE" Description="Bleeder: External: Thermic capacity" />
+      <Parameter Name="BLEEDER_SELECTOR_EXT" ID="398" Value="1" Disabled="TRUE" Description="Bleeder: Selector" />
+    </Group>
+  </Root>
+</AcoposParameterTable>

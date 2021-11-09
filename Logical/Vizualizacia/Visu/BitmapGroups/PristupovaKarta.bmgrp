@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.3.8.58 SP"?>
+<BitmapGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="PristupovaKarta">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="11"/>
+  <Property Name="Translate" Value="False"/>
+  <BitmapLayer LanguageId="neutral">
+    <BitmapRef ID="2037" Value="Source[local].Bitmap[ID_Cards128x128]"/>
+    <BitmapRef ID="2038" Value="None"/>
+  </BitmapLayer>
+  <IndexMap>
+    <Index ID="2037" Value="1"/>
+    <Index ID="2038" Value="0"/>
+  </IndexMap>
+</BitmapGroup>

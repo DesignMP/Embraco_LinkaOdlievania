@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.3.195?>
+<Library Version="1.00.3" Description="Analog ST" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File Description="Exported data types">Analog.typ</File>
+    <File Description="Exported constants">Analog.var</File>
+    <File Description="Function block / Function">Analog.fun</File>
+    <File Description="Convert analog input to physcal value ">Analog.st</File>
+    <File Description="Convert analog input to physcal value ">AnalogOut.st</File>
+  </Files>
+</Library>

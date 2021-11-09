@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.3.8.58 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="StavLinky">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="3"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="222517" Value="Vypnuta"/>
+    <Text ID="222518" Value="Prebieha inicializácia"/>
+    <Text ID="222519" Value="Prebieha výroba"/>
+    <Text ID="222520" Value="Prebieha ukončenie výroby"/>
+    <Text ID="222521" Value="Porucha na linke"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="222517" Value=""/>
+    <Text ID="222518" Value=""/>
+    <Text ID="222519" Value=""/>
+    <Text ID="222520" Value=""/>
+    <Text ID="222521" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="222517" Value="0"/>
+    <Index ID="222518" Value="1"/>
+    <Index ID="222519" Value="2"/>
+    <Index ID="222520" Value="3"/>
+    <Index ID="222521" Value="4"/>
+  </IndexMap>
+</TextGroup>

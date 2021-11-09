@@ -1,0 +1,14 @@
+VAR
+	strCategory : STRING[80];
+	MpRecipeUI_1 : MpRecipeUI;
+	UISetup : MpRecipeUISetupType;
+	UIConnect : MpRecipeUIConnectType := (0);
+	i : INT := 0;
+	a : INT;
+	old_a : INT := 0;
+	MoveUP : BOOL;
+	MoveDown : BOOL;
+	IndexZoznam : INT;
+	b : INT;
+	CasKontrolyKarty : TON;
+END_VAR

@@ -1,0 +1,358 @@
+(*
+T: RESOURCE CPU
+FW: NO
+CI#: 0
+QSL: 58
+QVE: 58
+QVPC: 58
+QPar: 0
+QFBI: 0
+*)
+@V 1 2 0
+siCS_Linka_KanalA	1	VAR_GLOBAL	@TYP:43
+%SIX 16.0		     
+
+;
+
+@V 1 3 0
+siCS_Linka_KanalB	2	VAR_GLOBAL	@TYP:43
+%SIX 16.1		     
+
+;
+
+@V 1 4 0
+siCS_RobotManipulacie_KanalA	3	VAR_GLOBAL	@TYP:43
+%SIX 16.2		     
+
+;
+
+@V 1 5 0
+siCS_RobotManipulacie_KanalB	4	VAR_GLOBAL	@TYP:43
+%SIX 16.3		     
+
+;
+
+@V 1 6 0
+siCS_RobotOdlievania_KanalA	5	VAR_GLOBAL	@TYP:43
+%SIX 16.4		     
+
+;
+
+@V 1 7 0
+siCS_RobotOdlievania_KanalB	6	VAR_GLOBAL	@TYP:43
+%SIX 16.5		     
+
+;
+
+@V 1 8 0
+siCS_DokonStanica_KanalA	7	VAR_GLOBAL	@TYP:43
+%SIX 16.6		     
+
+;
+
+@V 1 9 0
+siCS_DokonStanica_KanalB	8	VAR_GLOBAL	@TYP:43
+%SIX 16.7		     
+
+;
+
+@V 1 10 0
+siServisneDvere1_KanalA	9	VAR_GLOBAL	@TYP:43
+%SIX 60.0		     
+
+;
+
+@V 1 11 0
+siServisneDvere1_KanalB	10	VAR_GLOBAL	@TYP:43
+%SIX 60.1		     
+
+;
+
+@V 1 12 0
+siCS_ServisDvere1_KanalA	11	VAR_GLOBAL	@TYP:43
+%SIX 60.2		     
+
+;
+
+@V 1 13 0
+siCS_ServisDvere1_KanalB	12	VAR_GLOBAL	@TYP:43
+%SIX 60.3		     
+
+;
+
+@V 1 14 0
+siServisneDvere2_KanalA	13	VAR_GLOBAL	@TYP:43
+%SIX 60.4		     
+
+;
+
+@V 1 15 0
+siServisneDvere2_KanalB	14	VAR_GLOBAL	@TYP:43
+%SIX 60.5		     
+
+;
+
+@V 1 16 0
+siCS_ServisneDvere2_KanalA	15	VAR_GLOBAL	@TYP:43
+%SIX 60.6		     
+
+;
+
+@V 1 17 0
+siCS_ServisneDvere2_KanalB	16	VAR_GLOBAL	@TYP:43
+%SIX 60.7		     
+
+;
+
+@V 1 18 0
+siBZ_VystupTunela_KanalA	17	VAR_GLOBAL	@TYP:43
+%SIX 64.0		     
+
+;
+
+@V 1 19 0
+siBZ_VystupTunela_KanalB	18	VAR_GLOBAL	@TYP:43
+%SIX 64.1		     
+
+;
+
+@V 1 21 0
+soOtocnyStol	19	VAR_GLOBAL	@TYP:43
+%SQX 12.0		     
+
+;
+
+@V 1 22 0
+soTunel	20	VAR_GLOBAL	@TYP:43
+%SQX 12.2		     
+
+;
+
+@V 1 23 0
+soVystupy_Vzduch	21	VAR_GLOBAL	@TYP:43
+%SQX 12.3		     
+
+;
+
+@V 1 24 0
+soOplotenieLinky	22	VAR_GLOBAL	@TYP:43
+%SQX 12.4		     
+
+;
+
+@V 1 25 0
+soCentrifugy	23	VAR_GLOBAL	@TYP:43
+%SQX 12.1		     
+
+;
+
+@V 1 26 0
+soStavCS_HlavnejLinky	24	VAR_GLOBAL	@TYP:43
+%SQX 12.5		     
+
+;
+
+@V 1 27 0
+Release_soOtocnyStol	25	VAR_GLOBAL	@TYP:1
+%NSQX 2.0		     
+
+;
+
+@V 1 28 0
+Release_soCentrifugy	26	VAR_GLOBAL	@TYP:1
+%NSQX 2.1		     
+
+;
+
+@V 1 29 0
+Release_soTunel	27	VAR_GLOBAL	@TYP:1
+%NSQX 2.2		     
+
+;
+
+@V 1 30 0
+Release_soVystup_Vzduch	28	VAR_GLOBAL	@TYP:1
+%NSQX 2.3		     
+
+;
+
+@V 1 31 0
+Release_soOplotenieLinky	29	VAR_GLOBAL	@TYP:1
+%NSQX 2.4		     
+
+;
+
+@V 1 32 0
+Release_soStavCS_HlavnejLinky	30	VAR_GLOBAL	@TYP:1
+%NSQX 2.5		     
+
+;
+
+@V 1 34 0
+ResetCS	31	VAR_GLOBAL	@TYP:1
+%NSIX 0.0		     
+
+;
+
+@V 1 35 0
+ResetOplotenia	32	VAR_GLOBAL	@TYP:1
+%NSIX 0.1		     
+
+;
+
+@V 1 36 0
+ResetZamkuTunelVystup	33	VAR_GLOBAL	@TYP:1
+%NSIX 1.2		     
+
+;
+
+@V 1 37 0
+Stav_PrivodVzduchu_KanalA	34	VAR_GLOBAL	@TYP:1
+%NSIX 0.2		     
+
+;
+
+@V 1 38 0
+Stav_PrivodVzduchu_KanalB	35	VAR_GLOBAL	@TYP:1
+%NSIX 0.3		     
+
+;
+
+@V 1 39 0
+StavBezpecRele_Centrifugy	36	VAR_GLOBAL	@TYP:1
+%NSIX 0.4		     
+
+;
+
+@V 1 40 0
+StavBezpecRele_OplotenieLinky	37	VAR_GLOBAL	@TYP:1
+%NSIX 0.5		     
+
+;
+
+@V 1 41 0
+StavBezpecRele_OtocnyStol	38	VAR_GLOBAL	@TYP:1
+%NSIX 0.6		     
+
+;
+
+@V 1 42 0
+StavBezpecRele_StavCS_Linky	39	VAR_GLOBAL	@TYP:1
+%NSIX 0.7		     
+
+;
+
+@V 1 43 0
+StavBezpecRele_Tunel	40	VAR_GLOBAL	@TYP:1
+%NSIX 1.0		     
+
+;
+
+@V 1 44 0
+StavBezpecRele_Vystupy_Vzduch	41	VAR_GLOBAL	@TYP:1
+%NSIX 1.1		     
+
+;
+
+@V 1 45 0
+BZ_VystupTunela_PritomtPetlice	42	VAR_GLOBAL	@TYP:1
+%NSIX 20.0		     
+
+;
+
+@V 1 46 0
+RezimServis	43	VAR_GLOBAL	@TYP:1
+%NSIX 1.3		     
+
+;
+
+@V 1 48 0
+SafetyPLC_Nabehlo	44	VAR_GLOBAL	@TYP:1
+%NSQX 0.0		     
+
+;
+
+@V 1 49 0
+BezpOkruhCS_Aktivovany	45	VAR_GLOBAL	@TYP:1
+%NSQX 0.1		     
+
+;
+
+@V 1 50 0
+BezpOkruhOploteniaAktivovany	46	VAR_GLOBAL	@TYP:1
+%NSQX 0.2		     
+
+;
+
+@V 1 51 0
+Stav_BZ1_Zamknuty	47	VAR_GLOBAL	@TYP:1
+%NSQX 0.3		     
+
+;
+
+@V 1 52 0
+Stav_BZ2_Zamknuty	48	VAR_GLOBAL	@TYP:1
+%NSQX 0.4		     
+
+;
+
+@V 1 53 0
+Stav_BZ3_Zamknuty	49	VAR_GLOBAL	@TYP:1
+%NSQX 0.5		     
+
+;
+
+@V 1 54 0
+Stav_CS_BZ1_Odblokovany	50	VAR_GLOBAL	@TYP:1
+%NSQX 0.6		     
+
+;
+
+@V 1 55 0
+Stav_CS_BZ2_Odblokovany	51	VAR_GLOBAL	@TYP:1
+%NSQX 0.7		     
+
+;
+
+@V 1 56 0
+Stav_CS_DokonStanice_Odblokov	52	VAR_GLOBAL	@TYP:1
+%NSQX 1.0		     
+
+;
+
+@V 1 57 0
+Stav_CS_Linky_Odblokovany	53	VAR_GLOBAL	@TYP:1
+%NSQX 1.1		     
+
+;
+
+@V 1 58 0
+Stav_CS_RobotManipul_Odblokov	54	VAR_GLOBAL	@TYP:1
+%NSQX 1.2		     
+
+;
+
+@V 1 59 0
+Stav_CS_RobotOdliev_Odblokov	55	VAR_GLOBAL	@TYP:1
+%NSQX 1.3		     
+
+;
+
+@V 1 61 0
+OkruhCS_Aktivny	56	VAR_GLOBAL	@TYP:43
+		     
+
+;
+
+@V 1 62 0
+OkruhOplotenia_Aktivny	57	VAR_GLOBAL	@TYP:43
+		     
+
+;
+
+@V 1 63 0
+CSLinkyOdlievaniaAktivne	58	VAR_GLOBAL	@TYP:1
+		     
+
+;
+

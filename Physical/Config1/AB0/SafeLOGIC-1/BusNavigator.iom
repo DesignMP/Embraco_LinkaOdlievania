@@ -1,0 +1,65 @@
+<!--xml version= "1.0" encoding="utf-8"-->
+<!--IOMapping Version="4.0"-->
+<IOOffsets SIBytes="2048" SOBytes="2048" NSIBytes="1024" NSOBytes="1024" ConnectionsValidOffset="24" >
+		<Module Name="SL1.SM1" Hardware="X20SLX806" SafeLogicID="1" SafeModuleID="1" SISize="8" SOSize="2" NSISize="20" NSOSize="20" SIOffset="16" SOOffset="12" NSIOffset="0" NSOOffset="0" HWTypeCode="63" >
+			<Channel Name="SafeDigitalInput01" Mapping="SIX16.0" Variable="siCS_Linka_KanalA" Address="Cyclic#1.siCS_Linka_KanalA" SODIndex="0x9999" SODSubIndex="0x1" />
+			<Channel Name="SafeDigitalInput02" Mapping="SIX16.1" Variable="siCS_Linka_KanalB" Address="Cyclic#1.siCS_Linka_KanalB" SODIndex="0x9999" SODSubIndex="0x1" />
+			<Channel Name="SafeDigitalInput03" Mapping="SIX16.2" Variable="siCS_RobotManipulacie_KanalA" Address="Cyclic#1.siCS_RobotManipulacie_KanalA" SODIndex="0x9999" SODSubIndex="0x1" />
+			<Channel Name="SafeDigitalInput04" Mapping="SIX16.3" Variable="siCS_RobotManipulacie_KanalB" Address="Cyclic#1.siCS_RobotManipulacie_KanalB" SODIndex="0x9999" SODSubIndex="0x1" />
+			<Channel Name="SafeDigitalInput05" Mapping="SIX16.4" Variable="siCS_RobotOdlievania_KanalA" Address="Cyclic#1.siCS_RobotOdlievania_KanalA" SODIndex="0x9999" SODSubIndex="0x1" />
+			<Channel Name="SafeDigitalInput06" Mapping="SIX16.5" Variable="siCS_RobotOdlievania_KanalB" Address="Cyclic#1.siCS_RobotOdlievania_KanalB" SODIndex="0x9999" SODSubIndex="0x1" />
+			<Channel Name="SafeDigitalInput07" Mapping="SIX16.6" Variable="siCS_DokonStanica_KanalA" Address="Cyclic#1.siCS_DokoncovaciaStanica_KanalA" SODIndex="0x9999" SODSubIndex="0x1" />
+			<Channel Name="SafeDigitalInput08" Mapping="SIX16.7" Variable="siCS_DokonStanica_KanalB" Address="Cyclic#1.siCS_DokoncovaciaStanica_KanalB" SODIndex="0x9999" SODSubIndex="0x1" />
+			<Channel Name="SafeDigitalOutput01" Mapping="SQX12.0" Variable="soOtocnyStol" SODIndex="0x9999" SODSubIndex="0x4" />
+			<Channel Name="SafeDigitalOutput02" Mapping="SQX12.1" Variable="soCentrifugy" SODIndex="0x9999" SODSubIndex="0x4" />
+			<Channel Name="SafeDigitalOutput03" Mapping="SQX12.2" Variable="soTunel" SODIndex="0x9999" SODSubIndex="0x4" />
+			<Channel Name="SafeDigitalOutput04" Mapping="SQX12.3" Variable="soVystupy_Vzduch" SODIndex="0x9999" SODSubIndex="0x4" />
+			<Channel Name="SafeDigitalOutput05" Mapping="SQX12.4" Variable="soOplotenieLinky" SODIndex="0x9999" SODSubIndex="0x4" />
+			<Channel Name="SafeDigitalOutput06" Mapping="SQX12.5" Variable="soStavCS_HlavnejLinky" SODIndex="0x9999" SODSubIndex="0x4" />
+			<Channel Name="ReleaseOutput01" Mapping="NSQX2.0" Variable="Release_soOtocnyStol" SODIndex="0x9999" SODSubIndex="0x7" />
+			<Channel Name="ReleaseOutput02" Mapping="NSQX2.1" Variable="Release_soCentrifugy" SODIndex="0x9999" SODSubIndex="0x7" />
+			<Channel Name="ReleaseOutput03" Mapping="NSQX2.2" Variable="Release_soTunel" SODIndex="0x9999" SODSubIndex="0x7" />
+			<Channel Name="ReleaseOutput04" Mapping="NSQX2.3" Variable="Release_soVystup_Vzduch" SODIndex="0x9999" SODSubIndex="0x7" />
+			<Channel Name="ReleaseOutput05" Mapping="NSQX2.4" Variable="Release_soOplotenieLinky" SODIndex="0x9999" SODSubIndex="0x7" />
+			<Channel Name="ReleaseOutput06" Mapping="NSQX2.5" Variable="Release_soStavCS_HlavnejLinky" SODIndex="0x9999" SODSubIndex="0x7" />
+			<Channel Name="BOOL001" Mapping="NSQX0.0" Variable="SafetyPLC_Nabehlo" Address="Cyclic#1.SafetyPLC_Nabehlo" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL002" Mapping="NSQX0.1" Variable="BezpOkruhCS_Aktivovany" Address="Cyclic#1.BezpOkruhCS_Aktivovany" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL003" Mapping="NSQX0.2" Variable="BezpOkruhOploteniaAktivovany" Address="Cyclic#1.BezpOkruhOplotenia_Aktivovany" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL004" Mapping="NSQX0.3" Variable="Stav_BZ1_Zamknuty" Address="Cyclic#1.Stav_BZ1_Zamknuty" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL005" Mapping="NSQX0.4" Variable="Stav_BZ2_Zamknuty" Address="Cyclic#1.Stav_BZ2_Zamknuty" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL006" Mapping="NSQX0.5" Variable="Stav_BZ3_Zamknuty" Address="Cyclic#1.Stav_BZ3_Zamknuty" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL007" Mapping="NSQX0.6" Variable="Stav_CS_BZ1_Odblokovany" Address="Cyclic#1.Stav_CS_BZ1_Odblokovany" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL008" Mapping="NSQX0.7" Variable="Stav_CS_BZ2_Odblokovany" Address="Cyclic#1.Stav_CS_BZ2_Odblokovany" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL009" Mapping="NSQX1.0" Variable="Stav_CS_DokonStanice_Odblokov" Address="Cyclic#1.Stav_CS_DokonStanica_Odblokovane" SODIndex="0x2580" SODSubIndex="0x2" />
+			<Channel Name="BOOL010" Mapping="NSQX1.1" Variable="Stav_CS_Linky_Odblokovany" Address="Cyclic#1.Stav_CS_Linky_Odblokovane" SODIndex="0x2580" SODSubIndex="0x2" />
+			<Channel Name="BOOL011" Mapping="NSQX1.2" Variable="Stav_CS_RobotManipul_Odblokov" Address="Cyclic#1.Stav_CS_RoboManipul_Odblokovane" SODIndex="0x2580" SODSubIndex="0x2" />
+			<Channel Name="BOOL012" Mapping="NSQX1.3" Variable="Stav_CS_RobotOdliev_Odblokov" Address="Cyclic#1.Stav_CS_RobotOdliev_Odblokovane" SODIndex="0x2580" SODSubIndex="0x2" />
+			<Channel Name="BOOL101" Mapping="NSIX0.0" Variable="ResetCS" Address="Cyclic#1.Reset_CS" SODIndex="0x2500" SODSubIndex="0x2" />
+			<Channel Name="BOOL102" Mapping="NSIX0.1" Variable="ResetOplotenia" Address="Cyclic#1.Reset_Oplotenia" SODIndex="0x2500" SODSubIndex="0x2" />
+			<Channel Name="BOOL103" Mapping="NSIX0.2" Variable="Stav_PrivodVzduchu_KanalA" Address="Cyclic#1.diStav_HlavPrivoduVzduchuKanalA" SODIndex="0x2500" SODSubIndex="0x2" />
+			<Channel Name="BOOL104" Mapping="NSIX0.3" Variable="Stav_PrivodVzduchu_KanalB" Address="Cyclic#1.diStav_HlavPrivoduVzduchuKanalB" SODIndex="0x2500" SODSubIndex="0x2" />
+			<Channel Name="BOOL105" Mapping="NSIX0.4" Variable="StavBezpecRele_Centrifugy" Address="Cyclic#1.diStavBezpRele_Centrifugy" SODIndex="0x2500" SODSubIndex="0x2" />
+			<Channel Name="BOOL106" Mapping="NSIX0.5" Variable="StavBezpecRele_OplotenieLinky" Address="Cyclic#1.diStavBezpRele_OplotenieLinky" SODIndex="0x2500" SODSubIndex="0x2" />
+			<Channel Name="BOOL107" Mapping="NSIX0.6" Variable="StavBezpecRele_OtocnyStol" Address="Cyclic#1.diStavBezpRele_OtocnyStol" SODIndex="0x2500" SODSubIndex="0x2" />
+			<Channel Name="BOOL108" Mapping="NSIX0.7" Variable="StavBezpecRele_StavCS_Linky" Address="Cyclic#1.diStavBezpRele_StavCS_Linky" SODIndex="0x2500" SODSubIndex="0x2" />
+			<Channel Name="BOOL109" Mapping="NSIX1.0" Variable="StavBezpecRele_Tunel" Address="Cyclic#1.diStavBezpRele_Tunel" SODIndex="0x2500" SODSubIndex="0x3" />
+			<Channel Name="BOOL110" Mapping="NSIX1.1" Variable="StavBezpecRele_Vystupy_Vzduch" Address="Cyclic#1.diStavBezpRele_Vystupy_Vzduch" SODIndex="0x2500" SODSubIndex="0x3" />
+			<Channel Name="BOOL111" Mapping="NSIX1.2" Variable="ResetZamkuTunelVystup" Address="Cyclic#1.Reset_ZamkuTunelVystup" SODIndex="0x2500" SODSubIndex="0x3" />
+			<Channel Name="BOOL112" Mapping="NSIX1.3" Variable="RezimServis" Address="Cyclic#1.RezimServis" SODIndex="0x2500" SODSubIndex="0x3" />
+		</Module>
+		<Module Name="SL1.SM2" Hardware="X20SI8110" SafeLogicID="1" SafeModuleID="2" SISize="3" SOSize="0" NSISize="0" NSOSize="0" SIOffset="60" ConnectionValidBitNumber="0" HWTypeCode="27" >
+			<Channel Name="SafeDigitalInput01" Mapping="SIX60.0" Variable="siServisneDvere1_KanalA" Address="Cyclic#1.siDvereRobotMan_KanalA" SODIndex="0x6000" SODSubIndex="0x1" />
+			<Channel Name="SafeDigitalInput02" Mapping="SIX60.1" Variable="siServisneDvere1_KanalB" Address="Cyclic#1.siDvereRobotMan_KanalB" SODIndex="0x6000" SODSubIndex="0x1" />
+			<Channel Name="SafeDigitalInput03" Mapping="SIX60.2" Variable="siCS_ServisDvere1_KanalA" Address="Cyclic#1.siCS_DvereRobotMan_KanalA" SODIndex="0x6000" SODSubIndex="0x1" />
+			<Channel Name="SafeDigitalInput04" Mapping="SIX60.3" Variable="siCS_ServisDvere1_KanalB" Address="Cyclic#1.siCS_DvereRobotMan_KanalB" SODIndex="0x6000" SODSubIndex="0x1" />
+			<Channel Name="SafeDigitalInput05" Mapping="SIX60.4" Variable="siServisneDvere2_KanalA" Address="Cyclic#1.siDvereRobotOdliev_KanalA" SODIndex="0x6000" SODSubIndex="0x1" />
+			<Channel Name="SafeDigitalInput06" Mapping="SIX60.5" Variable="siServisneDvere2_KanalB" Address="Cyclic#1.siDvereRobotOdliev_KanalB" SODIndex="0x6000" SODSubIndex="0x1" />
+			<Channel Name="SafeDigitalInput07" Mapping="SIX60.6" Variable="siCS_ServisneDvere2_KanalA" Address="Cyclic#1.siCS_DvereRobotOdliev_KanalA" SODIndex="0x6000" SODSubIndex="0x1" />
+			<Channel Name="SafeDigitalInput08" Mapping="SIX60.7" Variable="siCS_ServisneDvere2_KanalB" Address="Cyclic#1.siCS_DvereRobotOdliev_KanalB" SODIndex="0x6000" SODSubIndex="0x1" />
+		</Module>
+		<Module Name="SL1.SM3" Hardware="X67SI8103" SafeLogicID="1" SafeModuleID="3" SISize="4" SOSize="0" NSISize="2" NSOSize="2" SIOffset="64" NSIOffset="20" NSOOffset="20" ConnectionValidBitNumber="1" HWTypeCode="27" >
+			<Channel Name="SafeDigitalInput01" Mapping="SIX64.0" Variable="siBZ_VystupTunela_KanalA" Address="Cyclic#1.siTunel_Vystup_BZ_KanalA" SODIndex="0x6000" SODSubIndex="0x1" />
+			<Channel Name="SafeDigitalInput02" Mapping="SIX64.1" Variable="siBZ_VystupTunela_KanalB" Address="Cyclic#1.siTunel_Vystup_BZ_KanalB" SODIndex="0x6000" SODSubIndex="0x1" />
+			<Channel Name="DigitalInput01" Mapping="NSIX20.0" Variable="BZ_VystupTunela_PritomtPetlice" Address="Cyclic#1.diTunel_Vystup_BZ_PritomnPetlice" SODIndex="0x2500" SODSubIndex="0x4" />
+		</Module>
+</IOOffsets>

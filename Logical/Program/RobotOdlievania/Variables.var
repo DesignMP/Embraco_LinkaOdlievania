@@ -1,0 +1,8 @@
+VAR
+	PocetKusovDoPreplachu : UINT;
+	CasPredVyliatim_Centrifuga1 : TON;
+	CasPredVyliatim_Centrifuga2 : TON;
+	CasPredVyliatim_Cakanie : TON;
+	Stav_PrebiehaOdlievanie : BOOL;
+	CasPredAutomatPreplachom : TON;
+END_VAR

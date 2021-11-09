@@ -1,0 +1,20 @@
+VAR
+	siCS_Linka_KanalA : BOOL;
+	siCS_Linka_KanalB : BOOL;
+	siCS_RobotManipulacie_KanalA : BOOL;
+	siCS_RobotManipulacie_KanalB : BOOL;
+	siCS_RobotOdlievania_KanalA : BOOL;
+	siCS_RobotOdlievania_KanalB : BOOL;
+	siCS_DvereRobotMan_KanalA : BOOL;
+	siCS_DvereRobotMan_KanalB : BOOL;
+	siCS_DvereRobotOdliev_KanalA : BOOL;
+	siCS_DvereRobotOdliev_KanalB : BOOL;
+	siCS_DokoncovaciaStanica_KanalA : BOOL;
+	siCS_DokoncovaciaStanica_KanalB : BOOL;
+	siDvereRobotMan_KanalA : BOOL;
+	siDvereRobotMan_KanalB : BOOL;
+	siDvereRobotOdliev_KanalA : BOOL;
+	siDvereRobotOdliev_KanalB : BOOL;
+	siTunel_Vystup_BZ_KanalA : BOOL;
+	siTunel_Vystup_BZ_KanalB : BOOL;
+END_VAR

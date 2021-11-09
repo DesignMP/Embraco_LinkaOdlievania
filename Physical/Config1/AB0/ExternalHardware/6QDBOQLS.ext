@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- A fieldbus integration example. -->
+<ISO15745Profile xmlns="http://www.profibus.com/GSDML/2003/11/DeviceProfile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.profibus.com/GSDML/2003/11/DeviceProfile ..\xsd\GSDML-DeviceProfile-v2.31.xsd">
+	<ProfileHeader>
+		<ProfileIdentification>PROFINET Device Profile</ProfileIdentification>
+		<ProfileRevision>1.00</ProfileRevision>
+		<ProfileName>Device Profile for PROFINET Devices</ProfileName>
+		<ProfileSource>PROFIBUS Nutzerorganisation e. V. (PNO)</ProfileSource>
+		<ProfileClassID>Device</ProfileClassID>
+		<ISO15745Reference>
+			<ISO15745Part>4</ISO15745Part>
+			<ISO15745Edition>1</ISO15745Edition>
+			<ProfileTechnology>GSDML</ProfileTechnology>
+		</ISO15745Reference>
+	</ProfileHeader>
+	<ProfileBody>
+		<DeviceIdentity VendorID="0x1111" DeviceID="0x0079">
+			<InfoText TextId="IDT_INFO_Device"/>
+			<VendorName Value="ADFweb.com"/>
+		</DeviceIdentity>
+		<DeviceFunction>
+			<Family MainFamily="Gateway" ProductFamily="HD67603"/>
+		</DeviceFunction>
+		<ApplicationProcess>
+			<DeviceAccessPointList>
+			  <DeviceAccessPointItem PNIO_Version="V2.3" RequiredSchemaVersion="V2.25" ID="IDD_1" PhysicalSlots="0..4" ModuleIdentNumber="0x00000001" MinDeviceInterval="64" ImplementationType="devicename1" DNS_CompatibleName="devicename1" FixedInSlots="0" ObjectUUID_LocalIndex="1" MultipleWriteSupported="true" MaxSupportedRecordSize="8192" ParameterizationSpeedupSupported="true" PowerOnToCommReady="350" DeviceAccessSupported="true" SharedDeviceSupported="true" CheckDeviceID_Allowed="false" NameOfStationNotTransferable="true">
+					<ModuleInfo>
+						<Name TextId="IDT_NAME_DAP1"/>
+						<InfoText TextId="IDT_INFO_DAP1"/>
+						<VendorName Value="ADFweb.com"/>
+						<OrderNumber Value="HD67603-A1"/>
+					</ModuleInfo>
+					<SubslotList>
+						<SubslotItem SubslotNumber="1" TextId="IDT_SUBSLOT_1"/>
+						<SubslotItem SubslotNumber="32768" TextId="IDT_SUBSLOT_Interface"/>
+						<SubslotItem SubslotNumber="32769" TextId="IDT_SUBSLOT_Port1"/>
+						<SubslotItem SubslotNumber="32770" TextId="IDT_SUBSLOT_Port2"/>
+					</SubslotList>
+					<IOConfigData MaxInputLength="1440" MaxOutputLength="1440" MaxDataLength="2880"/>
+					<UseableModules>
+						<ModuleItemRef ModuleItemTarget="IDM_1" FixedInSlots="1"/>
+					</UseableModules>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_V1" SubmoduleIdentNumber="0x00000000" >
+					    <IOData IOPS_Length="1" IOCS_Length="1"/>
+							<ModuleInfo>
+								<Name TextId="IDT_NAME_VS1"/>
+								<InfoText TextId="IDT_INFO_VS1"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+					<SystemDefinedSubmoduleList>
+						<InterfaceSubmoduleItem ID="IDS_I" SubmoduleIdentNumber="0x00000001" SubslotNumber="32768" TextId="IDT_NAME_IS" SupportedRT_Classes="RT_CLASS_1" SupportedProtocols="SNMP;LLDP" SupportedMibs="MIB2">
+							<ApplicationRelations NumberOfAR="2">
+								<TimingProperties SendClock="32" ReductionRatio="1 2 4 8 16 32 64 128 256 512"/>
+							</ApplicationRelations>
+						</InterfaceSubmoduleItem>
+						<PortSubmoduleItem ID="IDS_P1" SubmoduleIdentNumber="0x00000002" SubslotNumber="32769" TextId="IDT_NAME_PS1" MaxPortRxDelay="350" MaxPortTxDelay="160"/>
+						<PortSubmoduleItem ID="IDS_P2" SubmoduleIdentNumber="0x00000002" SubslotNumber="32770" TextId="IDT_NAME_PS2" MaxPortRxDelay="350" MaxPortTxDelay="160"/>
+					</SystemDefinedSubmoduleList>
+					<!-- This element tells the engineering tool that the DAP supports fieldbus integration (slot clusters). -->
+					<!-- FieldbusIntegrationSlots MaxSupported="127" Range="100..9999"/-->
+				</DeviceAccessPointItem>
+			</DeviceAccessPointList>
+			<ModuleList>
+				<!-- The "normal" module carrying the FAP. -->
+				<ModuleItem ID="IDM_1" ModuleIdentNumber="0x00000002">
+					<ModuleInfo>
+						<Name TextId="IDT_NAME_M1"/>
+						<InfoText TextId="IDT_INFO_M1"/>
+						<OrderNumber Value="12345-0040-M"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+			  		<VirtualSubmoduleItem ID="IDM_1" SubmoduleIdentNumber="0x00000001" >
+			  		  <IOData IOPS_Length="1" IOCS_Length="1" >
+   			  		     <Input> <DataItem DataType="OctetString" Length="512" TextId="IDT_Input_1"/> </Input>
+			  		     <Output><DataItem DataType="OctetString" Length="512" TextId="IDT_Output_1"/></Output>
+			  		  </IOData>
+			  	   	  <RecordDataList>
+                                            <ParameterRecordDataItem Index="128" Length="2" >
+						<Name TextId="IDT_NAME_M1_IDT_REF_channel"/>
+                                                <Const ByteOffset="0" Data="0x00,0x00"/>
+                                                <Ref TextId="IDT_REF_reaction_to_cpu_stop" Visible="true" DataType="BitArea" ByteOffset="0" BitOffset="0" BitLength="2" DefaultValue="2" AllowedValues="0..2" ValueItemTarget="IDV_reaction_to_cpu_stop" ID="IDT_REF_reaction_to_cpu_stop" />
+                                               <MenuList>
+                      			          <MenuItem ID="IDT_NAME_M1_IDT_REF_channel">
+							<Name TextId="IDT_NAME_M1_IDT_REF_channel"/>
+							<MenuRef MenuTarget="IDT_NAME_M1_Base_Parameters"/>
+						  </MenuItem>
+						  <MenuItem ID="IDT_NAME_M1_Base_Parameters">
+							<Name TextId="IDT_NAME_M1_Base_Parameters"/>
+							<ParameterRef ParameterTarget="IDT_REF_reaction_to_cpu_stop"/>
+						  </MenuItem>
+					       </MenuList>
+                                           </ParameterRecordDataItem>
+                                      </RecordDataList>
+			  	    <ModuleInfo>
+			  	  	  <Name TextId="IDT_NAME_M1"/>
+			  		    <InfoText TextId="IDT_INFO_M1"/>
+	   		  	  </ModuleInfo>
+		     		</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+			</ModuleList>
+         <ValueList>
+				 <ValueItem ID="IDV_reaction_to_cpu_stop">
+					<Assignments>
+						<Assign TextId="IDT_ASSIGN_do_set_substitude_values" Content="0"/>
+						<Assign TextId="IDT_ASSIGN_do_values_will_hold" Content="1"/>
+						<Assign TextId="IDT_ASSIGN_do_continue_counting" Content="2"/>
+					</Assignments>
+			        </ValueItem>
+         </ValueList>
+			<CategoryList>
+				<CategoryItem ID="IDC_DI" TextId="IDT_CATEGORY_DI">
+					<InfoText TextId="IDT_INFO_DI"/>
+				</CategoryItem>
+				<CategoryItem ID="IDC_DO" TextId="IDT_CATEGORY_DO">
+					<InfoText TextId="IDT_INFO_DO"/>
+				</CategoryItem>
+			</CategoryList>
+			<ExternalTextList>
+				<PrimaryLanguage>
+					<Text TextId="IDT_INFO_Device" Value="ADFweb Gateways"/>
+					<Text TextId="IDT_NAME_DAP1" Value="ModbusSlave"/>
+					<Text TextId="IDT_INFO_DAP1" Value="Profinet Modbus Slave Adapter"/>
+					<Text TextId="IDT_SUBSLOT_1" Value="Subslot 1"/>
+					<Text TextId="IDT_SUBSLOT_Interface" Value="Interface"/>
+					<Text TextId="IDT_SUBSLOT_Port1" Value="Port 1"/>
+					<Text TextId="IDT_SUBSLOT_Port2" Value="Port 2"/>
+					<Text TextId="IDT_RECORD_NAME_Head" Value="Parameters of head module"/>
+					<Text TextId="IDT_REF_Power" Value="Percent power"/>
+					<Text TextId="IDT_NAME_VS1" Value="Submodule V1"/>
+					<Text TextId="IDT_INFO_VS1" Value="Description of submodule V1"/>
+					<Text TextId="IDT_NAME_IS" Value="I"/>
+					<Text TextId="IDT_NAME_PS1" Value="P1"/>
+					<Text TextId="IDT_NAME_PS2" Value="P2"/>
+					<Text TextId="IDT_NAME_M1" Value="Module"/>
+					<Text TextId="IDT_INFO_M1" Value="device MODBUS"/>
+					<Text TextId="IDT_NAME_FAP" Value="FAP for MODBUS"/>
+					<Text TextId="IDT_INFO_FAP" Value="Description of FAP for MODBUS"/>
+					<Text TextId="IDT_RECORD_NAME_SlotCluster" Value="Parameters of the FAP"/>
+					<Text TextId="IDT_REF_SlotClusterBegin" Value="Beginning of slot cluster"/>
+					<Text TextId="IDT_NAME_M_PB1" Value="MODBUS Slave "/>
+					<Text TextId="IDT_INFO_M_PB1" Value="Description of MODBUS Slave"/>
+					<Text TextId="IDT_NAME_S_PB1" Value="Module of a MODBUS Slave"/>
+					<Text TextId="IDT_INFO_S_PB1" Value="Description of module of a MODBUS Slave"/>
+					<Text TextId="IDT_PB_Input" Value="Digital input MODBUS Slave"/>
+					<Text TextId="IDT_PB_InputBit0" Value="Digital input bit ModBusSlave"/>
+					<Text TextId="IDT_NAME_S1" Value="Submodule 1"/>
+					<Text TextId="IDT_INFO_S1" Value="Description of submodule 1"/>
+					<Text TextId="IDT_Input_1" Value="Input byte"/>
+					<Text TextId="IDT_Output_1" Value="Output word"/>
+					<Text TextId="IDT_CATEGORY_DI" Value="Digital Input"/>
+					<Text TextId="IDT_INFO_DI" Value="Description of digital input"/>
+					<Text TextId="IDT_CATEGORY_DO" Value="Digital output"/>
+					<Text TextId="IDT_INFO_DO" Value="Description of digital output"/>
+					<Text TextId="IDT_NAME_M1_IDT_REF_channel" Value="Canale x"/>
+          <Text TextId="IDT_REF_reaction_to_cpu_stop" Value="Reaction to CPU STOP"/>
+          <Text TextId="IDT_NAME_M1_Base_Parameters" Value="Base Parameters"/>
+          <Text Value="Output substitute value" TextId="IDT_ASSIGN_do_set_substitude_values"/>
+					<Text Value="Keep last value" TextId="IDT_ASSIGN_do_values_will_hold"/>
+					<Text Value="Continue operation" TextId="IDT_ASSIGN_do_continue_counting"/>
+				</PrimaryLanguage>
+			</ExternalTextList>
+		</ApplicationProcess>
+	</ProfileBody>
+</ISO15745Profile>

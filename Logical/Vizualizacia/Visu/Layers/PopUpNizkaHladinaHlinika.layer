@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.3.8.58 SP"?>
+<Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="PopUpNizkaHladinaHlinika">
+  <Property Name="BackColor" Value="9"/>
+  <Property Name="Description" Value=""/>
+  <Property Name="Height" Value="768"/>
+  <Property Name="Left" Value="0"/>
+  <Property Name="StatusDatapoint" Value="None"/>
+  <Property Name="Top" Value="0"/>
+  <Property Name="Width" Value="1366"/>
+  <TextGroup>
+    <TextLayer LanguageId="en">
+      <Text ID="226773" Value="Upozornenie !!!"/>
+      <Text ID="226774" Value="Kritická hladina hliníka v peci."/>
+      <Text ID="226775" Value="OK"/>
+      <Text ID="231772" Value="Upozornenie !!!"/>
+      <Text ID="231773" Value="Nízka hladina hliníka v peci."/>
+      <Text ID="231774" Value="OK"/>
+      <Text ID="231776" Value="Upozornenie !!!"/>
+      <Text ID="231777" Value="Doplň hliník do pece."/>
+      <Text ID="231778" Value="OK"/>
+      <Text ID="232251" Value="Upozornenie !!!"/>
+      <Text ID="232252" Value="Porucha indukčného ohrevu !!!"/>
+      <Text ID="232725" Value="OK"/>
+    </TextLayer>
+    <TextLayer LanguageId="de">
+      <Text ID="226773" Value="Text_1"/>
+      <Text ID="226774" Value="Text_1"/>
+      <Text ID="226775" Value=""/>
+      <Text ID="231772" Value="Text_1"/>
+      <Text ID="231773" Value="Text_1"/>
+      <Text ID="231774" Value=""/>
+      <Text ID="231776" Value="Text_1"/>
+      <Text ID="231777" Value="Text_1"/>
+      <Text ID="231778" Value=""/>
+      <Text ID="232251" Value="Text_1"/>
+      <Text ID="232252" Value="Text_1"/>
+      <Text ID="232725" Value=""/>
+    </TextLayer>
+    <IndexMap>
+      <Index ID="226773" Value="1"/>
+      <Index ID="226774" Value="2"/>
+      <Index ID="226775" Value="3"/>
+      <Index ID="231772" Value="4"/>
+      <Index ID="231773" Value="5"/>
+      <Index ID="231774" Value="6"/>
+      <Index ID="231776" Value="8"/>
+      <Index ID="231777" Value="9"/>
+      <Index ID="231778" Value="10"/>
+      <Index ID="232251" Value="12"/>
+      <Index ID="232252" Value="13"/>
+      <Index ID="232725" Value="14"/>
+    </IndexMap>
+  </TextGroup>
+  <Controls>
+    <Control ClassId="0x00001004" Name="Text_2">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="38"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_SunkenNG]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Opaque"/>
+      <Property Name="Font" Value="Source[local].Font[Arial16_Bold_0]"/>
+      <Property Name="Height" Value="275"/>
+      <Property Name="Left" Value="920"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_KritickaHladina]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="1"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="400"/>
+      <Property Name="Width" Value="435"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[Digitalny_22]"/>
+      <Property Name="Height" Value="125"/>
+      <Property Name="Left" Value="942"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_KritickaHladina]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="2"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="445"/>
+      <Property Name="Width" Value="390"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="Button_16">
+      <Property Name="BackColor" Value="0"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="None"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_17]"/>
+      <Property Name="Font" Value="Source[local].Font[Arial16_Bold]"/>
+      <Property Name="ForeColor" Value="10"/>
+      <Property Name="Height" Value="50"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="1047"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="PressedBackColor" Value="0"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_KritickaHladina]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="3"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="600"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_17]"/>
+      <Property Name="Width" Value="180"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="Bitmap_2">
+      <Property Name="Bitmap" Value="Source[local].Bitmap[Warning_60x60]"/>
+      <Property Name="BitmapSource" Value="SingleBitmap"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="60"/>
+      <Property Name="IndexDatapoint" Value="None"/>
+      <Property Name="Left" Value="1285"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_KritickaHladina]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="405"/>
+      <Property Name="Width" Value="60"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_3">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="48"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_SunkenNG]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Opaque"/>
+      <Property Name="Font" Value="Source[local].Font[Arial16_Bold_0]"/>
+      <Property Name="Height" Value="275"/>
+      <Property Name="Left" Value="470"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_NizkaHladina]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="4"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="400"/>
+      <Property Name="Width" Value="435"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_4">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[Digitalny_22]"/>
+      <Property Name="Height" Value="125"/>
+      <Property Name="Left" Value="495"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_NizkaHladina]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="5"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="445"/>
+      <Property Name="Width" Value="390"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="Button_17">
+      <Property Name="BackColor" Value="0"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="None"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_43]"/>
+      <Property Name="Font" Value="Source[local].Font[Arial16_Bold]"/>
+      <Property Name="ForeColor" Value="10"/>
+      <Property Name="Height" Value="50"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="600"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="PressedBackColor" Value="0"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_NizkaHladina]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="6"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="600"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_43]"/>
+      <Property Name="Width" Value="180"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="Bitmap_3">
+      <Property Name="Bitmap" Value="Source[local].Bitmap[Info_60x60]"/>
+      <Property Name="BitmapSource" Value="SingleBitmap"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="60"/>
+      <Property Name="IndexDatapoint" Value="None"/>
+      <Property Name="Left" Value="835"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_NizkaHladina]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="405"/>
+      <Property Name="Width" Value="60"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_5">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="11"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_SunkenNG]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Opaque"/>
+      <Property Name="Font" Value="Source[local].Font[Arial16_Bold_0]"/>
+      <Property Name="Height" Value="275"/>
+      <Property Name="Left" Value="20"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_DoplnHlinik]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="8"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="400"/>
+      <Property Name="Width" Value="435"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_6">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[Digitalny_22]"/>
+      <Property Name="Height" Value="125"/>
+      <Property Name="Left" Value="45"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_DoplnHlinik]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="9"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="445"/>
+      <Property Name="Width" Value="390"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="Button_18">
+      <Property Name="BackColor" Value="0"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="None"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_44]"/>
+      <Property Name="Font" Value="Source[local].Font[Arial16_Bold]"/>
+      <Property Name="ForeColor" Value="10"/>
+      <Property Name="Height" Value="50"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="150"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="PressedBackColor" Value="0"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_DoplnHlinik]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="10"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="600"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_44]"/>
+      <Property Name="Width" Value="180"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="Bitmap_4">
+      <Property Name="Bitmap" Value="Source[local].Bitmap[Info_60x60]"/>
+      <Property Name="BitmapSource" Value="SingleBitmap"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="60"/>
+      <Property Name="IndexDatapoint" Value="None"/>
+      <Property Name="Left" Value="385"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_DoplnHlinik]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="405"/>
+      <Property Name="Width" Value="60"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_7">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="38"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_SunkenNG]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Opaque"/>
+      <Property Name="Font" Value="Source[local].Font[Arial16_Bold_0]"/>
+      <Property Name="Height" Value="275"/>
+      <Property Name="Left" Value="470"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_IndOhrevPorucha]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="12"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="115"/>
+      <Property Name="Width" Value="435"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_8">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[Digitalny_22]"/>
+      <Property Name="Height" Value="125"/>
+      <Property Name="Left" Value="495"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_IndOhrevPorucha]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="13"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="160"/>
+      <Property Name="Width" Value="390"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="Bitmap_5">
+      <Property Name="Bitmap" Value="Source[local].Bitmap[Warning_60x60]"/>
+      <Property Name="BitmapSource" Value="SingleBitmap"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="60"/>
+      <Property Name="IndexDatapoint" Value="None"/>
+      <Property Name="Left" Value="835"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_IndOhrevPorucha]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="120"/>
+      <Property Name="Width" Value="60"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="Button_19">
+      <Property Name="BackColor" Value="0"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="None"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_45]"/>
+      <Property Name="Font" Value="Source[local].Font[Arial16_Bold]"/>
+      <Property Name="ForeColor" Value="10"/>
+      <Property Name="Height" Value="50"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="600"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="PressedBackColor" Value="0"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_IndOhrevPorucha]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="14"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="315"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_45]"/>
+      <Property Name="Width" Value="180"/>
+    </Control>
+  </Controls>
+  <KeyMapping>
+    <VirtualKey Name="%embVirtualKey_17">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_KritickaHladina]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="%embVirtualKey_43">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_NizkaHladina]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="%embVirtualKey_44">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_DoplnHlinik]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="%embVirtualKey_45">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_IndOhrevPorucha]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+  </KeyMapping>
+</Layer>

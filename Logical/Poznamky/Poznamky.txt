@@ -1,0 +1,9 @@
+Heslo do safety - vlmardo
+Zdvih centrifugy - 1ot serva = 10mm
+OtoËenie centrifugy - 1ot serva = 144∞ 
+Manipulator pojazd - 1ot serva = 8mm
+Ot·Ëky pre centrifugu - 800ot/min - 48000 ot serva /sek
+Centrifuga rozbeh rampa 2,5s
+Centrifuga dobeh rampa 1,5s
+Centrifuga doba ot·Ëania 10s
+1 ot·Ëka centrifugy = 3600 jednotiek serva

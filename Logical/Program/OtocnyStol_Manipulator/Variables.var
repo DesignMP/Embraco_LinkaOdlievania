@@ -1,0 +1,17 @@
+VAR
+	SC_OvlGripra : SequenceControlTyp;
+	Otvor_Griper : BOOL;
+	Zatvor_Griper : BOOL;
+	SC_OvlZdvihu : SequenceControlTyp;
+	Zdvih_Manipulatora : BOOL;
+	Zostup_Manipulatora : BOOL;
+	SC_OvlServoPojazdu : SequenceControlTyp;
+	ServoPojazd_JoggVPRED : BOOL;
+	ServoPojazd_JoggVZAD : BOOL;
+	ServoPojazd_Polohuj : BOOL;
+	KonstantaPojazd_MM : REAL;
+	KonstantaPojazd_Servo : REAL;
+	RR_PoziciaOdoberania : BOOL;
+	RR_PoziciaVkladaniaVnutorna : BOOL;
+	RR_PoziciaVkladaniaVonkajsia : BOOL;
+END_VAR

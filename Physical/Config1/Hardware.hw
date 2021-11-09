@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.10.3.60 FileVersion="4.9"?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="0AC808.9" Type="0AC808.9" Version="1.0.0.0">
+    <Connection Connector="ETH1" TargetModule="AB0" TargetConnector="IF3">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH2" TargetModule="OtocnyStol" TargetConnector="PLK1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH4" TargetModule="Tunel_DB5.0_8DI/DO" TargetConnector="PLK1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH5" TargetModule="Stol_DB1.0_8DI/DO" TargetConnector="PLK1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH6" TargetModule="Centrifuga1_DB2.0_8DI/DO" TargetConnector="PLK1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="ETH7" TargetModule="Centrifuga2_DB3.0_8DI/DO" TargetConnector="PLK1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+  </Module>
+  <Module Name="AB0" Type="X20CP3585" Version="1.10.0.0">
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="192.168.0.2" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+      <Group ID="Vnc1" />
+      <Parameter ID="VncVcObjectName1" Value="Visu" />
+      <Parameter ID="VncKeyMappingFile1" Value="VC\PS2-Keyboard.dis" />
+      <Parameter ID="VncMaxConnections1" Value="4" />
+      <Parameter ID="VncRefreshRate1" Value="100" />
+      <Parameter ID="ActivateModbus" Value="1" />
+      <Parameter ID="NumSlaves" Value="-1" />
+      <Parameter ID="NumAllBlocks" Value="-1" />
+      <Parameter ID="MemSizeIn" Value="-1" />
+      <Parameter ID="MemSizeOut" Value="-1" />
+    </Connector>
+    <Connector Name="IF3">
+      <Parameter ID="DNAConfiguration" Value="manual" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="HlavnaLinkaNaOdlievanieRotorov_Config1" />
+    <Parameter ID="UserPartitionSize" Value="0" />
+    <Parameter ID="PermanentPvSize" Value="8000" />
+    <Parameter ID="TimerDeviceType" Value="EPLX2X" />
+    <Parameter ID="TimerDevice" Value="AB0.IF3" />
+    <Parameter ID="TaskClassIdleTime" Value="2000" />
+    <Parameter ID="Cyclic1Duration" Value="2000" />
+    <Parameter ID="Cyclic1Tolerance" Value="2000" />
+    <Parameter ID="Cyclic2Duration" Value="30000" />
+    <Parameter ID="Cyclic2Tolerance" Value="0" />
+    <Parameter ID="Cyclic2Stack" Value="81920" />
+    <Parameter ID="Cyclic3Duration" Value="100000" />
+    <Parameter ID="Cyclic3Tolerance" Value="100000" />
+    <Parameter ID="Cyclic3Stack" Value="81920" />
+    <Parameter ID="Cyclic4Duration" Value="200000" />
+    <Parameter ID="Cyclic4Tolerance" Value="200000" />
+    <Parameter ID="Cyclic5Duration" Value="500000" />
+    <Parameter ID="Cyclic5Tolerance" Value="500000" />
+    <Parameter ID="Cyclic6Duration" Value="1000000" />
+    <Parameter ID="Cyclic6Tolerance" Value="1000000" />
+    <Parameter ID="Cyclic7Duration" Value="5000000" />
+    <Parameter ID="Cyclic7Tolerance" Value="5000000" />
+    <Parameter ID="Cyclic8Tolerance" Value="10000" />
+    <Group ID="FileDevice1" />
+    <Parameter ID="FileDeviceName1" Value="HDD" />
+    <Parameter ID="FileDevicePath1" Value="C:\" />
+    <Parameter ID="TimeZone" Value="145" />
+    <Group ID="FtpUser1" />
+    <Parameter ID="FtpUsername1" Value="admin" />
+    <Parameter ID="FtpUserPassword1" Value="KiiK2qx7GJ34MevM/8lgpcBq5ebVpZo+YR/zU2ilti4=" />
+    <Parameter ID="FtpUserSalt1" Value="xub3z1RK" />
+    <Parameter ID="FTPAccessRight1" Value="0" />
+    <Parameter ID="FTPMSPartition1" Value="SYSTEM" />
+  </Module>
+  <Module Name="AB10_X2XMaster" Type="X20BT9400" Version="1.3.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11e" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="PowerInfo" Value="on" />
+  </Module>
+  <Module Name="AB1_ProfinetMaster" Type="X20IF10E1-1" Version="1.4.0.0">
+    <Connection Connector="SS" TargetModule="AB0" TargetConnector="SS1" />
+    <Connector Name="IF1">
+      <Parameter ID="DtmRef" Value="FBDIF.Hilscher.PNIOControllerDTM2.NETX 100 RE/PNM" />
+      <Parameter ID="DtmId" Value="6f304fa5-bd54-4cee-985f-e7c3c2d16454" />
+    </Connector>
+    <Parameter ID="ConfigFile" Value="AB1_ProfinetMaster.dtm" />
+    <Parameter ID="ConfigModule" Value="asnxdb1" />
+  </Module>
+  <Module Name="AB2_ProfinetSlave" Type="X20IF10E3-1" Version="1.9.0.0">
+    <Connection Connector="SS" TargetModule="AB0" TargetConnector="SS2" />
+    <Connector Name="IF1">
+      <Parameter ID="DtmRef" Value="FBDIF.Hilscher.PNIODevDTM2.X20IF10E3-1_NETX V1.3.x.x" />
+      <Parameter ID="DtmId" Value="0d506d24-30cf-4cfc-b8b3-c80176e60529" />
+    </Connector>
+    <Parameter ID="ConfigFile" Value="AB2_ProfinetSlave.dtm" />
+    <Parameter ID="ConfigModule" Value="asnxdb2" />
+    <Group ID="ChannelBlocks_ed1975e9-9840-4113-a4dd-70ca987cd585" Description="1 Real32 Input" />
+    <Group ID="IO_OutputImage_ed1975e9-9840-4113-a4dd-70ca987cd585" Description="4 Byte(s)" />
+    <Group ID="ChannelBlocks_7b248142-af38-4ca7-a6da-d6dbd2286c44" Description="1 Real32 Input" />
+    <Group ID="IO_OutputImage_7b248142-af38-4ca7-a6da-d6dbd2286c44" Description="4 Byte(s)" />
+    <Group ID="ChannelBlocks_fe309f66-03c5-4d1c-89c4-7c6016c66398" Description="1 Real32 Input" />
+    <Group ID="IO_OutputImage_fe309f66-03c5-4d1c-89c4-7c6016c66398" Description="4 Byte(s)" />
+    <Group ID="ChannelBlocks_4acb8b6f-60ff-4feb-ab81-b9722d2544a8" Description="1 Unsigned16 Input" />
+    <Group ID="IO_OutputImage_4acb8b6f-60ff-4feb-ab81-b9722d2544a8" Description="2 Byte(s)" />
+    <Group ID="ChannelBlocks_40cbfa64-d980-41f6-af54-00a8cb426c2d" Description="1 Real32 Output" />
+    <Group ID="IO_InputImage_40cbfa64-d980-41f6-af54-00a8cb426c2d" Description="4 Byte(s)" />
+    <Group ID="ChannelBlocks_2a86973c-43a8-4a94-85d0-c79b8f811295" Description="1 Real32 Output" />
+    <Group ID="IO_InputImage_2a86973c-43a8-4a94-85d0-c79b8f811295" Description="4 Byte(s)" />
+    <Group ID="ChannelBlocks_eec662de-6385-403b-810e-8aba766c1cb1" Description="1 Real32 Output" />
+    <Group ID="IO_InputImage_eec662de-6385-403b-810e-8aba766c1cb1" Description="4 Byte(s)" />
+    <Group ID="ChannelBlocks_ec4ca8fb-e890-4e71-b22c-8c7e25bfdf87" Description="1 Unsigned16 Output" />
+    <Group ID="IO_InputImage_ec4ca8fb-e890-4e71-b22c-8c7e25bfdf87" Description="2 Byte(s)" />
+  </Module>
+  <Module Name="AB3_SafetyMaster" Type="X20SLX806" Version="1.10.12.1">
+    <Connection Connector="SS1" TargetModule="X20TB52" TargetConnector="SS" />
+    <Connection Connector="SS2" TargetModule="X20TB52a" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM33" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="SafeProject" Value="SafeLOGIC-1" />
+    <Parameter ID="SafeDesigner" Value="4.3.4.4" />
+    <Parameter ID="DigitalOutput01" Value="viaSafeLOGIC" />
+    <Parameter ID="DigitalOutput02" Value="viaSafeLOGIC" />
+    <Parameter ID="DigitalOutput03" Value="viaSafeLOGIC" />
+    <Parameter ID="DigitalOutput04" Value="viaSafeLOGIC" />
+    <Parameter ID="DigitalOutput05" Value="viaSafeLOGIC" />
+    <Parameter ID="DigitalOutput06" Value="viaSafeLOGIC" />
+    <Parameter ID="UnsafeOutputBOOLs" Value="16" />
+    <Parameter ID="UnsafeInputBOOLs" Value="16" />
+  </Module>
+  <Module Name="AB4_SafetyDI" Type="X20SI8110" Version="1.10.12.0">
+    <Connection Connector="SS1" TargetModule="X20TB52b" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM13" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="AB5_16DI" Type="X20DIF371" Version="1.2.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB1F" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="AB6_16DI" Type="X20DIF371" Version="1.2.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB1F1" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11a" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="AB7_16DO" Type="X20DOF322" Version="1.5.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB1F2" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11b" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="AB8_16DO" Type="X20DOF322" Version="1.5.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB1F3" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11c" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="AB9_16DO" Type="X20DOF322" Version="1.5.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB1F4" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11d" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="Centrifuga1_DB2.0_8DI/DO" Type="X67BC8321-1" Version="2.14.0.0">
+    <Connection Connector="PLK1" TargetModule="0AC808.9" TargetConnector="ETH6" NodeNumber="6">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="IOSupervision" Value="off" />
+  </Module>
+  <Module Name="Centrifuga1_DB2.1_Tenzometre" Type="X67AI2744" Version="1.3.0.0">
+    <Connection Connector="X2X1" TargetModule="Centrifuga1_DB2.0_8DI/DO" TargetConnector="IF1">
+      <Cable Type="X2XCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="Centrifuga1_OtacanieCentrifugy" Type="8LSA73.DA030S000-3" Version="2.2.0.1">
+    <Connection Connector="EC" TargetModule="Centrifuga_1" TargetConnector="EC1" />
+    <Connection Connector="MT" TargetModule="Centrifuga_1" TargetConnector="MT1" />
+  </Module>
+  <Module Name="Centrifuga1_Zdvih1" Type="8LSA55.DA030S200-3" Version="2.2.1.0">
+    <Connection Connector="EC" TargetModule="Centrifuga_1" TargetConnector="EC2" />
+    <Connection Connector="MT" TargetModule="Centrifuga_1" TargetConnector="MT2" />
+  </Module>
+  <Module Name="Centrifuga1_Zdvih2" Type="8LSA55.DA030S200-3" Version="2.2.1.0">
+    <Connection Connector="EC" TargetModule="Centrifuga_1" TargetConnector="EC3" />
+    <Connection Connector="MT" TargetModule="Centrifuga_1" TargetConnector="MT3" />
+  </Module>
+  <Module Name="Centrifuga2_DB3.0_8DI/DO" Type="X67BC8321-1" Version="2.14.0.0">
+    <Connection Connector="PLK1" TargetModule="0AC808.9" TargetConnector="ETH7" NodeNumber="8">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="IOSupervision" Value="off" />
+  </Module>
+  <Module Name="Centrifuga2_DB3.1_Tenzometre" Type="X67AI2744" Version="1.3.0.0">
+    <Connection Connector="X2X1" TargetModule="Centrifuga2_DB3.0_8DI/DO" TargetConnector="IF1">
+      <Cable Type="X2XCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="Centrifuga2_OtacanieCentrifugy" Type="8LSA73.DA030S000-3" Version="2.2.0.1">
+    <Connection Connector="EC" TargetModule="Centrifuga_2" TargetConnector="EC1" />
+    <Connection Connector="MT" TargetModule="Centrifuga_2" TargetConnector="MT1" />
+  </Module>
+  <Module Name="Centrifuga2_Zdvih1" Type="8LSA55.DA030S200-3" Version="2.2.1.0">
+    <Connection Connector="EC" TargetModule="Centrifuga_2" TargetConnector="EC2" />
+    <Connection Connector="MT" TargetModule="Centrifuga_2" TargetConnector="MT2" />
+  </Module>
+  <Module Name="Centrifuga2_Zdvih2" Type="8LSA55.DA030S200-3" Version="2.2.1.0">
+    <Connection Connector="EC" TargetModule="Centrifuga_2" TargetConnector="EC3" />
+    <Connection Connector="MT" TargetModule="Centrifuga_2" TargetConnector="MT3" />
+  </Module>
+  <Module Name="Centrifuga_1" Type="8EIxxxHxT1x.xxxx-1" Version="2.3.1.1">
+    <Connection Connector="PLK1" TargetModule="OtocnyStol" TargetConnector="PLK2" NodeNumber="2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="PLK2" TargetModule="Centrifuga_2" TargetConnector="PLK1" NodeNumber="2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="EC1" TargetModule="Centrifuga1_OtacanieCentrifugy" TargetConnector="EC" />
+    <Connection Connector="EC2" TargetModule="Centrifuga1_Zdvih1" TargetConnector="EC" />
+    <Connection Connector="EC3" TargetModule="Centrifuga1_Zdvih2" TargetConnector="EC" />
+    <Connection Connector="MT2" TargetModule="Centrifuga1_Zdvih1" TargetConnector="MT" />
+    <Connection Connector="MT3" TargetModule="Centrifuga1_Zdvih2" TargetConnector="MT" />
+    <Parameter ID="MotionTP" Value="Acp10Arnc0" />
+    <Parameter ID="BothEndSwitchesAreNormallyOpen_r1" Value="on" />
+    <Parameter ID="QuickStopIsNormallyOpen_r1" Value="on" />
+    <Parameter ID="BothEndSwitchesAreNormallyOpen_r2" Value="on" />
+    <Parameter ID="QuickStopIsNormallyOpen_r2" Value="on" />
+    <Parameter ID="BothEndSwitchesAreNormallyOpen_r3" Value="on" />
+    <Parameter ID="QuickStopIsNormallyOpen_r3" Value="on" />
+    <Parameter ID="Ax1Interface" Value="Ax1EnDat" />
+    <Parameter ID="Ax2Interface" Value="Ax2EnDat" />
+    <Parameter ID="Ax3Interface" Value="Ax3EnDat" />
+  </Module>
+  <Module Name="Centrifuga_2" Type="8EIxxxHxT1x.xxxx-1" Version="2.3.1.1">
+    <Connection Connector="PLK1" TargetModule="Centrifuga_1" TargetConnector="PLK2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="PLK2" TargetModule="DopravnikChladiaciTunel" TargetConnector="PLK1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="EC1" TargetModule="Centrifuga2_OtacanieCentrifugy" TargetConnector="EC" />
+    <Connection Connector="EC2" TargetModule="Centrifuga2_Zdvih1" TargetConnector="EC" />
+    <Connection Connector="EC3" TargetModule="Centrifuga2_Zdvih2" TargetConnector="EC" />
+    <Connection Connector="MT2" TargetModule="Centrifuga2_Zdvih1" TargetConnector="MT" />
+    <Connection Connector="MT3" TargetModule="Centrifuga2_Zdvih2" TargetConnector="MT" />
+    <Parameter ID="MotionTP" Value="Acp10Arnc0" />
+    <Parameter ID="BothEndSwitchesAreNormallyOpen_r1" Value="on" />
+    <Parameter ID="QuickStopIsNormallyOpen_r1" Value="on" />
+    <Parameter ID="BothEndSwitchesAreNormallyOpen_r2" Value="on" />
+    <Parameter ID="QuickStopIsNormallyOpen_r2" Value="on" />
+    <Parameter ID="BothEndSwitchesAreNormallyOpen_r3" Value="on" />
+    <Parameter ID="QuickStopIsNormallyOpen_r3" Value="on" />
+    <Parameter ID="Ax1Interface" Value="Ax1EnDat" />
+    <Parameter ID="Ax2Interface" Value="Ax2EnDat" />
+    <Parameter ID="Ax3Interface" Value="Ax3EnDat" />
+  </Module>
+  <Module Name="DB4.0_8DI/DO" Type="X67DM1321" Version="1.2.0.0">
+    <Connection Connector="X2X1" TargetModule="AB10_X2XMaster" TargetConnector="X2X1">
+      <Cable Type="X2XCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="Direction07" Value="output" />
+    <Parameter ID="Direction08" Value="output" />
+  </Module>
+  <Module Name="DopravnikChladiaciTunel" Type="8I74xxxxxxx.01P-1" Version="1.6.2.0">
+    <Connection Connector="PLK1" TargetModule="Centrifuga_2" TargetConnector="PLK2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="LFRD_LFR_Filter" Value="LFR_RFR" />
+    <Parameter ID="ACC" Value="10" />
+    <Parameter ID="DEC" Value="10" />
+    <Parameter ID="CTT" Value="0" />
+    <Parameter ID="NPR" Value="55" />
+    <Parameter ID="COS" Value="73" />
+    <Parameter ID="UNS" Value="230" />
+    <Parameter ID="NCR" Value="26" />
+    <Parameter ID="NSP" Value="1375" />
+    <Parameter ID="PTCL" Value="1" />
+  </Module>
+  <Module Name="IndukcnyOhrev" Type="FBD.Hilscher.PNIOGenDevDTM2.ModbusSlave" Version="0.0.0.0" OrderNumber="ModbusSlave">
+    <Connection Connector="PN1" TargetModule="RobotManipulacie" TargetConnector="PN2" NodeNumber="3" />
+    <Parameter ID="DtmId" Value="6842814f-13f6-45c1-8da8-2e6a3d4bef96" />
+    <Parameter ID="DtmRef" Value="FBD.Hilscher.PNIOGenDevDTM2.ModbusSlave" />
+  </Module>
+  <Module Name="ModbusTcp_any" Type="ModbusTcp_any" Version="1.0.9.0">
+    <Connection Connector="ETH1" TargetModule="AB0" TargetConnector="IF2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="IpAddress" Value="192.168.0.3" />
+    <Group ID="Cb_1" />
+    <Parameter ID="Cb_1_FunCode" Value="4" />
+    <Parameter ID="Cb_1_Addr" Value="8192" />
+    <Parameter ID="Cb_1_NumItems" Value="0" />
+    <Group ID="Cb_1_C_1" />
+    <Parameter ID="Cb_1_C_1_Name" Value="IN_1" />
+    <Parameter ID="Cb_1_C_1_Datatype" Value="6" />
+    <Group ID="Cb_1_C_2" />
+    <Parameter ID="Cb_1_C_2_Name" Value="IN_2" />
+    <Parameter ID="Cb_1_C_2_Datatype" Value="6" />
+    <Group ID="Cb_1_C_3" />
+    <Parameter ID="Cb_1_C_3_Name" Value="IN_3" />
+    <Parameter ID="Cb_1_C_3_Datatype" Value="6" />
+    <Group ID="Cb_1_C_4" />
+    <Parameter ID="Cb_1_C_4_Name" Value="IN_4" />
+    <Parameter ID="Cb_1_C_4_Datatype" Value="6" />
+    <Group ID="Cb_1_C_5" />
+    <Parameter ID="Cb_1_C_5_Name" Value="IN_5" />
+    <Parameter ID="Cb_1_C_5_Datatype" Value="6" />
+    <Group ID="Cb_2" />
+    <Parameter ID="Cb_2_FunCode" Value="6" />
+    <Parameter ID="Cb_2_AddrExt" Value="24576" />
+    <Parameter ID="Cb_2_NumItemsExt" Value="0" />
+    <Group ID="Cb_2_C_1" />
+    <Parameter ID="Cb_2_C_1_Name" Value="OUT_1" />
+    <Parameter ID="Cb_2_C_1_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_1_Dir" Value="1" />
+    <Group ID="Cb_3" />
+    <Parameter ID="Cb_3_FunCode" Value="6" />
+    <Parameter ID="Cb_3_AddrExt" Value="24577" />
+    <Parameter ID="Cb_3_NumItemsExt" Value="0" />
+    <Group ID="Cb_3_C_1" />
+    <Parameter ID="Cb_3_C_1_Name" Value="OUT_2" />
+    <Parameter ID="Cb_3_C_1_Datatype" Value="6" />
+    <Parameter ID="Cb_3_C_1_Dir" Value="1" />
+    <Group ID="Cb_4" />
+    <Parameter ID="Cb_4_FunCode" Value="6" />
+    <Parameter ID="Cb_4_AddrExt" Value="24578" />
+    <Parameter ID="Cb_4_NumItemsExt" Value="0" />
+    <Group ID="Cb_4_C_1" />
+    <Parameter ID="Cb_4_C_1_Name" Value="OUT_3" />
+    <Parameter ID="Cb_4_C_1_Datatype" Value="6" />
+    <Parameter ID="Cb_4_C_1_Dir" Value="1" />
+    <Group ID="Cb_5" />
+    <Parameter ID="Cb_5_FunCode" Value="6" />
+    <Parameter ID="Cb_5_AddrExt" Value="24579" />
+    <Parameter ID="Cb_5_NumItemsExt" Value="0" />
+    <Group ID="Cb_5_C_1" />
+    <Parameter ID="Cb_5_C_1_Name" Value="OUT_4" />
+    <Parameter ID="Cb_5_C_1_Datatype" Value="6" />
+    <Parameter ID="Cb_5_C_1_Dir" Value="1" />
+    <Group ID="Cb_6" />
+    <Parameter ID="Cb_6_FunCode" Value="6" />
+    <Parameter ID="Cb_6_AddrExt" Value="24580" />
+    <Parameter ID="Cb_6_NumItemsExt" Value="0" />
+    <Group ID="Cb_6_C_1" />
+    <Parameter ID="Cb_6_C_1_Name" Value="OUT_5" />
+    <Parameter ID="Cb_6_C_1_Datatype" Value="6" />
+    <Parameter ID="Cb_6_C_1_Dir" Value="1" />
+  </Module>
+  <Module Name="NapajanieSekcie1" Type="X20PS2100" Version="1.4.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM01" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="PowerInfo" Value="on" />
+  </Module>
+  <Module Name="OtocnyStol" Type="8EIxxxMxS1x.xxxx-1" Version="2.3.1.1">
+    <Connection Connector="PLK1" TargetModule="0AC808.9" TargetConnector="ETH2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="PLK2" TargetModule="Centrifuga_1" TargetConnector="PLK1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="EC1" TargetModule="OtocnyStol_Manipulator" TargetConnector="EC" />
+    <Parameter ID="BothEndSwitchesAreNormallyOpen_r1" Value="on" />
+    <Parameter ID="QuickStopIsNormallyOpen_r1" Value="on" />
+    <Parameter ID="Ax1Interface" Value="Ax1EnDat" />
+  </Module>
+  <Module Name="OtocnyStol_Manipulator" Type="8LVA23.B8015S000-0" Version="1.0.1.30">
+    <Connection Connector="EC" TargetModule="OtocnyStol" TargetConnector="EC1" />
+    <Connection Connector="MT" TargetModule="OtocnyStol" TargetConnector="MT1" />
+  </Module>
+  <Module Name="RobotManipulacie" Type="FBD.Hilscher.PNIOGenDevDTM2.DSQC688" Version="1.12" OrderNumber="DSQC688">
+    <Connection Connector="PN1" TargetModule="RobotOdlievania" TargetConnector="PN2" NodeNumber="2" />
+    <Parameter ID="DtmId" Value="9cf49b22-40b6-4a19-889f-2efe4dfbf3e6" />
+    <Parameter ID="DtmRef" Value="FBD.Hilscher.PNIOGenDevDTM2.DSQC688.V1.12" />
+  </Module>
+  <Module Name="RobotOdlievania" Type="FBD.Hilscher.PNIOGenDevDTM2.DSQC688" Version="1.12" OrderNumber="DSQC688">
+    <Connection Connector="PN1" TargetModule="AB1_ProfinetMaster" TargetConnector="IF1" NodeNumber="1" />
+    <Parameter ID="DtmId" Value="b9f268e4-a929-4e6f-b88e-7610519422e0" />
+    <Parameter ID="DtmRef" Value="FBD.Hilscher.PNIOGenDevDTM2.DSQC688.V1.12" />
+  </Module>
+  <Module Name="Stol_DB1.0_8DI/DO" Type="X67BC8321-1" Version="2.14.0.0">
+    <Connection Connector="PLK1" TargetModule="0AC808.9" TargetConnector="ETH5" NodeNumber="5">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="IOSupervision" Value="off" />
+  </Module>
+  <Module Name="Stol_DB1.1_4AI" Type="X67AI1323" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="Stol_DB1.0_8DI/DO" TargetConnector="IF1">
+      <Cable Type="X2XCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="EnhChannelConfig" Value="on" />
+    <Parameter ID="ChannelType01" Value="4to20mA" />
+    <Parameter ID="ChannelType02" Value="4to20mA" />
+    <Parameter ID="ChannelType03" Value="4to20mA" />
+    <Parameter ID="ChannelType04" Value="4to20mA" />
+  </Module>
+  <Module Name="Stol_DB1.2_16Valve" Type="7XV116.50-62" Version="1.2.0.0">
+    <Connection Connector="X2X1" TargetModule="Stol_DB1.1_4AI" TargetConnector="X2X2">
+      <Cable Type="X2XCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="Stol_DB1.3_8DI" Type="X67DI1371" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="Stol_DB1.2_16Valve" TargetConnector="X2X2">
+      <Cable Type="X2XCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="Tunel_DB5.0_8DI/DO" Type="X67BC8321-1" Version="2.14.0.0">
+    <Connection Connector="PLK1" TargetModule="0AC808.9" TargetConnector="ETH4" NodeNumber="9">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="IOSupervision" Value="off" />
+    <Parameter ID="Direction07" Value="output" />
+    <Parameter ID="Direction08" Value="output" />
+  </Module>
+  <Module Name="Tunel_DB5.1_8DI/DO" Type="X67DM1321" Version="1.2.0.0">
+    <Connection Connector="X2X1" TargetModule="Tunel_DB5.0_8DI/DO" TargetConnector="IF1">
+      <Cable Type="X2XCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="Direction07" Value="output" />
+    <Parameter ID="Direction08" Value="output" />
+  </Module>
+  <Module Name="Tunel_DB5.2_SI" Type="X67SI8103" Version="1.10.12.0">
+    <Connection Connector="X2X1" TargetModule="Tunel_DB5.1_8DI/DO" TargetConnector="X2X2">
+      <Cable Type="X2XCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="SafeModuleID" Value="3" />
+  </Module>
+  <Module Name="X20BM01" Type="X20BM01" Version="2.2.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11c" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM13" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11a" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11b" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11a" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11c" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11b" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11d" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM01" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11e" Type="X20BM11" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM11d" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM13" Type="X20BM13" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BM33" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM33" Type="X20BM33" Version="1.1.0.0">
+    <Connection Connector="X2X1" TargetModule="AB0" TargetConnector="IF6" />
+  </Module>
+  <Module Name="X20TB12" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12a" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB1F" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F1" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F2" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F3" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F4" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB52" Type="X20TB52" Version="1.0.0.2" />
+  <Module Name="X20TB52a" Type="X20TB52" Version="1.0.0.2" />
+  <Module Name="X20TB52b" Type="X20TB52" Version="1.0.0.2" />
+</Hardware>

@@ -1,0 +1,136 @@
+﻿{GroupDefinition(0,'SafetyVstupy')}
+{GroupDefinition(19,'SafetyVystupy')}
+{GroupDefinition(32,'Vstupy_z_PLC_do_SLX')}
+{GroupDefinition(46,'Vystupy_z_SLX_do_PLC')}
+{GroupDefinition(59,'Statusy')}
+
+VAR_GLOBAL {Group(0)}
+    {LINE(1)}
+    siCS_Linka_KanalA AT %IX16.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeDigitalInput01')};
+    {LINE(2)}
+    siCS_Linka_KanalB AT %IX16.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeDigitalInput02')};
+    {LINE(3)}
+    siCS_RobotManipulacie_KanalA AT %IX16.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeDigitalInput03')};
+    {LINE(4)}
+    siCS_RobotManipulacie_KanalB AT %IX16.3 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeDigitalInput04')};
+    {LINE(5)}
+    siCS_RobotOdlievania_KanalA AT %IX16.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeDigitalInput05')};
+    {LINE(6)}
+    siCS_RobotOdlievania_KanalB AT %IX16.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeDigitalInput06')};
+    {LINE(7)}
+    siCS_DokonStanica_KanalA AT %IX16.6 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeDigitalInput07')};
+    {LINE(8)}
+    siCS_DokonStanica_KanalB AT %IX16.7 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeDigitalInput08')};
+    {LINE(9)}
+    siServisneDvere1_KanalA AT %IX60.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput01')};
+    {LINE(10)}
+    siServisneDvere1_KanalB AT %IX60.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput02')};
+    {LINE(11)}
+    siCS_ServisDvere1_KanalA AT %IX60.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput03')};
+    {LINE(12)}
+    siCS_ServisDvere1_KanalB AT %IX60.3 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput04')};
+    {LINE(13)}
+    siServisneDvere2_KanalA AT %IX60.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput05')};
+    {LINE(14)}
+    siServisneDvere2_KanalB AT %IX60.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput06')};
+    {LINE(15)}
+    siCS_ServisneDvere2_KanalA AT %IX60.6 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput07')};
+    {LINE(16)}
+    siCS_ServisneDvere2_KanalB AT %IX60.7 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput08')};
+    {LINE(17)}
+    siBZ_VystupTunela_KanalA AT %IX64.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM3.SafeDigitalInput01')};
+    {LINE(18)}
+    siBZ_VystupTunela_KanalB AT %IX64.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM3.SafeDigitalInput02')};
+END_VAR
+
+VAR_GLOBAL {Group(19)}
+    {LINE(20)}
+    soOtocnyStol AT %QX12.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeDigitalOutput01')};
+    {LINE(21)}
+    soTunel AT %QX12.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeDigitalOutput03')};
+    {LINE(22)}
+    soVystupy_Vzduch AT %QX12.3 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeDigitalOutput04')};
+    {LINE(23)}
+    soOplotenieLinky AT %QX12.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeDigitalOutput05')};
+    {LINE(24)}
+    soCentrifugy AT %QX12.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeDigitalOutput02')};
+    {LINE(25)}
+    soStavCS_HlavnejLinky AT %QX12.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeDigitalOutput06')};
+    {LINE(26)}
+    Release_soOtocnyStol AT %QX2.0 : BOOL {Custom('SL1.SM1.ReleaseOutput01')};
+    {LINE(27)}
+    Release_soCentrifugy AT %QX2.1 : BOOL {Custom('SL1.SM1.ReleaseOutput02')};
+    {LINE(28)}
+    Release_soTunel AT %QX2.2 : BOOL {Custom('SL1.SM1.ReleaseOutput03')};
+    {LINE(29)}
+    Release_soVystup_Vzduch AT %QX2.3 : BOOL {Custom('SL1.SM1.ReleaseOutput04')};
+    {LINE(30)}
+    Release_soOplotenieLinky AT %QX2.4 : BOOL {Custom('SL1.SM1.ReleaseOutput05')};
+    {LINE(31)}
+    Release_soStavCS_HlavnejLinky AT %QX2.5 : BOOL {Custom('SL1.SM1.ReleaseOutput06')};
+END_VAR
+
+VAR_GLOBAL {Group(32)}
+    {LINE(33)}
+    ResetCS AT %IX0.0 : BOOL {Custom('SL1.SM1.BOOL101')};
+    {LINE(34)}
+    ResetOplotenia AT %IX0.1 : BOOL {Custom('SL1.SM1.BOOL102')};
+    {LINE(35)}
+    ResetZamkuTunelVystup AT %IX1.2 : BOOL {Custom('SL1.SM1.BOOL111')};
+    {LINE(36)}
+    Stav_PrivodVzduchu_KanalA AT %IX0.2 : BOOL {Custom('SL1.SM1.BOOL103')};
+    {LINE(37)}
+    Stav_PrivodVzduchu_KanalB AT %IX0.3 : BOOL {Custom('SL1.SM1.BOOL104')};
+    {LINE(38)}
+    StavBezpecRele_Centrifugy AT %IX0.4 : BOOL {Custom('SL1.SM1.BOOL105')};
+    {LINE(39)}
+    StavBezpecRele_OplotenieLinky AT %IX0.5 : BOOL {Custom('SL1.SM1.BOOL106')};
+    {LINE(40)}
+    StavBezpecRele_OtocnyStol AT %IX0.6 : BOOL {Custom('SL1.SM1.BOOL107')};
+    {LINE(41)}
+    StavBezpecRele_StavCS_Linky AT %IX0.7 : BOOL {Custom('SL1.SM1.BOOL108')};
+    {LINE(42)}
+    StavBezpecRele_Tunel AT %IX1.0 : BOOL {Custom('SL1.SM1.BOOL109')};
+    {LINE(43)}
+    StavBezpecRele_Vystupy_Vzduch AT %IX1.1 : BOOL {Custom('SL1.SM1.BOOL110')};
+    {LINE(44)}
+    BZ_VystupTunela_PritomtPetlice AT %IX20.0 : BOOL {Custom('SL1.SM3.DigitalInput01')};
+    {LINE(45)}
+    RezimServis AT %IX1.3 : BOOL {Custom('SL1.SM1.BOOL112')};
+END_VAR
+
+VAR_GLOBAL {Group(46)}
+    {LINE(47)}
+    SafetyPLC_Nabehlo AT %QX0.0 : BOOL {Custom('SL1.SM1.BOOL001')};
+    {LINE(48)}
+    BezpOkruhCS_Aktivovany AT %QX0.1 : BOOL {Custom('SL1.SM1.BOOL002')};
+    {LINE(49)}
+    BezpOkruhOploteniaAktivovany AT %QX0.2 : BOOL {Custom('SL1.SM1.BOOL003')};
+    {LINE(50)}
+    Stav_BZ1_Zamknuty AT %QX0.3 : BOOL {Custom('SL1.SM1.BOOL004')}; (*Oplotenie linky*)
+    {LINE(51)}
+    Stav_BZ2_Zamknuty AT %QX0.4 : BOOL {Custom('SL1.SM1.BOOL005')}; (*Oplotenie linky*)
+    {LINE(52)}
+    Stav_BZ3_Zamknuty AT %QX0.5 : BOOL {Custom('SL1.SM1.BOOL006')}; (*Tunel*)
+    {LINE(53)}
+    Stav_CS_BZ1_Odblokovany AT %QX0.6 : BOOL {Custom('SL1.SM1.BOOL007')};
+    {LINE(54)}
+    Stav_CS_BZ2_Odblokovany AT %QX0.7 : BOOL {Custom('SL1.SM1.BOOL008')};
+    {LINE(55)}
+    Stav_CS_DokonStanice_Odblokov AT %QX1.0 : BOOL {Custom('SL1.SM1.BOOL009')};
+    {LINE(56)}
+    Stav_CS_Linky_Odblokovany AT %QX1.1 : BOOL {Custom('SL1.SM1.BOOL010')};
+    {LINE(57)}
+    Stav_CS_RobotManipul_Odblokov AT %QX1.2 : BOOL {Custom('SL1.SM1.BOOL011')};
+    {LINE(58)}
+    Stav_CS_RobotOdliev_Odblokov AT %QX1.3 : BOOL {Custom('SL1.SM1.BOOL012')};
+END_VAR
+
+VAR_GLOBAL {Group(59)}
+    {LINE(60)}
+    OkruhCS_Aktivny : SAFEBOOL;
+    {LINE(61)}
+    OkruhOplotenia_Aktivny : SAFEBOOL;
+    {LINE(62)}
+    CSLinkyOdlievaniaAktivne : BOOL;
+END_VAR

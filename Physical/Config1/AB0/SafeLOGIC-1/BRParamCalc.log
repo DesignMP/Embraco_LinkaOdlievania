@@ -1,0 +1,181 @@
+LOGStart created on Tuesday 2020/08/11  UTC 06:32:31:760
+
+Reading "OSDD Data"...
+Reading Content "Start"
+Reading properties for module "X20SLX806_110.MainSN".
+  ParameterGroup "Basic_PLC" has 16 parameters.
+  ParameterGroup "Safety_Response_Time_Defaults" has 11 parameters.
+  ParameterGroup "Options" has 5 parameters.
+  ParameterGroup "SafeDigitalInput01" has 6 parameters.
+  ParameterGroup "SafeDigitalInput02" has 6 parameters.
+  ParameterGroup "SafeDigitalInput03" has 6 parameters.
+  ParameterGroup "SafeDigitalInput04" has 6 parameters.
+  ParameterGroup "SafeDigitalInput05" has 6 parameters.
+  ParameterGroup "SafeDigitalInput06" has 6 parameters.
+  ParameterGroup "SafeDigitalInput07" has 6 parameters.
+  ParameterGroup "SafeDigitalInput08" has 6 parameters.
+  ParameterGroup "SafeDigitalOutput01" has 4 parameters.
+  ParameterGroup "SafeDigitalOutput02" has 1 parameters.
+  ParameterGroup "SafeDigitalOutput03" has 1 parameters.
+  ParameterGroup "SafeDigitalOutput04" has 1 parameters.
+  ParameterGroup "SafeDigitalOutput05" has 1 parameters.
+  ParameterGroup "SafeDigitalOutput06" has 5 parameters.
+  ParameterGroup "http://www.br-automation.com" has 89 parameters.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 1 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 2 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 3 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 4 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 5 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 6 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 7 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 8 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 9 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 10 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 11 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 12 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 13 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 14 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 15 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 16 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 17 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 18 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 19 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 20 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 21 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 22 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 23 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 24 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 25 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 26 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 27 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 28 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 29 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 30 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 31 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 32 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 33 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 34 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 35 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 36 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 37 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 38 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 39 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 40 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 41 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 42 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 43 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 44 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 45 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 46 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 47 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 48 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 49 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 50 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 51 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 52 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 53 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 54 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 55 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 56 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 57 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 58 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 59 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 60 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 61 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 62 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 63 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" and has 64 external machine option objects.
+Module "X20SLX806_110.MainSN.SL1.SM1" is of type "X20SLX806" and has 81 channels and 18 parameter groups.
+Reading properties for module "X20SI8110_110".
+  ParameterGroup "Basic_Node" has 8 parameters.
+  ParameterGroup "Safety_Response_Time" has 4 parameters.
+  ParameterGroup "SafeDigitalInput01" has 6 parameters.
+  ParameterGroup "SafeDigitalInput02" has 6 parameters.
+  ParameterGroup "SafeDigitalInput03" has 6 parameters.
+  ParameterGroup "SafeDigitalInput04" has 6 parameters.
+  ParameterGroup "SafeDigitalInput05" has 6 parameters.
+  ParameterGroup "SafeDigitalInput06" has 6 parameters.
+  ParameterGroup "SafeDigitalInput07" has 6 parameters.
+  ParameterGroup "SafeDigitalInput08" has 12 parameters.
+  ParameterGroup "http://www.br-automation.com" has 17 parameters.
+Module "X20SI8110_110.SL1.SM2" is of type "X20SI8110" and has 25 channels and 11 parameter groups.
+Reading properties for module "X67SI8103_110".
+  ParameterGroup "Basic_Node" has 8 parameters.
+  ParameterGroup "Safety_Response_Time" has 4 parameters.
+  ParameterGroup "Connector01" has 10 parameters.
+  ParameterGroup "Connector02" has 10 parameters.
+  ParameterGroup "Connector03" has 8 parameters.
+  ParameterGroup "Connector04" has 8 parameters.
+  ParameterGroup "http://www.br-automation.com" has 63 parameters.
+Module "X67SI8103_110.SL1.SM3" is of type "X67SI8103" and has 33 channels and 7 parameter groups.
+Content "name1" successfully read from "name2"
+
+
+
+LOGAppend on Tuesday 2020/08/11  UTC 06:32:31:765
+
+Reading "D:\Projekty BER\Embraco_HlavnaLinkaNaOdlievanieRotorov_Rev1\Physical\Config1\AB0\SafeLOGIC-1\BusNavigator.iom"...
+Reading Content "IOOffsets"
+IO reservations (MAX number of bytes): SI=2048  SO=2048  NSI=1024  NSO=1024   ConValid = 24  BITEMOsOffset=0  BITEMOsSize=0
+Reading properties for module "SL1.SM1". Beginning at line 3
+Reading properties for channel "SafeDigitalInput01". Beginning at line 4
+Reading properties for channel "SafeDigitalInput02". Beginning at line 5
+Reading properties for channel "SafeDigitalInput03". Beginning at line 6
+Reading properties for channel "SafeDigitalInput04". Beginning at line 7
+Reading properties for channel "SafeDigitalInput05". Beginning at line 8
+Reading properties for channel "SafeDigitalInput06". Beginning at line 9
+Reading properties for channel "SafeDigitalInput07". Beginning at line 10
+Reading properties for channel "SafeDigitalInput08". Beginning at line 11
+Reading properties for channel "SafeDigitalOutput01". Beginning at line 12
+Reading properties for channel "SafeDigitalOutput02". Beginning at line 13
+Reading properties for channel "SafeDigitalOutput03". Beginning at line 14
+Reading properties for channel "SafeDigitalOutput04". Beginning at line 15
+Reading properties for channel "SafeDigitalOutput05". Beginning at line 16
+Reading properties for channel "SafeDigitalOutput06". Beginning at line 17
+Reading properties for channel "ReleaseOutput01". Beginning at line 18
+Reading properties for channel "ReleaseOutput02". Beginning at line 19
+Reading properties for channel "ReleaseOutput03". Beginning at line 20
+Reading properties for channel "ReleaseOutput04". Beginning at line 21
+Reading properties for channel "ReleaseOutput05". Beginning at line 22
+Reading properties for channel "ReleaseOutput06". Beginning at line 23
+Reading properties for channel "BOOL001". Beginning at line 24
+Reading properties for channel "BOOL002". Beginning at line 25
+Reading properties for channel "BOOL003". Beginning at line 26
+Reading properties for channel "BOOL004". Beginning at line 27
+Reading properties for channel "BOOL005". Beginning at line 28
+Reading properties for channel "BOOL006". Beginning at line 29
+Reading properties for channel "BOOL007". Beginning at line 30
+Reading properties for channel "BOOL008". Beginning at line 31
+Reading properties for channel "BOOL009". Beginning at line 32
+Reading properties for channel "BOOL010". Beginning at line 33
+Reading properties for channel "BOOL011". Beginning at line 34
+Reading properties for channel "BOOL012". Beginning at line 35
+Reading properties for channel "BOOL101". Beginning at line 36
+Reading properties for channel "BOOL102". Beginning at line 37
+Reading properties for channel "BOOL103". Beginning at line 38
+Reading properties for channel "BOOL104". Beginning at line 39
+Reading properties for channel "BOOL105". Beginning at line 40
+Reading properties for channel "BOOL106". Beginning at line 41
+Reading properties for channel "BOOL107". Beginning at line 42
+Reading properties for channel "BOOL108". Beginning at line 43
+Reading properties for channel "BOOL109". Beginning at line 44
+Reading properties for channel "BOOL110". Beginning at line 45
+Reading properties for channel "BOOL111". Beginning at line 46
+Reading properties for channel "BOOL112". Beginning at line 47
+Module "SL1.SM1.SL1.SM1" has 44 items.
+Reading properties for module "SL1.SM2". Beginning at line 49
+Reading properties for channel "SafeDigitalInput01". Beginning at line 50
+Reading properties for channel "SafeDigitalInput02". Beginning at line 51
+Reading properties for channel "SafeDigitalInput03". Beginning at line 52
+Reading properties for channel "SafeDigitalInput04". Beginning at line 53
+Reading properties for channel "SafeDigitalInput05". Beginning at line 54
+Reading properties for channel "SafeDigitalInput06". Beginning at line 55
+Reading properties for channel "SafeDigitalInput07". Beginning at line 56
+Reading properties for channel "SafeDigitalInput08". Beginning at line 57
+Module "SL1.SM2.SL1.SM2" has 8 items.
+Reading properties for module "SL1.SM3". Beginning at line 59
+Reading properties for channel "SafeDigitalInput01". Beginning at line 60
+Reading properties for channel "SafeDigitalInput02". Beginning at line 61
+Reading properties for channel "DigitalInput01". Beginning at line 62
+Module "SL1.SM3.SL1.SM3" has 3 items.
+Content "IOOffsets" successfully read from "D:\Projekty BER\Embraco_HlavnaLinkaNaOdlievanieRotorov_Rev1\Physical\Config1\AB0\SafeLOGIC-1\BusNavigator.iom"

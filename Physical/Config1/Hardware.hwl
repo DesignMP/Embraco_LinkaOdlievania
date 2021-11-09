@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?AutomationStudio FileVersion="4.9"?>
+<BR.AS.HardwareTopology>
+  <TimeStamps>
+    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="11/04/2021 09:35:18" />
+  </TimeStamps>
+  <Modules>
+    <Module Name="AB0" Type="X20CP3585" X="100" Y="17" />
+    <Module Name="AB2_ProfinetSlave" Type="X20IF10E3-1" X="237" Y="17" />
+    <Module Name="AB1_ProfinetMaster" Type="X20IF10E1-1" X="212" Y="17" />
+    <Module Name="X20BM33" Type="X20BM33" X="300" Y="17" />
+    <Module Name="AB3_SafetyMaster" Type="X20SLX806" X="300" Y="17" />
+    <Module Name="X20TB52a" Type="X20TB52" X="313" Y="43" />
+    <Module Name="X20TB52" Type="X20TB52" X="300" Y="43" />
+    <Module Name="X20BM13" Type="X20BM13" X="326" Y="17" />
+    <Module Name="AB4_SafetyDI" Type="X20SI8110" X="326" Y="17" />
+    <Module Name="X20TB52b" Type="X20TB52" X="326" Y="43" />
+    <Module Name="X20BM11" Type="X20BM11" X="339" Y="17" />
+    <Module Name="AB5_16DI" Type="X20DIF371" X="339" Y="17" />
+    <Module Name="X20TB1F" Type="X20TB1F" X="339" Y="44" />
+    <Module Name="X20BM11a" Type="X20BM11" X="352" Y="17" />
+    <Module Name="AB6_16DI" Type="X20DIF371" X="352" Y="17" />
+    <Module Name="X20TB1F1" Type="X20TB1F" X="352" Y="44" />
+    <Module Name="X20BM11b" Type="X20BM11" X="365" Y="17" />
+    <Module Name="AB7_16DO" Type="X20DOF322" X="365" Y="17" />
+    <Module Name="X20TB1F2" Type="X20TB1F" X="365" Y="44" />
+    <Module Name="X20BM11c" Type="X20BM11" X="378" Y="17" />
+    <Module Name="AB8_16DO" Type="X20DOF322" X="378" Y="17" />
+    <Module Name="X20TB1F3" Type="X20TB1F" X="378" Y="44" />
+    <Module Name="X20BM01" Type="X20BM01" X="391" Y="17" />
+    <Module Name="NapajanieSekcie1" Type="X20PS2100" X="391" Y="17" />
+    <Module Name="X20TB12" Type="X20TB12" X="391" Y="44" />
+    <Module Name="X20BM11d" Type="X20BM11" X="404" Y="17" />
+    <Module Name="AB9_16DO" Type="X20DOF322" X="404" Y="17" />
+    <Module Name="X20TB1F4" Type="X20TB1F" X="404" Y="44" />
+    <Module Name="X20BM11e" Type="X20BM11" X="417" Y="17" />
+    <Module Name="AB10_X2XMaster" Type="X20BT9400" X="417" Y="17" />
+    <Module Name="X20TB12a" Type="X20TB12" X="417" Y="44" />
+    <Module Name="0AC808.9" Type="0AC808.9" X="100" Y="459" />
+    <Module Name="OtocnyStol" Type="8EIxxxMxS1x.xxxx-1" X="791" Y="402" />
+    <Module Name="Centrifuga_1" Type="8EIxxxHxT1x.xxxx-1" X="1000" Y="402" />
+    <Module Name="Centrifuga_2" Type="8EIxxxHxT1x.xxxx-1" X="1198" Y="402" />
+    <Module Name="OtocnyStol_Manipulator" Type="8LVA23.B8015S000-0" X="791" Y="713" />
+    <Module Name="Centrifuga1_Zdvih1" Type="8LSA55.DA030S200-3" X="1000" Y="847" />
+    <Module Name="Centrifuga1_Zdvih2" Type="8LSA55.DA030S200-3" X="1000" Y="981" />
+    <Module Name="Centrifuga1_OtacanieCentrifugy" Type="8LSA73.DA030S000-3" X="1000" Y="713" />
+    <Module Name="Centrifuga2_Zdvih2" Type="8LSA55.DA030S200-3" X="1198" Y="981" />
+    <Module Name="Centrifuga2_Zdvih1" Type="8LSA55.DA030S200-3" X="1198" Y="847" />
+    <Module Name="Centrifuga2_OtacanieCentrifugy" Type="8LSA73.DA030S000-3" X="1198" Y="713" />
+    <Module Name="DopravnikChladiaciTunel" Type="8I74xxxxxxx.01P-1" X="1489" Y="402" />
+    <Module Name="Stol_DB1.0_8DI/DO" Type="X67BC8321-1" X="109" Y="615" />
+    <Module Name="Centrifuga2_DB3.0_8DI/DO" Type="X67BC8321-1" X="60" Y="931" />
+    <Module Name="Centrifuga1_DB2.0_8DI/DO" Type="X67BC8321-1" X="87" Y="777" />
+    <Module Name="Tunel_DB5.0_8DI/DO" Type="X67BC8321-1" X="56" Y="1101" />
+    <Module Name="Stol_DB1.1_4AI" Type="X67AI1323" X="233" Y="615" />
+    <Module Name="Stol_DB1.2_16Valve" Type="7XV116.50-62" X="342" Y="616" />
+    <Module Name="Stol_DB1.3_8DI" Type="X67DI1371" X="459" Y="616" />
+    <Module Name="Centrifuga1_DB2.1_Tenzometre" Type="X67AI2744" X="205" Y="777" />
+    <Module Name="Centrifuga2_DB3.1_Tenzometre" Type="X67AI2744" X="156" Y="931" />
+    <Module Name="Tunel_DB5.1_8DI/DO" Type="X67DM1321" X="152" Y="1101" />
+    <Module Name="Tunel_DB5.2_SI" Type="X67SI8103" X="240" Y="1101" />
+    <Module Name="DB4.0_8DI/DO" Type="X67DM1321" X="680" Y="32" />
+    <Module Name="ModbusTcp_any" Type="ModbusTcp_any" X="23" Y="166" />
+    <Module Name="RobotManipulacie" Type="FBD.Hilscher.PNIOGenDevDTM2.DSQC688" X="430" Y="166" />
+    <Module Name="RobotOdlievania" Type="FBD.Hilscher.PNIOGenDevDTM2.DSQC688" X="257" Y="166" />
+    <Module Name="IndukcnyOhrev" Type="FBD.Hilscher.PNIOGenDevDTM2.ModbusSlave" X="570" Y="166" />
+  </Modules>
+  <Links>
+    <Link From="0AC808.9" To="AB0" FromPort="ETH1" ToPort="IF3" IsRoutedByUser="False">
+      <Point X="126" Y="470" />
+      <Point X="126" Y="470" />
+      <Point X="126" Y="458" />
+      <Point X="126" Y="438" />
+      <Point X="156" Y="438" />
+      <Point X="156" Y="118" />
+      <Point X="156" Y="104" />
+      <Point X="156" Y="104" />
+    </Link>
+    <Link From="0AC808.9" To="OtocnyStol" FromPort="ETH2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="139" Y="470" />
+      <Point X="139" Y="470" />
+      <Point X="139" Y="458" />
+      <Point X="139" Y="388" />
+      <Point X="755" Y="388" />
+      <Point X="755" Y="412.5" />
+      <Point X="790.7" Y="412.5" />
+      <Point X="798.7" Y="412.5" />
+      <Point X="798.7" Y="412.5" />
+    </Link>
+    <Link From="0AC808.9" To="Tunel_DB5.0_8DI/DO" FromPort="ETH4" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="165" Y="470" />
+      <Point X="165" Y="470" />
+      <Point X="165" Y="458" />
+      <Point X="165" Y="438" />
+      <Point X="55" Y="438" />
+      <Point X="55" Y="1025" />
+      <Point X="66" Y="1025" />
+      <Point X="66" Y="1100" />
+      <Point X="66" Y="1113" />
+      <Point X="66" Y="1113" />
+    </Link>
+    <Link From="0AC808.9" To="Stol_DB1.0_8DI/DO" FromPort="ETH5" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="126" Y="483" />
+      <Point X="126" Y="483" />
+      <Point X="126" Y="503" />
+      <Point X="126" Y="515" />
+      <Point X="119" Y="515" />
+      <Point X="119" Y="614" />
+      <Point X="119" Y="627" />
+      <Point X="119" Y="627" />
+    </Link>
+    <Link From="0AC808.9" To="Centrifuga1_DB2.0_8DI/DO" FromPort="ETH6" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="139" Y="483" />
+      <Point X="139" Y="483" />
+      <Point X="139" Y="503" />
+      <Point X="139" Y="508" />
+      <Point X="97.9000244" Y="508" />
+      <Point X="97.9000244" Y="776.5" />
+      <Point X="97.9000244" Y="789.5" />
+      <Point X="97.9000244" Y="789.5" />
+    </Link>
+    <Link From="0AC808.9" To="Centrifuga2_DB3.0_8DI/DO" FromPort="ETH7" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="152" Y="483" />
+      <Point X="152" Y="483" />
+      <Point X="152" Y="503" />
+      <Point X="152" Y="522" />
+      <Point X="70.9000244" Y="522" />
+      <Point X="70.9000244" Y="930" />
+      <Point X="70.9000244" Y="943" />
+      <Point X="70.9000244" Y="943" />
+    </Link>
+    <Link From="AB0" To="ModbusTcp_any" FromPort="IF2" ToPort="ETH1" IsRoutedByUser="False">
+      <Point X="132" Y="104" />
+      <Point X="132" Y="104" />
+      <Point X="132" Y="118" />
+      <Point X="132" Y="225" />
+      <Point X="57" Y="225" />
+      <Point X="57" Y="217" />
+      <Point X="57" Y="210" />
+      <Point X="57" Y="210" />
+    </Link>
+    <Link From="AB10_X2XMaster" To="DB4.0_8DI/DO" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="424" Y="61" />
+      <Point X="424" Y="61" />
+      <Point X="431" Y="61" />
+      <Point X="445" Y="61" />
+      <Point X="445" Y="44" />
+      <Point X="679" Y="44" />
+      <Point X="690" Y="44" />
+      <Point X="690" Y="44" />
+    </Link>
+    <Link From="AB1_ProfinetMaster" To="RobotOdlievania" FromPort="IF1" ToPort="PN1" IsRoutedByUser="False">
+      <Point X="226" Y="108" />
+      <Point X="226" Y="108" />
+      <Point X="226" Y="118" />
+      <Point X="226" Y="225" />
+      <Point X="276" Y="225" />
+      <Point X="276" Y="217" />
+      <Point X="276" Y="205" />
+      <Point X="276" Y="205" />
+    </Link>
+    <Link From="Centrifuga1_DB2.0_8DI/DO" To="Centrifuga1_DB2.1_Tenzometre" FromPort="IF1" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="129.900024" Y="789.5" />
+      <Point X="129.900024" Y="789.5" />
+      <Point X="141.900024" Y="789.5" />
+      <Point X="204" Y="789.5" />
+      <Point X="215" Y="789.5" />
+      <Point X="215" Y="789.5" />
+    </Link>
+    <Link From="Centrifuga1_OtacanieCentrifugy" To="Centrifuga_1" FromPort="EC" ToPort="EC1" IsRoutedByUser="False">
+      <Point X="1021.5" Y="719.1" />
+      <Point X="1021.5" Y="719.1" />
+      <Point X="1021.5" Y="712.1" />
+      <Point X="1021.5" Y="698" />
+      <Point X="1062" Y="698" />
+      <Point X="1062" Y="539" />
+      <Point X="1047" Y="539" />
+      <Point X="1025" Y="539" />
+      <Point X="1025" Y="539" />
+    </Link>
+    <Link From="Centrifuga1_OtacanieCentrifugy" To="Centrifuga_1" FromPort="MT" ToPort="MT1" IsRoutedByUser="False">
+      <Point X="1049.5" Y="719.1" />
+      <Point X="1049.5" Y="719.1" />
+      <Point X="1049.5" Y="712.1" />
+      <Point X="1049.5" Y="705" />
+      <Point X="1055" Y="705" />
+      <Point X="1055" Y="548.3" />
+      <Point X="1046.6" Y="548.3" />
+      <Point X="1026.6" Y="548.3" />
+      <Point X="1026.6" Y="548.3" />
+    </Link>
+    <Link From="Centrifuga1_Zdvih1" To="Centrifuga_1" FromPort="EC" ToPort="EC2" IsRoutedByUser="False">
+      <Point X="1021.5" Y="853.1" />
+      <Point X="1021.5" Y="853.1" />
+      <Point X="1021.5" Y="846.1" />
+      <Point X="1021.5" Y="828" />
+      <Point X="1078" Y="828" />
+      <Point X="1078" Y="490" />
+      <Point X="1047" Y="490" />
+      <Point X="1025" Y="490" />
+      <Point X="1025" Y="490" />
+    </Link>
+    <Link From="Centrifuga1_Zdvih1" To="Centrifuga_1" FromPort="MT" ToPort="MT2" IsRoutedByUser="False">
+      <Point X="1049.5" Y="853.1" />
+      <Point X="1049.5" Y="853.1" />
+      <Point X="1049.5" Y="846.1" />
+      <Point X="1049.5" Y="835" />
+      <Point X="1092" Y="835" />
+      <Point X="1092" Y="499.3" />
+      <Point X="1046.6" Y="499.3" />
+      <Point X="1026.6" Y="499.3" />
+      <Point X="1026.6" Y="499.3" />
+    </Link>
+    <Link From="Centrifuga1_Zdvih2" To="Centrifuga_1" FromPort="EC" ToPort="EC3" IsRoutedByUser="False">
+      <Point X="1021.5" Y="987.1" />
+      <Point X="1021.5" Y="987.1" />
+      <Point X="1021.5" Y="980.1" />
+      <Point X="1021.5" Y="968" />
+      <Point X="1099" Y="968" />
+      <Point X="1099" Y="441" />
+      <Point X="1047" Y="441" />
+      <Point X="1025" Y="441" />
+      <Point X="1025" Y="441" />
+    </Link>
+    <Link From="Centrifuga1_Zdvih2" To="Centrifuga_1" FromPort="MT" ToPort="MT3" IsRoutedByUser="False">
+      <Point X="1049.5" Y="987.1" />
+      <Point X="1049.5" Y="987.1" />
+      <Point X="1049.5" Y="980.1" />
+      <Point X="1049.5" Y="975" />
+      <Point X="1085" Y="975" />
+      <Point X="1085" Y="450.3" />
+      <Point X="1046.6" Y="450.3" />
+      <Point X="1026.6" Y="450.3" />
+      <Point X="1026.6" Y="450.3" />
+    </Link>
+    <Link From="Centrifuga2_DB3.0_8DI/DO" To="Centrifuga2_DB3.1_Tenzometre" FromPort="IF1" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="102.900024" Y="943" />
+      <Point X="102.900024" Y="943" />
+      <Point X="114.900024" Y="943" />
+      <Point X="155.900024" Y="943" />
+      <Point X="166.900024" Y="943" />
+      <Point X="166.900024" Y="943" />
+    </Link>
+    <Link From="Centrifuga2_OtacanieCentrifugy" To="Centrifuga_2" FromPort="EC" ToPort="EC1" IsRoutedByUser="False">
+      <Point X="1219.5" Y="719.1" />
+      <Point X="1219.5" Y="719.1" />
+      <Point X="1219.5" Y="712.1" />
+      <Point X="1219.5" Y="698" />
+      <Point X="1262" Y="698" />
+      <Point X="1262" Y="539" />
+      <Point X="1245" Y="539" />
+      <Point X="1223" Y="539" />
+      <Point X="1223" Y="539" />
+    </Link>
+    <Link From="Centrifuga2_OtacanieCentrifugy" To="Centrifuga_2" FromPort="MT" ToPort="MT1" IsRoutedByUser="False">
+      <Point X="1247.5" Y="719.1" />
+      <Point X="1247.5" Y="719.1" />
+      <Point X="1247.5" Y="712.1" />
+      <Point X="1247.5" Y="705" />
+      <Point X="1283" Y="705" />
+      <Point X="1283" Y="548.3" />
+      <Point X="1244.6" Y="548.3" />
+      <Point X="1224.6" Y="548.3" />
+      <Point X="1224.6" Y="548.3" />
+    </Link>
+    <Link From="Centrifuga2_Zdvih1" To="Centrifuga_2" FromPort="EC" ToPort="EC2" IsRoutedByUser="False">
+      <Point X="1219.5" Y="853.1" />
+      <Point X="1219.5" Y="853.1" />
+      <Point X="1219.5" Y="846.1" />
+      <Point X="1219.5" Y="828" />
+      <Point X="1296" Y="828" />
+      <Point X="1296" Y="490" />
+      <Point X="1245" Y="490" />
+      <Point X="1223" Y="490" />
+      <Point X="1223" Y="490" />
+    </Link>
+    <Link From="Centrifuga2_Zdvih1" To="Centrifuga_2" FromPort="MT" ToPort="MT2" IsRoutedByUser="False">
+      <Point X="1247.5" Y="853.1" />
+      <Point X="1247.5" Y="853.1" />
+      <Point X="1247.5" Y="846.1" />
+      <Point X="1247.5" Y="835" />
+      <Point X="1303" Y="835" />
+      <Point X="1303" Y="499.3" />
+      <Point X="1244.6" Y="499.3" />
+      <Point X="1224.6" Y="499.3" />
+      <Point X="1224.6" Y="499.3" />
+    </Link>
+    <Link From="Centrifuga2_Zdvih2" To="Centrifuga_2" FromPort="EC" ToPort="EC3" IsRoutedByUser="False">
+      <Point X="1219.5" Y="987.1" />
+      <Point X="1219.5" Y="987.1" />
+      <Point X="1219.5" Y="980.1" />
+      <Point X="1219.5" Y="968" />
+      <Point X="1310" Y="968" />
+      <Point X="1310" Y="441" />
+      <Point X="1245" Y="441" />
+      <Point X="1223" Y="441" />
+      <Point X="1223" Y="441" />
+    </Link>
+    <Link From="Centrifuga2_Zdvih2" To="Centrifuga_2" FromPort="MT" ToPort="MT3" IsRoutedByUser="False">
+      <Point X="1247.5" Y="987.1" />
+      <Point X="1247.5" Y="987.1" />
+      <Point X="1247.5" Y="980.1" />
+      <Point X="1247.5" Y="975" />
+      <Point X="1275" Y="975" />
+      <Point X="1275" Y="450.3" />
+      <Point X="1244.6" Y="450.3" />
+      <Point X="1224.6" Y="450.3" />
+      <Point X="1224.6" Y="450.3" />
+    </Link>
+    <Link From="Centrifuga_1" To="OtocnyStol" FromPort="PLK1" ToPort="PLK2" IsRoutedByUser="False">
+      <Point X="1007.7" Y="412.5" />
+      <Point X="1007.7" Y="412.5" />
+      <Point X="999.7" Y="412.5" />
+      <Point X="995" Y="412.5" />
+      <Point X="995" Y="395" />
+      <Point X="807.1" Y="395" />
+      <Point X="807.1" Y="401.5" />
+      <Point X="807.1" Y="412.5" />
+      <Point X="807.1" Y="412.5" />
+    </Link>
+    <Link From="Centrifuga_1" To="Centrifuga_2" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="1016.1" Y="412.5" />
+      <Point X="1016.1" Y="412.5" />
+      <Point X="1016.1" Y="401.5" />
+      <Point X="1016.1" Y="395" />
+      <Point X="1055" Y="395" />
+      <Point X="1055" Y="412.5" />
+      <Point X="1197.7" Y="412.5" />
+      <Point X="1205.7" Y="412.5" />
+      <Point X="1205.7" Y="412.5" />
+    </Link>
+    <Link From="Centrifuga_2" To="DopravnikChladiaciTunel" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="1214.1" Y="412.5" />
+      <Point X="1214.1" Y="412.5" />
+      <Point X="1214.1" Y="401.5" />
+      <Point X="1214.1" Y="395" />
+      <Point X="1255" Y="395" />
+      <Point X="1255" Y="615" />
+      <Point X="1497" Y="615" />
+      <Point X="1497" Y="603" />
+      <Point X="1497" Y="561" />
+      <Point X="1497" Y="561" />
+    </Link>
+    <Link From="IndukcnyOhrev" To="RobotManipulacie" FromPort="PN1" ToPort="PN2" IsRoutedByUser="False">
+      <Point X="589" Y="205" />
+      <Point X="589" Y="205" />
+      <Point X="569" Y="205" />
+      <Point X="565" Y="205" />
+      <Point X="565" Y="225" />
+      <Point X="464" Y="225" />
+      <Point X="464" Y="217" />
+      <Point X="464" Y="205" />
+      <Point X="464" Y="205" />
+    </Link>
+    <Link From="OtocnyStol" To="OtocnyStol_Manipulator" FromPort="EC1" ToPort="EC" IsRoutedByUser="False">
+      <Point X="816" Y="441" />
+      <Point X="816" Y="441" />
+      <Point X="838" Y="441" />
+      <Point X="852" Y="441" />
+      <Point X="852" Y="615" />
+      <Point X="812.5" Y="615" />
+      <Point X="812.5" Y="712.1" />
+      <Point X="812.5" Y="719.1" />
+      <Point X="812.5" Y="719.1" />
+    </Link>
+    <Link From="OtocnyStol" To="OtocnyStol_Manipulator" FromPort="MT1" ToPort="MT" IsRoutedByUser="False">
+      <Point X="817.6" Y="450.3" />
+      <Point X="817.6" Y="450.3" />
+      <Point X="837.6" Y="450.3" />
+      <Point X="840.5" Y="450.3" />
+      <Point X="840.5" Y="712.1" />
+      <Point X="840.5" Y="719.1" />
+      <Point X="840.5" Y="719.1" />
+    </Link>
+    <Link From="RobotManipulacie" To="RobotOdlievania" FromPort="PN1" ToPort="PN2" IsRoutedByUser="False">
+      <Point X="449" Y="205" />
+      <Point X="449" Y="205" />
+      <Point X="429" Y="205" />
+      <Point X="425" Y="205" />
+      <Point X="425" Y="225" />
+      <Point X="291.099976" Y="225" />
+      <Point X="291.099976" Y="217" />
+      <Point X="291.099976" Y="205" />
+      <Point X="291.099976" Y="205" />
+    </Link>
+    <Link From="Stol_DB1.0_8DI/DO" To="Stol_DB1.1_4AI" FromPort="IF1" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="151" Y="627" />
+      <Point X="151" Y="627" />
+      <Point X="163" Y="627" />
+      <Point X="232" Y="627" />
+      <Point X="243" Y="627" />
+      <Point X="243" Y="627" />
+    </Link>
+    <Link From="Stol_DB1.1_4AI" To="Stol_DB1.2_16Valve" FromPort="X2X2" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="275" Y="627" />
+      <Point X="275" Y="627" />
+      <Point X="287" Y="627" />
+      <Point X="297" Y="627" />
+      <Point X="297" Y="607" />
+      <Point X="366" Y="607" />
+      <Point X="366" Y="615" />
+      <Point X="366" Y="625" />
+      <Point X="366" Y="625" />
+    </Link>
+    <Link From="Stol_DB1.2_16Valve" To="Stol_DB1.3_8DI" FromPort="X2X2" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="386" Y="625.800049" />
+      <Point X="386" Y="625.800049" />
+      <Point X="386" Y="615.800049" />
+      <Point X="386" Y="611" />
+      <Point X="417" Y="611" />
+      <Point X="417" Y="628.800049" />
+      <Point X="458" Y="628.800049" />
+      <Point X="469" Y="628.800049" />
+      <Point X="469" Y="628.800049" />
+    </Link>
+    <Link From="Tunel_DB5.0_8DI/DO" To="Tunel_DB5.1_8DI/DO" FromPort="IF1" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="98" Y="1113" />
+      <Point X="98" Y="1113" />
+      <Point X="110" Y="1113" />
+      <Point X="151" Y="1113" />
+      <Point X="162" Y="1113" />
+      <Point X="162" Y="1113" />
+    </Link>
+    <Link From="Tunel_DB5.1_8DI/DO" To="Tunel_DB5.2_SI" FromPort="X2X2" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="194" Y="1113" />
+      <Point X="194" Y="1113" />
+      <Point X="206" Y="1113" />
+      <Point X="239" Y="1113" />
+      <Point X="250" Y="1113" />
+      <Point X="250" Y="1113" />
+    </Link>
+  </Links>
+  <InfoElements>
+    <InfoElementText Id="Textbox_1" X="723" Y="342" Width="138" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Nod 1 - Otočný stôl</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_2" X="929" Y="342" Width="149.099976" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Nod 2 - Centrifuga 1</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_3" X="1167" Y="342" Width="160.8999" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Nod 3 - Centrifuga 2</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_4" X="1421.5" Y="342" Width="171.5" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Nod 4 - Chladiaci tunel</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_5" X="140.900024" Y="571.5" Width="165" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Nod 5 - Otočný stôl</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_6" X="140.900024" Y="739" Width="172.099976" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Nod 6 - Centrifuga 1</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_7" X="140.900024" Y="894.5" Width="175.099976" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Nod 8 - Centrifuga 2</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_8" X="398.900024" Y="231" Width="141.099976" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Robot manipulácie</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_9" X="136" Y="1060.5" Width="211.099976" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Nod 9 - Chladiaci tunel</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_11" X="226" Y="231" Width="138" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Robot - odlievania</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_12" X="617.5" Y="-8" Width="156" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Robot - manipulacie</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_13" X="587.4" Y="231" Width="141.099976" Height="20">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Indukčný ohrev</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+  </InfoElements>
+</BR.AS.HardwareTopology>

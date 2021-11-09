@@ -1,0 +1,9 @@
+VAR
+	CasPredOdhlasenimUzivatela : TON;
+	CasPredResetomOplotenia : TON;
+END_VAR
+(***********PremenneTaktime******************)
+VAR
+	i : USINT;
+	CasTeplotyHlinika : TON;
+END_VAR

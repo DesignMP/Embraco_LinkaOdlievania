@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<osdd xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ethernet-powerlink.org/osdd osdd.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" Version="1.6" xmlns="http://www.ethernet-powerlink.org/osdd">
+  <Topology SafetyDomain="1">
+    <GeneratorDescription Name="AutomationStudio" Version="4.7.7.74" LanguageID="1">
+      <Info Name="ARVersion" Value="47304" />
+      <Info Name="SafetyRelease" Value="1.10" />
+      <Info Name="Communication" Value="/IF=tcpip /LOPO=11159 /SA=1  /COMT=2500 /RT=1000 /AM=* /SDT=5 /DAIP=10.13.132.112 /REPO=11159 /ANSL=1 /PT=11169  /PORT=50000" />
+    </GeneratorDescription>
+    <SafetyConfigurationManager TransportSAddr="1">
+      <DeviceDescription Module="X20SLXxxx_110.SCM" minOpenSafetyRelease="1.5"><![CDATA[C:\BrAutomation\AS47\AS\Hardware\Modules\X20SLX806\1.10.12.1\OSDD\X20SLXxxx_SCM_1_10_12_0.xosdd]]></DeviceDescription>
+      <NodeDescription />
+    </SafetyConfigurationManager>
+    <SafetyNode SAddr="1">
+      <DeviceDescription Module="X20SLX806_110.MainSN" minOpenSafetyRelease="1.5"><![CDATA[C:\BrAutomation\AS47\AS\Hardware\Modules\X20SLX806\1.10.12.1\OSDD\\X20SLX806_1_10_12_0.xosdd]]></DeviceDescription>
+      <DesignConfiguration>
+        <ModuleSettings>
+          <SettingsGroup id="DataFromAs">
+            <Setting id="SafeDesigner" Value="4.3.4.4" />
+          </SettingsGroup>
+        </ModuleSettings>
+      </DesignConfiguration>
+      <NodeDescription>
+        <Classification Type="Digital" />
+        <Classification Type="Input" />
+        <Classification Type="Output" />
+        <Classification Type="PLC" />
+        <Classification Type="VendorSpecific">Safe</Classification>
+        <Classification Type="VendorSpecific">IO</Classification>
+        <Classification Type="VendorSpecific">Combined</Classification>
+        <Info Name="Interface" Value="IF6.ST1" />
+        <Info Name="HWC_Revision" Value="1.10.12.1" />
+        <Info Name="HWC_LastEdit" Value="10.11.2020 15:44:46" />
+        <Info Name="AS_Name" Value="AB3_SafetyMaster" />
+        <Info Name="FirstPublishedSafetyRelease" Value="1.10" />
+        <Info Name="ProjectSL" Value="1" />
+        <Info Name="Description-de" Value="X20 SafeLOGIC Compact, 8xE 24V, 6xA 24V 0.2A" />
+        <Info Name="Description-en" Value="X20 SafeLOGIC Compact, 8xI 24V, 6xO 24V 0.2A" />
+        <Info Name="AsVariable" Value="BOOL111,Cyclic#1.Reset_ZamkuTunelVystup" />
+        <Info Name="AsVariable" Value="BOOL103,Cyclic#1.diStav_HlavPrivoduVzduchuKanalA" />
+        <Info Name="AsVariable" Value="BOOL004,Cyclic#1.Stav_BZ1_Zamknuty" />
+        <Info Name="AsVariable" Value="BOOL104,Cyclic#1.diStav_HlavPrivoduVzduchuKanalB" />
+        <Info Name="AsVariable" Value="BOOL008,Cyclic#1.Stav_CS_BZ2_Odblokovany" />
+        <Info Name="AsVariable" Value="PhysicalStateChannel02,Cyclic#1.soCentrifugy" />
+        <Info Name="AsVariable" Value="BOOL108,Cyclic#1.diStavBezpRele_StavCS_Linky" />
+        <Info Name="AsVariable" Value="SafeDigitalInput04,Cyclic#1.siCS_RobotManipulacie_KanalB" />
+        <Info Name="AsVariable" Value="BOOL110,Cyclic#1.diStavBezpRele_Vystupy_Vzduch" />
+        <Info Name="AsVariable" Value="PhysicalStateChannel06,Cyclic#1.soStavCS_HlavnejLinky" />
+        <Info Name="AsVariable" Value="BOOL009,Cyclic#1.Stav_CS_DokonStanica_Odblokovane" />
+        <Info Name="AsVariable" Value="PhysicalStateChannel03,Cyclic#1.soTunel" />
+        <Info Name="AsVariable" Value="BOOL101,Cyclic#1.Reset_CS" />
+        <Info Name="AsVariable" Value="BOOL106,Cyclic#1.diStavBezpRele_OplotenieLinky" />
+        <Info Name="AsVariable" Value="BOOL005,Cyclic#1.Stav_BZ2_Zamknuty" />
+        <Info Name="AsVariable" Value="BOOL105,Cyclic#1.diStavBezpRele_Centrifugy" />
+        <Info Name="AsVariable" Value="SafeDigitalInput05,Cyclic#1.siCS_RobotOdlievania_KanalA" />
+        <Info Name="AsVariable" Value="BOOL109,Cyclic#1.diStavBezpRele_Tunel" />
+        <Info Name="AsVariable" Value="BOOL012,Cyclic#1.Stav_CS_RobotOdliev_Odblokovane" />
+        <Info Name="AsVariable" Value="BOOL112,Cyclic#1.RezimServis" />
+        <Info Name="AsVariable" Value="BOOL011,Cyclic#1.Stav_CS_RoboManipul_Odblokovane" />
+        <Info Name="AsVariable" Value="SafeDigitalInput01,Cyclic#1.siCS_Linka_KanalA" />
+        <Info Name="AsVariable" Value="SafeDigitalInput08,Cyclic#1.siCS_DokoncovaciaStanica_KanalB" />
+        <Info Name="AsVariable" Value="SafeDigitalInput06,Cyclic#1.siCS_RobotOdlievania_KanalB" />
+        <Info Name="AsVariable" Value="BOOL007,Cyclic#1.Stav_CS_BZ1_Odblokovany" />
+        <Info Name="AsVariable" Value="BOOL107,Cyclic#1.diStavBezpRele_OtocnyStol" />
+        <Info Name="AsVariable" Value="BOOL002,Cyclic#1.BezpOkruhCS_Aktivovany" />
+        <Info Name="AsVariable" Value="BOOL102,Cyclic#1.Reset_Oplotenia" />
+        <Info Name="AsVariable" Value="BOOL001,Cyclic#1.SafetyPLC_Nabehlo" />
+        <Info Name="AsVariable" Value="SafeDigitalInput02,Cyclic#1.siCS_Linka_KanalB" />
+        <Info Name="AsVariable" Value="BOOL003,Cyclic#1.BezpOkruhOplotenia_Aktivovany" />
+        <Info Name="AsVariable" Value="PhysicalStateChannel04,Cyclic#1.soVystupy_HlavnyPrivodVzduchu" />
+        <Info Name="AsVariable" Value="SafeDigitalInput07,Cyclic#1.siCS_DokoncovaciaStanica_KanalA" />
+        <Info Name="AsVariable" Value="PhysicalStateChannel01,Cyclic#1.soOtocnyStol" />
+        <Info Name="AsVariable" Value="BOOL010,Cyclic#1.Stav_CS_Linky_Odblokovane" />
+        <Info Name="AsVariable" Value="BOOL006,Cyclic#1.Stav_BZ3_Zamknuty" />
+        <Info Name="AsVariable" Value="SafeDigitalInput03,Cyclic#1.siCS_RobotManipulacie_KanalA" />
+        <Info Name="AsVariable" Value="PhysicalStateChannel05,Cyclic#1.soOplotenieLinky" />
+      </NodeDescription>
+      <ChannelConfiguration>
+        <DataTransport>
+          <GenericTransport Name="DataExFromCpu" Direction="Input" OctetSize="20" IsSafe="false" />
+          <GenericTransport Name="DataExToCpu" Direction="Output" OctetSize="20" IsSafe="false" />
+        </DataTransport>
+        <ChannelGroup id="ToCPU_BOOL">
+          <Channel id="BOOL0">
+            <DataValue Type="Boolean">
+              <Transport Name="DataExToCpu" Index="0x00" />
+              <SODPosition Index="0x0" SubIndex="0x00" />
+            </DataValue>
+            <Repetition RangeMax="16" NrOfDigits="2" />
+          </Channel>
+        </ChannelGroup>
+        <ChannelGroup id="FromCPU_OCTET">
+          <Channel id="MFWslxIN">
+            <DataValue Type="UInt8">
+              <Transport Name="DataExFromCpu" Index="0x00" />
+              <SODPosition Index="0x0" SubIndex="0x00" />
+            </DataValue>
+            <VendorInfo>NrElements="14"</VendorInfo>
+            <VendorInfo>GeneratedBySafeFirmware="true"</VendorInfo>
+            <VendorInfo>IncludeInChannelCRC="1"</VendorInfo>
+            <VendorInfo>NotVisible="true"</VendorInfo>
+            <VendorInfo>Mappable="false"</VendorInfo>
+          </Channel>
+        </ChannelGroup>
+        <ChannelGroup id="FromCPU_BOOL">
+          <Channel id="BOOL1">
+            <DataValue Type="Boolean">
+              <Transport Name="DataExFromCpu" Index="0x00" />
+              <SODPosition Index="0x0" SubIndex="0x00" />
+            </DataValue>
+            <Repetition RangeMax="16" NrOfDigits="2" />
+          </Channel>
+        </ChannelGroup>
+      </ChannelConfiguration>
+    </SafetyNode>
+    <SafetyNode SAddr="2">
+      <DeviceDescription Module="X20SI8110_110" minOpenSafetyRelease="1.5"><![CDATA[C:\BrAutomation\AS47\AS\Hardware\Modules\X20SI8110\1.10.12.0\OSDD\\X20SI8110_1_10_12_0.xosdd]]></DeviceDescription>
+      <NodeDescription>
+        <Classification Type="Digital" />
+        <Classification Type="Input" />
+        <Classification Type="VendorSpecific">Safe</Classification>
+        <Classification Type="VendorSpecific">IO</Classification>
+        <Info Name="Interface" Value="IF6.ST2" />
+        <Info Name="HWC_Revision" Value="1.10.12.0" />
+        <Info Name="HWC_LastEdit" Value="15.01.2021 9:45:40" />
+        <Info Name="AS_Name" Value="AB4_SafetyDI" />
+        <Info Name="FirstPublishedSafetyRelease" Value="1.7" />
+        <Info Name="Description-de" Value="X20 Safe Digital In, 8xE, 24V" />
+        <Info Name="Description-en" Value="X20 Safe Digital In, 8xI, 24V" />
+        <Info Name="AsVariable" Value="SafeDigitalInput04,Cyclic#1.siCS_DvereRobotMan_KanalB" />
+        <Info Name="AsVariable" Value="SafeDigitalInput01,Cyclic#1.siDvereRobotMan_KanalA" />
+        <Info Name="AsVariable" Value="SafeDigitalInput06,Cyclic#1.siDvereRobotOdliev_KanalB" />
+        <Info Name="AsVariable" Value="SafeDigitalInput03,Cyclic#1.siCS_DvereRobotMan_KanalA" />
+        <Info Name="AsVariable" Value="SafeDigitalInput05,Cyclic#1.siDvereRobotOdliev_KanalA" />
+        <Info Name="AsVariable" Value="SafeDigitalInput08,Cyclic#1.siCS_DvereRobotOdliev_KanalB" />
+        <Info Name="AsVariable" Value="SafeDigitalInput02,Cyclic#1.siDvereRobotMan_KanalB" />
+        <Info Name="AsVariable" Value="SafeDigitalInput07,Cyclic#1.siCS_DvereRobotOdliev_KanalA" />
+      </NodeDescription>
+      <ChannelConfiguration />
+    </SafetyNode>
+    <SafetyNode SAddr="3">
+      <DeviceDescription Module="X67SI8103_110" minOpenSafetyRelease="1.5"><![CDATA[C:\BrAutomation\AS47\AS\Hardware\Modules\X67SI8103\1.10.12.0\OSDD\\X67SI8103_1_10_12_0.xosdd]]></DeviceDescription>
+      <NodeDescription>
+        <Classification Type="Digital" />
+        <Classification Type="Input" />
+        <Classification Type="VendorSpecific">Safe</Classification>
+        <Classification Type="VendorSpecific">IO</Classification>
+        <Info Name="Interface" Value="IF3.ST9.IF1.ST3" />
+        <Info Name="HWC_Revision" Value="1.10.12.0" />
+        <Info Name="HWC_LastEdit" Value="15.01.2021 10:01:02" />
+        <Info Name="AS_Name" Value="Tunel_DB5.2_SI" />
+        <Info Name="FirstPublishedSafetyRelease" Value="1.5" />
+        <Info Name="Description-de" Value="X67 Safe Digital In, 8xE, 24V" />
+        <Info Name="Description-en" Value="X67 Safe Digital In, 8xI, 24V" />
+        <Info Name="AsVariable" Value="SafeDigitalInput02,Cyclic#1.siTunel_Vystup_BZ_KanalB" />
+        <Info Name="AsVariable" Value="DigitalOutput01,Cyclic#1.doTunel_Vystup_ZamkniBZ" />
+        <Info Name="AsVariable" Value="SafeDigitalInput01,Cyclic#1.siTunel_Vystup_BZ_KanalA" />
+        <Info Name="AsVariable" Value="DigitalInput01,Cyclic#1.diTunel_Vystup_BZ_PritomnPetlice" />
+      </NodeDescription>
+      <ChannelConfiguration>
+        <DataTransport>
+          <GenericTransport Name="PDOo" Direction="Output" OctetSize="2" IsSafe="false" />
+          <GenericTransport Name="PDOi" Direction="Input" OctetSize="2" IsSafe="false" />
+        </DataTransport>
+        <ChannelGroup id="Connector 1">
+          <Channel id="DigitalInput01">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOi" Index="0x00" />
+            </DataValue>
+          </Channel>
+        </ChannelGroup>
+        <ChannelGroup id="Connector 2">
+          <Channel id="DigitalInput02">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOi" Index="0x00" />
+            </DataValue>
+          </Channel>
+        </ChannelGroup>
+        <ChannelGroup id="Connector 1">
+          <Channel id="DigitalOutput01OK">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOi" Index="0x00" />
+            </DataValue>
+          </Channel>
+        </ChannelGroup>
+        <ChannelGroup id="Connector 2">
+          <Channel id="DigitalOutput02OK">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOi" Index="0x00" />
+            </DataValue>
+          </Channel>
+        </ChannelGroup>
+        <ChannelGroup id="Connector 1">
+          <Channel id="PhysicalStateOutput01">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOi" Index="0x00" />
+            </DataValue>
+          </Channel>
+        </ChannelGroup>
+        <ChannelGroup id="Connector 2">
+          <Channel id="PhysicalStateOutput02">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOi" Index="0x00" />
+            </DataValue>
+          </Channel>
+        </ChannelGroup>
+        <ChannelGroup id="Connector 1">
+          <Channel id="DigitalOutput01">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOo" Index="0x00" />
+            </DataValue>
+            <VendorInfo>Enabled="false"</VendorInfo>
+          </Channel>
+        </ChannelGroup>
+        <ChannelGroup id="Connector 2">
+          <Channel id="DigitalOutput02">
+            <DataValue Type="Boolean">
+              <Transport Name="PDOo" Index="0x00" />
+            </DataValue>
+            <VendorInfo>Enabled="false"</VendorInfo>
+          </Channel>
+        </ChannelGroup>
+      </ChannelConfiguration>
+    </SafetyNode>
+  </Topology>
+</osdd>

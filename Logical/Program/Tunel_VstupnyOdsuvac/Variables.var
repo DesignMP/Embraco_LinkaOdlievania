@@ -1,0 +1,7 @@
+VAR
+	SC_OvlVstupnehoOdsuvaca : SequenceControlTyp;
+	VstupnyOdsuvac_VYSUN : BOOL;
+	VstupnyOdsuvac_ZASUN : BOOL;
+	CasTaktTime1 : TON;
+	CasTaktTime2 : TON;
+END_VAR

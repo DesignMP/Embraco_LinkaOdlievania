@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.3.195?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="IEC">KOMDokoncovaciaStanica</Object>
+    <Object Type="Program" Language="IEC">KOMRobotManipulacie</Object>
+    <Object Type="Program" Language="IEC">KOM_RobotOdlievania</Object>
+    <Object Type="Program" Language="IEC">KOM_IndukcnyOhrev</Object>
+    <Object Type="Program" Language="IEC">KOM_PecNaHlinik</Object>
+    <Object Type="Program" Language="IEC">KOM_MedziPLC</Object>
+  </Objects>
+</Package>

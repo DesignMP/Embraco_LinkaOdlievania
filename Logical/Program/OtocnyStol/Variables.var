@@ -1,0 +1,10 @@
+VAR
+	SC_OvlStola : SequenceControlTyp;
+	Otacaj_VPRED : BOOL;
+	Otacaj_VZAD : BOOL;
+	CasTaktuOFF : BOOL;
+	Stol_PocetOtoceniNaprazdno : USINT;
+	CasSpusteniaIndukOhrevu : TON;
+	CasPreruseniaIndukcnehoOhrevu : TON;
+	PocetOtoceniStola : USINT;
+END_VAR

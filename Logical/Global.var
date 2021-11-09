@@ -1,0 +1,877 @@
+(*************Prepoèet analógu****************)
+VAR
+	NastavenieAnalogu1 : USINT; (*00110000*)
+	NastavenieAnalogu2 : USINT; (*00110000*)
+	NastavenieAnalogu3 : USINT; (*00110000*)
+	NastavenieAnalogu4 : USINT; (*00110000*)
+	AnalogInput_1 : Analog := (0); (*Centrifuga 1 - vreteno 1*)
+	AnalogInput_2 : Analog := (0); (*Centrifuga 1 - vreteno 2*)
+	AnalogInput_3 : Analog := (0); (*Centrifuga 2 - vreteno 1*)
+	AnalogInput_4 : Analog := (0); (*Centrifuga 2 - vreteno 2*)
+	Skalovanie1_READY : BOOL;
+	Skalovanie1_ERROR : BOOL;
+	Skalovanie2_READY : BOOL;
+	Skalovanie2_ERROR : BOOL;
+	Skalovanie3_READY : BOOL;
+	Skalovanie3_ERROR : BOOL;
+	Skalovanie4_READY : BOOL;
+	Skalovanie4_ERROR : BOOL;
+	Centrifuga1_Vreteno1_Tlak_Kg : REAL; (*Preškálovaná hodnota*)
+	Centrifuga1_Vreteno2_Tlak_Kg : REAL; (*Preškálovaná hodnota*)
+	Centrifuga2_Vreteno1_Tlak_Kg : REAL; (*Preškálovaná hodnota*)
+END_VAR
+VAR RETAIN
+	Centrifuga2_Vreteno2_Tlak_Kg : REAL := 0.0; (*Preškálovaná hodnota*)
+END_VAR
+VAR
+	Centrifuga1_VR1_PoslednyTlak_Kg : REAL;
+	Centrifuga1_VR2_PoslednyTlak_Kg : REAL;
+	Centrifuga2_VR1_PoslednyTlak_Kg : REAL;
+	Centrifuga2_VR2_PoslednyTlak_Kg : REAL;
+END_VAR
+(*************Premenne receptur**************)
+VAR
+	MpRecipeRegPar_0 : MpRecipeRegPar := (0);
+	MpRecipeXml_0 : MpRecipeXml := (0);
+	Receptura : ARRAY[0..50] OF ParametreRecepturTyp := [51((0))];
+	ZoznamReceptur : ARRAY[0..50] OF STRING[50] := [51('')];
+	UlozRecepturu : BOOL := FALSE;
+	NacitajRecepturu : BOOL;
+	Nazov : STRING[50] := '';
+	CisloProgramuLinka : UDINT;
+	CisloProgramuRobotOdlievania : UDINT;
+	CisloProgramuRobotManipulacie : UDINT;
+	VyskaBalika : REAL;
+	VyskaBalikaHornaTolerancia : REAL;
+	VyskaBalikaSpodnaTolerancia : REAL;
+	UholOdlievaniaRobOdlievCentr1 : REAL;
+	CasOdlievaniaRobOdlievCentr1 : REAL;
+	UholOdlievaniaRobOdlievCentr2 : REAL;
+	CasOdlievaniaRobOdlievCentr2 : REAL;
+	CasOtacaniaPriOdlievani : REAL;
+	RychlostOtacaniaPriOdlievani : REAL;
+	ZvolenyNazovProduktu : STRING[50];
+	ZvolenyProgramLinka : UDINT;
+	ZvolenyProgramRobotOdlievania : UDINT;
+	ZvolenyProgramRobotManipulacie : UDINT;
+	ZvolenaVyskaBalika : REAL;
+	ZvolenaHornaToleranciaBalika : REAL;
+	ZvolenaSpodnaToleranciaBalika : REAL;
+	ZvolUholOdlievRobOdlievCentr1 : UDINT;
+	ZvolCasOdlievRobOdlievCentr1 : UDINT;
+	ZvolUholOdlievRobOdlievCentr2 : UDINT;
+	ZvolCasOdlievRobOdlievCentr2 : UDINT;
+	ZvolCasOtacaniaPriOdlievani : REAL;
+	ZvolRychlostOtacaniaPriOdlievani : REAL;
+END_VAR
+(**********Premenne uzivatelov********************************)
+VAR
+	SC_Uzivatelia : SequenceControlTyp;
+	MpRecipeXml_1 : MpRecipeXml := (0);
+	MpRecipeRegPar_1 : MpRecipeRegPar := (0);
+	Uzivatel : ARRAY[0..50] OF ParametreUzivatelovTyp;
+	ZoznamUzivatelov : ARRAY[0..50] OF STRING[50] := [51('')];
+	MenoUzivatela : STRING[50];
+	UrovenUzivatela : UINT;
+	ZvolenyUzivatel : STRING[50];
+	ZvolenaUroven : UINT;
+	UlozUzivatelov : BOOL;
+	PrihlasUzivatela : BOOL;
+	VymazUzivatela : BOOL;
+	OdhlasUzivatela : BOOL;
+	NacitanyKodCitacky_0 : USINT;
+	NacitanyKodCitacky_1 : USINT;
+	NacitanyKodCitacky_2 : USINT;
+	NacitanyKodCitacky_3 : USINT;
+	NacitanyKodCitacky_4 : USINT;
+	NacitanyKodCitacky_5 : USINT;
+	NacitanyKodCitacky_6 : USINT;
+	NacitanyKodCitacky_7 : USINT;
+	NacitanyKodCitacky_8 : USINT;
+	NacitanyKodCitacky_9 : USINT;
+	NacitanyKodCitacky_10 : USINT;
+	NacitanyKodCitacky_11 : USINT;
+	NacitanyKodCitacky_12 : USINT;
+	NacitanyKodCitacky_13 : USINT;
+	UlozenyKodCitacky_0 : USINT;
+	UlozenyKodCitacky_1 : USINT;
+	UlozenyKodCitacky_2 : USINT;
+	UlozenyKodCitacky_3 : USINT;
+	UlozenyKodCitacky_4 : USINT;
+	UlozenyKodCitacky_5 : USINT;
+	UlozenyKodCitacky_6 : USINT;
+	UlozenyKodCitacky_7 : USINT;
+	UlozenyKodCitacky_8 : USINT;
+	UlozenyKodCitacky_9 : USINT;
+	UlozenyKodCitacky_10 : USINT;
+	UlozenyKodCitacky_11 : USINT;
+	UlozenyKodCitacky_12 : USINT;
+	UlozenyKodCitacky_13 : USINT;
+	KodCitacky_0 : USINT;
+	KodCitacky_1 : USINT;
+	KodCitacky_2 : USINT;
+	KodCitacky_3 : USINT;
+	KodCitacky_4 : USINT;
+	KodCitacky_5 : USINT;
+	KodCitacky_6 : USINT;
+	KodCitacky_7 : USINT;
+	KodCitacky_8 : USINT;
+	KodCitacky_9 : USINT;
+	KodCitacky_10 : USINT;
+	KodCitacky_11 : USINT;
+	KodCitacky_12 : USINT;
+	KodCitacky_13 : USINT;
+	ZvolenyKodCitacky_0 : USINT;
+	ZvolenyKodCitacky_1 : USINT;
+	ZvolenyKodCitacky_2 : USINT;
+	ZvolenyKodCitacky_3 : USINT;
+	ZvolenyKodCitacky_4 : USINT;
+	ZvolenyKodCitacky_5 : USINT;
+	ZvolenyKodCitacky_6 : USINT;
+	ZvolenyKodCitacky_7 : USINT;
+	ZvolenyKodCitacky_8 : USINT;
+	ZvolenyKodCitacky_9 : USINT;
+	ZvolenyKodCitacky_10 : USINT;
+	ZvolenyKodCitacky_11 : USINT;
+	ZvolenyKodCitacky_12 : USINT;
+	ZvolenyKodCitacky_13 : USINT;
+	Uzivatel_Stav_Prihlaseny : BOOL;
+	KartaPrilozena : BOOL;
+	EditaciaUzivatelov : BOOL;
+END_VAR
+(**********Blikaèe*******************************)
+VAR
+	Blikac200ms : BOOL;
+	Blikac500ms : BOOL;
+	Blikac1s : BOOL;
+	Blikac5s : BOOL;
+END_VAR
+(*********RiadenieServ*************************)
+VAR
+	gAxis01 : ACP10AXIS_typ;
+	gAxis02 : ACP10AXIS_typ;
+	gAxis03 : ACP10AXIS_typ;
+	gAxis04 : ACP10AXIS_typ;
+	gAxis05 : ACP10AXIS_typ;
+	gAxis06 : ACP10AXIS_typ;
+	gAxis07 : ACP10AXIS_typ;
+	Motion : ARRAY[1..7] OF Axis;
+	idx : USINT := 0;
+END_VAR
+VAR CONSTANT
+	MAX_MOTION : USINT := 7;
+END_VAR
+VAR
+	Servo1_PriradenieSnimacov : MC_BR_SetHardwareInputs;
+	Servo2_PriradenieSnimacov : MC_BR_SetHardwareInputs;
+	Servo3_PriradenieSnimacov : MC_BR_SetHardwareInputs;
+	Servo4_PriradenieSnimacov : MC_BR_SetHardwareInputs;
+	Servo5_PriradenieSnimacov : MC_BR_SetHardwareInputs;
+	Servo6_PriradenieSnimacov : MC_BR_SetHardwareInputs;
+	Servo7_PriradenieSnimacov : MC_BR_SetHardwareInputs;
+END_VAR
+(************Riadenie FM menièov*********************)
+VAR
+	ErrorInfo : ARRAY[1..2] OF Error_Info_typ;
+END_VAR
+VAR CONSTANT
+	NR_OF_INVERTERS : USINT := 1;
+END_VAR
+VAR
+	FM_Menic : ARRAY[1..NR_OF_INVERTERS] OF Inverter_typ;
+END_VAR
+(*************Safety premenné*****************************)
+VAR
+	SafetyPLC_Nabehlo : BOOL;
+	BezpOkruhCS_Aktivovany : BOOL;
+	BezpOkruhOplotenia_Aktivovany : BOOL;
+	Reset_CS : BOOL;
+	Reset_Oplotenia : BOOL;
+	Reset_ZamkuTunelVystup : BOOL;
+	Stav_CS_Linky_Odblokovane : BOOL;
+	Stav_CS_RoboManipul_Odblokovane : BOOL;
+	Stav_CS_RobotOdliev_Odblokovane : BOOL;
+	Stav_CS_BZ1_Odblokovany : BOOL;
+	Stav_CS_BZ2_Odblokovany : BOOL;
+	Stav_CS_DokonStanica_Odblokovane : BOOL;
+	Stav_BZ1_Zamknuty : BOOL;
+	Stav_BZ2_Zamknuty : BOOL;
+	Stav_BZ3_Zamknuty : BOOL;
+	Zamkni_BZ1 : BOOL;
+	Zamkni_BZ2 : BOOL;
+	Zamkni_BZ3 : BOOL;
+	RezimServis : BOOL;
+END_VAR
+(*****************Alarmy*************************)
+VAR
+	Alarmy : ARRAY[0..100] OF BOOL;
+	NastalaPorucha : BOOL;
+	ZobrazSymbolAlarmu : BOOL;
+	PotvrdenieAlarmov : BOOL;
+	PoruchaVstupManipulator : BOOL;
+	PoruchaOddelovaca : BOOL;
+	PoruchaOtocnyStol : BOOL;
+	PoruchaCentrifugy1 : BOOL;
+	PoruchaCentrifugy2 : BOOL;
+	PoruchaIndukcnehoOhrevu : BOOL;
+	PoruchaPeceNaHlinik : BOOL;
+	PoruchaChladiacehoTunela : BOOL;
+	PoruchaVstupuChladiacehoTunela : BOOL;
+	PoruchaRobotOdlievania : BOOL;
+	PoruchaRobotManipulacie : BOOL;
+	VypnutieHukacky : BOOL;
+END_VAR
+(***********Meranie výšky balíka**************)
+VAR
+	Skalovanie_Centrifuga1_VR1 : LCRScal;
+	Skalovanie_Centrifuga1_VR2 : LCRScal;
+	Skalovanie_Centrifuga2_VR1 : LCRScal;
+	Skalovanie_Centrifuga2_VR2 : LCRScal;
+END_VAR
+VAR RETAIN
+	Centrifuga1_VR1_30_NamerVyska : REAL;
+	Centrifuga1_VR1_70_NamerVyska : REAL;
+	Centrifuga1_VR2_30_NamerVyska : REAL;
+	Centrifuga1_VR2_70_NamerVyska : REAL;
+	Centrifuga2_VR1_30_NamerVyska : REAL;
+	Centrifuga2_VR1_70_NamerVyska : REAL;
+	Centrifuga2_VR2_30_NamerVyska : REAL;
+	Centrifuga2_VR2_70_NamerVyska : REAL;
+END_VAR
+VAR
+	Centrifuga1_VR1_30_ZapisHodnotu : BOOL;
+	Centrifuga1_VR1_70_ZapisHodnotu : BOOL;
+	Centrifuga1_VR2_30_ZapisHodnotu : BOOL;
+	Centrifuga1_VR2_70_ZapisHodnotu : BOOL;
+	Centrifuga2_VR1_30_ZapisHodnotu : BOOL;
+	Centrifuga2_VR1_70_ZapisHodnotu : BOOL;
+	Centrifuga2_VR2_30_ZapisHodnotu : BOOL;
+	Centrifuga2_VR2_70_ZapisHodnotu : BOOL;
+END_VAR
+(************PremenneTaktime*****************)
+VAR
+	TaktTime_Pole : ARRAY[0..25] OF TIME;
+	TaktTime_VyratajPriemer : BOOL;
+	TaktTime_Index : USINT;
+	TaktTime_VyratanyPriemernyCas : TIME;
+	TaktTime_ZratanePole : TIME;
+	TaktTime_Cyklu : TIME;
+	TaktTime_Cyklu_REAL : REAL;
+	TaktTime_RataniePriemeru_ON : BOOL;
+END_VAR
+(************Všeobecné premenné************)
+VAR RETAIN
+	TeplotaHlinika_HornyLimit : REAL;
+	TeplotaHlinika_SpodnyLimit : REAL;
+END_VAR
+VAR
+	TeplotaHlinika_MimoRozsah : BOOL;
+	PocetVyrobenychKusov_Smena : UDINT;
+	PocetVyrobenychKusov_Model : UDINT;
+	ResetPoctuVyrobenychKusov_Smena : BOOL;
+	ResetPoctuVyrobenychKusov_Model : BOOL;
+	TaktTimeLinky : REAL;
+	TEST : BOOL;
+	IndukcnyOhrev_StavPreruseny : BOOL;
+	IndukcnyOhrev_Dohrievanie : BOOL;
+	Zariadenie_Automat : BOOL;
+	Zariadenie_Manual : BOOL;
+	Zariadenie_Reset : BOOL;
+	Zariadenie_PoINIT : BOOL;
+	Zariadenie_KoniecVyroby : BOOL;
+	Zariadenie_KoniecCyklu : BOOL;
+	Zariadenie_UkoncenieModelu : BOOL;
+	Zariadenie_StavAutomat : BOOL;
+	Zariadenie_StavManual : BOOL;
+	Zariadenie_StavPoINIT : BOOL;
+	Zariadenie_Pauza : BOOL;
+	Stol_KomunikaciaOK : BOOL;
+	Centrifuga1_KomunikaciaOK : BOOL;
+	Centrifuga2_KomunikaciaOK : BOOL;
+	Tunel_KomunikaciaOK : BOOL;
+	Zariadenie_HomingOK : BOOL;
+	Zariadenie_HOME : BOOL;
+	BlikanieTlacitkaStartZariadenia : BOOL;
+	Pec_TeplotaHlinika : REAL;
+	Pec_TeplotaPece : REAL;
+	Pec_PozadovanaTeplotaPece : REAL;
+	Pec_StavHoraka : UINT;
+	IndukcnyOhrevStart : BOOL;
+	VolbaProgramuOK : BOOL;
+	PrebiehaUkoncenieVyroby : BOOL;
+	PrebiehaKoniecCyklu : BOOL;
+	StavLinky : USINT;
+	Stav_ServaREADY : BOOL;
+	SC_OtocnyStol : SequenceControlTyp;
+	Stol_Automat : BOOL;
+	Stol_Manual : BOOL;
+	Stol_Reset : BOOL;
+	Stol_PoINIT : BOOL;
+	Stol_KoniecVyroby : BOOL;
+	Stol_KoniecCyklu : BOOL;
+	Stol_PrebehloOtocenie : BOOL;
+	Stol_TS_VnutornyOkruhKonstanta : INT;
+	Stol_TS_VonkajsiOkruhKonstanta : INT;
+	Stol_TS_VnutorOkruhKonstStupne : INT;
+	Stol_TS_VonkajOkruhKonstStupne : INT;
+	Stol_TS_VnutorOkruhAktualStupne : REAL;
+	Stol_TS_VonkajOkruhAktualStupne : REAL;
+	Stol_PocetOtoceni : USINT;
+	Stol_CakaNaVlozenieRotorov : BOOL;
+	Stol_CasDohrievaniaKusov : TIME;
+	SC_Oddelovac : SequenceControlTyp;
+	Oddelovac_Automat : BOOL;
+	Oddelovac_Manual : BOOL;
+	Oddelovac_Reset : BOOL;
+	Oddelovac_PoINIT : BOOL;
+	Oddelovac_KoniecVyroby : BOOL;
+	Oddelovac_KoniecCyklu : BOOL;
+	SC_Stol_Manipulator : SequenceControlTyp;
+	Stol_Manipulator_Automat : BOOL;
+	Stol_Manipulator_Manual : BOOL;
+	Stol_Manipulator_Reset : BOOL;
+	Stol_Manipulator_PoINIT : BOOL;
+	Stol_Manipulator_KoniecVyroby : BOOL;
+	Stol_Manipulator_KoniecCyklu : BOOL;
+	Stol_BlokaciaOtacania : BOOL;
+	Stol_Manipulator_RychlJoggingu : REAL;
+	Stol_Manipulator_RozbehRampa : REAL;
+	Stol_Manipulator_DobehRampa : REAL;
+	Stol_Manipulator_RychlostPolohov : REAL;
+	Stol_Manipulator_Rychlost_MM_s : REAL; (*v mm/s*)
+	Stol_Manipulator_RychlJog_MM_s : REAL; (*v mm/s*)
+	Stol_Manipulator_HomingOK : BOOL;
+	Stol_Manipulator_HOME : BOOL;
+	Stol_Manipulator_AktualPozMM : REAL;
+	Stol_Manipulator_ZadanaPozMM : REAL;
+	Stol_Manipulator_PrebiehaHoming : BOOL;
+	Stol_Manipulator_PojazdVPOZICI : BOOL;
+	Stol_Manipulator_CakaNaOtocenie : BOOL;
+	Stol_Manipulator_StartVyroby : BOOL;
+	Stol_Manipulator_VyrobaPrebieha : BOOL;
+	Stol_Manipulator_UkoncenieVyroby : BOOL;
+	Stol_Manipulator_VlozeneKusy : USINT;
+	Stol_VnutorOkruh_TeplotaRotoraOK : BOOL;
+	Stol_VonkajOkruh_TeplotaRotoraOK : BOOL;
+	Stol_VnutorOkruh_DohrejKus : BOOL;
+	Stol_VonkajOkruh_DohrejKus : BOOL;
+	SC_Centrifuga1 : SequenceControlTyp;
+END_VAR
+VAR RETAIN
+	Centrifuga1_OFF : BOOL;
+END_VAR
+VAR
+	Centrifuga1_Automat : BOOL;
+	Centrifuga1_Manual : BOOL;
+	Centrifuga1_Reset : BOOL;
+	Centrifuga1_PoINIT : BOOL;
+	Centrifuga1_KoniecVyroby : BOOL;
+	Centrifuga1_KoniecCyklu : BOOL;
+	Centrifuga1_Otacanie_HomingOK : BOOL;
+	Centrifuga1_Otacanie_HOME_Senzor : BOOL;
+	Centrifuga1_Otacanie_HOME_Direct : BOOL;
+	Centrifuga1_Otacanie_AktualPozST : REAL;
+	Centrifuga1_Zdvih1_HomingOK : BOOL;
+	Centrifuga1_Zdvih2_HomingOK : BOOL;
+	Centrifuga1_Zdvih1_HOME : BOOL;
+	Centrifuga1_Zdvih2_HOME : BOOL;
+	Centrifuga1_Zdvih1_AktualPozMM : REAL;
+	Centrifuga1_Zdvih2_AktualPozMM : REAL;
+	Centrifuga1_Otacanie_PocetOtacok : REAL;
+	Centrifuga1_Zdvih1_ZadanaPozMM : REAL;
+	Centrifuga1_Zdvih2_ZadanaPozMM : REAL;
+	Centrifuga1_Otacanie_PrebHoming : BOOL;
+	Centrifuga1_Zdvih1_PrebHoming : BOOL;
+	Centrifuga1_Zdvih2_PrebHoming : BOOL;
+	Centrifuga1_OtacanieVPOZICI : BOOL;
+	Centrifuga1_Zdvih1_VPOZICI : BOOL;
+	Centrifuga1_Zdvih2_VPOZICI : BOOL;
+	Centrifuga1_PrebiehaPritlak : BOOL;
+	Centrifuga1_Otacanie_RychlJogg : REAL; (*V otáèkach za minútu*)
+	Centrifuga1_Otac_PracovRychlost : REAL; (*V otáèkach za minutu*)
+	Centrifuga1_Otac_StartRychlost : REAL; (*V otáèkach za minutu*)
+	Centrifuga1_Otac_AktualneOtacMin : REAL; (*V otáèkach za minútu*)
+	Centrifuga1_Zdvih1_RychlJogg : REAL;
+	Centrifuga1_Zdvih1_RychlJog_MM_s : REAL; (*v mm/s*)
+	Centrifuga1_Zdvih1_RychlPolohov : REAL;
+	Centrifuga1_Zdvih1_RychlPol_MM_s : REAL; (*v mm/s*)
+	Centrifuga1_Zdvih1_RychlMoment : REAL;
+	Centrifuga1_Zdvih1_RychlMom_MM_s : REAL; (*v mm/s*)
+	Centrifuga1_Zdvih1_MomentPritlak : REAL;
+	Centrifuga1_Zdvih2_RychlJogg : REAL;
+	Centrifuga1_Zdvih2_RychlJog_MM_s : REAL; (*v mm/s*)
+	Centrifuga1_Zdvih2_RychlPolohov : REAL;
+	Centrifuga1_Zdvih2_RychlPol_MM_s : REAL; (*v mm/s*)
+	Centrifuga1_Zdvih2_RychlMoment : REAL;
+	Centrifuga1_Zdvih2_RychlMom_MM_s : REAL; (*v mm/s*)
+	Centrifuga1_Zdvih2_MomentPritlak : REAL;
+	Centrifuga1_Zdvih1_KonstAnalog : REAL;
+	Centrifuga1_Zdvih1_KonstVaha : REAL;
+	Centrifuga1_Zdvih1_AktualnaVaha : REAL;
+	Centrifuga1_Zdvih1_TenzomREAL : REAL;
+	Centrifuga1_Zdvih2_KonstAnalog : REAL;
+	Centrifuga1_Zdvih2_KonstVaha : REAL;
+	Centrifuga1_Zdvih2_AktualnaVaha : REAL;
+	Centrifuga1_Zdvih2_TenzomREAL : REAL;
+	Centrifuga1_Kusy_v_Centrifuge : BOOL;
+	Centrifuga1_VyratanyPocetOtacok : REAL;
+	Centrifuga1_CasOtacaniaTIME : TIME;
+	Centrifuga1_VR1_NamVyskaBalika : REAL;
+	Centrifuga1_VR2_NamVyskaBalika : REAL;
+	Centrifuga1_StavPrazdna : BOOL;
+	Centrifuga1_VR1_VyskaBalika : Analog := (0); (*Centrifuga 1 - vreteno 1*)
+	Centrifuga1_VR2_VyskaBalika : Analog := (0); (*Centrifuga 1 - vreteno 2*)
+	SC_Centrifuga2 : SequenceControlTyp;
+END_VAR
+VAR RETAIN
+	Centrifuga2_OFF : BOOL;
+END_VAR
+VAR
+	Centrifuga2_Automat : BOOL;
+	Centrifuga2_Manual : BOOL;
+	Centrifuga2_Reset : BOOL;
+	Centrifuga2_PoINIT : BOOL;
+	Centrifuga2_KoniecVyroby : BOOL;
+	Centrifuga2_KoniecCyklu : BOOL;
+	Centrifuga2_Otacanie_HomingOK : BOOL;
+	Centrifuga2_Otacanie_HOME_Senzor : BOOL;
+	Centrifuga2_Otacanie_HOME_Direct : BOOL;
+	Centrifuga2_Otacanie_AktualPozST : REAL;
+	Centrifuga2_Zdvih1_HomingOK : BOOL;
+	Centrifuga2_Zdvih2_HomingOK : BOOL;
+	Centrifuga2_Zdvih1_HOME : BOOL;
+	Centrifuga2_Zdvih2_HOME : BOOL;
+	Centrifuga2_Zdvih1_AktualPozMM : REAL;
+	Centrifuga2_Zdvih2_AktualPozMM : REAL;
+	Centrifuga2_Otacanie_PocetOtacok : REAL;
+	Centrifuga2_Zdvih1_ZadanaPozMM : REAL;
+	Centrifuga2_Zdvih2_ZadanaPozMM : REAL;
+	Centrifuga2_Otacanie_PrebHoming : BOOL;
+	Centrifuga2_Zdvih1_PrebHoming : BOOL;
+	Centrifuga2_Zdvih2_PrebHoming : BOOL;
+	Centrifuga2_OtacanieVPOZICI : BOOL;
+	Centrifuga2_Zdvih1_VPOZICI : BOOL;
+	Centrifuga2_Zdvih2_VPOZICI : BOOL;
+	Centrifuga2_PrebiehaPritlak : BOOL;
+	Centrifuga2_Otacanie_RychlJogg : REAL;
+	Centrifuga2_Otac_PracovRychlost : REAL; (*V otáèkach za minutu*)
+	Centrifuga2_Otac_StartRychlost : REAL; (*V otáèkach za minutu*)
+	Centrifuga2_Otacanie_RychlVeloc : REAL; (*V otáèkach za minútu*)
+	Centrifuga2_Otac_AktualneOtacMin : REAL;
+	Centrifuga2_Zdvih1_RychlJogg : REAL;
+	Centrifuga2_Zdvih1_RychlJog_MM_s : REAL; (*v mm/s*)
+	Centrifuga2_Zdvih1_RychlPolohov : REAL;
+	Centrifuga2_Zdvih1_RychlPol_MM_s : REAL; (*v mm/s*)
+	Centrifuga2_Zdvih1_RychlMoment : REAL;
+	Centrifuga2_Zdvih1_RychlMom_MM_s : REAL; (*v mm/s*)
+	Centrifuga2_Zdvih1_MomentPritlak : REAL;
+	Centrifuga2_Zdvih2_RychlJogg : REAL;
+	Centrifuga2_Zdvih2_RychlJog_MM_s : REAL; (*v mm/s*)
+	Centrifuga2_Zdvih2_RychlPolohov : REAL;
+	Centrifuga2_Zdvih2_RychlPol_MM_s : REAL; (*v mm/s*)
+	Centrifuga2_Zdvih2_RychlMoment : REAL;
+	Centrifuga2_Zdvih2_RychlMom_MM_s : REAL; (*v mm/s*)
+	Centrifuga2_Zdvih2_MomentPritlak : REAL;
+	Centrifuga2_Zdvih1_KonstAnalog : REAL;
+	Centrifuga2_Zdvih1_KonstVaha : REAL;
+	Centrifuga2_Zdvih1_AktualnaVaha : REAL;
+	Centrifuga2_Zdvih1_TenzomREAL : REAL;
+	Centrifuga2_Zdvih2_KonstAnalog : REAL;
+	Centrifuga2_Zdvih2_KonstVaha : REAL;
+	Centrifuga2_Zdvih2_AktualnaVaha : REAL;
+	Centrifuga2_Zdvih2_TenzomREAL : REAL;
+	Centrifuga2_Kusy_v_Centrifuge : BOOL;
+	Centrifuga2_VyratanyPocetOtacok : REAL;
+	Centrifuga2_CasOtacaniaTIME : TIME;
+	Centrifuga2_VR1_NamVyskaBalika : REAL;
+	Centrifuga2_VR2_NamVyskaBalika : REAL;
+	Centrifuga2_StavPrazdna : BOOL;
+	Centrifuga2_VR1_VyskaBalika : Analog := (0); (*Centrifuga 2 - vreteno 1*)
+	Centrifuga2_VR2_VyskaBalika : Analog := (0); (*Centrifuga 2 - vreteno 2*)
+	SC_Tunel : SequenceControlTyp;
+	Tunel_Automat : BOOL;
+	Tunel_Manual : BOOL;
+	Tunel_Reset : BOOL;
+	Tunel_PoINIT : BOOL;
+	Tunel_KoniecVyroby : BOOL;
+	Tunel_KoniecCyklu : BOOL;
+	Tunel_READY : BOOL;
+	Tunel_Vyprazdnenie : BOOL;
+	Tunel_DopravnikSaPOSUNUL : BOOL;
+	Tunel_BlokaciaDopravnika : BOOL;
+	Tunel_Dopravnik_RychlPolohovHz : INT;
+	Tunel_Dopravnik_RychlJogginguHz : INT;
+	PocetKusovVtuneli : USINT;
+	Tunel_Stav_VystupnaTratPlna : BOOL;
+END_VAR
+VAR RETAIN
+	Tunel_PocetKusovNaListe : USINT;
+END_VAR
+VAR
+	Tunel_PocetKusovNaListe_8 : BOOL;
+	Tunel_PocetKusovNaListe_10 : BOOL;
+	SC_TunelVstup : SequenceControlTyp;
+	TunelVstup_Automat : BOOL;
+	TunelVstup_Manual : BOOL;
+	TunelVstup_Reset : BOOL;
+	TunelVstup_Vyprazdnenie : BOOL;
+	TunelVstup_PoINIT : BOOL;
+	TunelVstup_KoniecVyroby : BOOL;
+	TunelVstup_KoniecCyklu : BOOL;
+	TunelVstup_KontrolaNaliatkovON : BOOL;
+	TunelVstup_PocetMerNaliatkovOFF : USINT;
+	SC_RobotManipulacie : SequenceControlTyp;
+	RobotManipulacie_Automat : BOOL;
+	RobotManipulacie_Manual : BOOL;
+	RobotManipulacie_Reset : BOOL;
+	RobotManipulacie_PoINIT : BOOL;
+	RobotManipulacie_KoniecVyroby : BOOL;
+	RobotManipulacie_KoniecCyklu : BOOL;
+	RobotManipulacie_LinkaPripravena : BOOL;
+	RobotManipulacie_GriperOtvoreny : BOOL;
+	RobotManipulacie_GriperZatvoreny : BOOL;
+	RobotManipulacie_Odparkovanie : BOOL;
+	RobotManipulacie_NaliatkyOK : BOOL;
+	SC_RobotOdlievania : SequenceControlTyp;
+	RobotOdlievania_Automat : BOOL;
+	RobotOdlievania_Manual : BOOL;
+	RobotOdlievania_Reset : BOOL;
+	RobotOdlievania_PoINIT : BOOL;
+	RobotOdlievania_KoniecVyroby : BOOL;
+	RobotOdlievania_KoniecCyklu : BOOL;
+	RobotOdlievania_Odparkovanie : BOOL;
+	RobotOdlievanie_Servis : BOOL;
+	RobotOdlievanie_AutomatPreplach : BOOL;
+	RobotOdlievanie_StavPreplachnuty : BOOL;
+	RobotOdlievanie_NahriatieLyzic : BOOL;
+	RobotOdlievanie_PreplachniLyzice : BOOL;
+	RobotOdlievanie_NadCentrifugamy : BOOL;
+	RobotOdlievanie_CasDoPreplachu : TIME;
+END_VAR
+(*************Vizualizacia***********************)
+VAR
+	CisloAktualnejObrazovky : USINT;
+	CisloZadanejObrazovky : USINT;
+	Slider : UINT;
+END_VAR
+VAR CONSTANT
+	RozsahBargrafu : UINT := 1000;
+END_VAR
+VAR
+	TP_ZobrazHlasenieResetZariadenia : USINT;
+	TP_ZobrazHlasenieZamkyVyblokov : USINT;
+	TP_ZobrazTlacitkoSetup : USINT;
+	TP_ZobrazTlacitkoAlarmy : USINT;
+	TP_ZobrazTlacitkoHome : USINT;
+	TP_ZobrazTlacitkoSpat : USINT;
+	TP_ZobrazPopUp_Tunel : USINT;
+	TP_ZobrazPopUp_TunelVstup : USINT;
+	TP_ZobrazPopUp_Stol : USINT;
+	TP_ZobrazPopUp_Oddelovac : USINT;
+	TP_ZobrazPopUp_Manipulator : USINT;
+	TP_ZobrazPopUp_Centrifuga1 : USINT;
+	TP_ZobrazPopUp_Centrifuga2 : USINT;
+	TP_ZobrazPopUp_RobotOdliev : USINT;
+	TP_ZobrazPopUp_RobotManip : USINT;
+	TP_ZobrazPopUp_NezvolenyProgram : USINT;
+	TP_ZobrazPopUp_TratZaTunelomPlna : USINT;
+	TP_ZobrazPopUp_IndukOhrevVypnut : USINT;
+	TP_ZobrazPopUp_RobOdlievVypnut : USINT;
+	TP_ZobrazPopUp_RobManipVypnut : USINT;
+	TP_ZobrazPopUp_TeplotaHlinikaNG : USINT;
+	TP_ZobrazPopUp_NizkeNaliatky : USINT;
+	TP_ZobrazPopUp_KontrolaKrytuPece : USINT;
+	TP_ZobrazPopUp_KontrolaCentrifug : USINT;
+	TP_ZobrazPopUp_OdoberKrytPece : USINT;
+	TP_ZobrazPopUp_NizkaHladina : USINT;
+	TP_ZobrazPopUp_KritickaHladina : USINT;
+	TP_ZobrazPopUp_DoplnHlinik : USINT;
+	TP_ZobrazHlasVyskaBalikaCentrif1 : USINT;
+	TP_ZobrazHlasVyskaBalikaCentrif2 : USINT;
+	TP_ZobrazPopUp_IndOhrevPorucha : USINT;
+	TP_ModraLEDResetCS : USINT;
+	TP_ModraLEDResetOplotenia : USINT;
+END_VAR
+VAR RETAIN
+	TP_Manipul_PoziciaOdoberania : REAL; (*v mm*)
+	TP_Manipul_PozVkladaniaVnutorna : REAL; (*v mm*)
+	TP_Manipul_PozVkladaniaVonkajsia : REAL; (*v mm*)
+	TP_Manipul_RychlostPolohovania : REAL; (*v mm/s*)
+	TP_Manipul_RychlostJogg : REAL; (*v mm/s*)
+	TP_Centrifuga1_Zdvih_PozZdvihu : REAL; (*v mm*)
+	TP_Centrifuga1_Zdvih_RychlZdvihu : REAL; (*v mm/s*)
+	TP_Centrifuga1_Zdvih_MomentPritl : REAL; (*v Nm*)
+	TP_Centrifuga1_Zdvih_RychlPritl : REAL; (*v mm/s*)
+	TP_Centrifuga1_PocetOtacok : REAL;
+	TP_Centrifuga1_RychlostOtacania : REAL; (*v ot/min*)
+	TP_Centrifuga1_OtackyNalievania : REAL; (*v ot/min*)
+	TP_Centrifuga1_AccRampOtacania : REAL; (*v ot/s*)
+	TP_Centrifuga1_RychlOtacaniaJogg : REAL; (*v ot/min*)
+	TP_Centrifuga1_RychlostZdvihJogg : REAL; (*v mm/s*)
+	TP_Centrifuga1_CasOtacania_s : REAL; (*v s*)
+	TP_Centrifuga2_Zdvih_PozZdvihu : REAL; (*v mm*)
+	TP_Centrifuga2_Zdvih_RychlZdvihu : REAL; (*v mm/s*)
+	TP_Centrifuga2_Zdvih_MomentPritl : REAL; (*v Nm*)
+	TP_Centrifuga2_Zdvih_RychlPritl : REAL; (*v mm/s*)
+	TP_Centrifuga2_PocetOtacok : REAL;
+	TP_Centrifuga2_RychlostOtacania : REAL; (*v ot/min*)
+	TP_Centrifuga2_OtackyNalievania : REAL; (*v ot/min*)
+	TP_Centrifuga2_AccRampOtacania : REAL; (*v ot/s*)
+	TP_Centrifuga2_RychlOtacaniaJogg : REAL; (*v ot/min*)
+	TP_Centrifuga2_RychlostZdvihJogg : REAL; (*v mm/s*)
+	TP_Centrifuga2_CasOtacania_s : REAL; (*v s*)
+	TP_Tunel_RychlostDopravnika : INT; (*v Hz*)
+	TP_Tunel_RychlostDopravnikaJogg : INT; (*v Hz*)
+	TP_Tunel_ZastavenieDopravnika : REAL; (*v s*)
+	TP_Stol_HornaHranicaTeplotyOK : REAL; (*v °C*)
+	TP_Stol_SpodnaHranicaTeplotyOK : REAL; (*v °C*)
+	TP_Stol_SpodnaHranicaDohrievania : REAL; (*v °C*)
+	TP_Stol_CasDohrievaniaKusov : REAL; (*v s*)
+	TP_VykonIndukcnehoOhrevu : USINT; (*v %*)
+END_VAR
+VAR
+	TP_ZamkniTlacStartAutomat : USINT;
+	TP_ZamkniTlacUkoncenieVyroby : USINT;
+	TP_ZamkniTlacKoniecCyklu : USINT;
+	TP_ZamkniTlacitkoHomingServ : USINT;
+	TP_ZamkniTlacitkoOvladanieZamkov : USINT;
+	TP_ZamkniTlacitkoRezimManual : USINT;
+	TP_ZamkniTlacitkoRezimAutomat : USINT;
+	TP_ZamkniTlacitkoRR_Stol : USINT;
+	TP_ZamkniTlacitkoRR_Centrifuga1 : USINT;
+	TP_ZamkniTlacitkoRR_Centrifuga2 : USINT;
+	TP_ZamkniTlacitkoRR_Tunel : USINT;
+	TP_ZamkniTlacitkoRR_RobotManip : USINT;
+	TP_ZamkniTlacitkoZamokRobOdliev : USINT;
+	TP_ZamkniTlacitkoZamokRobManip : USINT;
+	TP_ZamkniTlacitkoZamokTunel : USINT;
+	TP_ZamkniTlacitkoPojazdManipul : USINT;
+	TP_ZamkniTlacitkoOtacaniaStola : USINT;
+	TP_ZamkniTlacitkoTunelDoprVpred : USINT;
+	TP_ZamkniTlacitkoTunelDoprVzad : USINT;
+	TP_ZamkniTlacitkoTunelVstupOdsuv : USINT;
+	TP_ZamkniTlacitkoTunelVystOdsuv : USINT;
+	TP_ZamkniTlacitkoCentr1_Otacanie : USINT;
+	TP_ZamkniTlacitkoCentr2_Otacanie : USINT;
+	TP_ZamkniTlacitkoCentr1_InitOtac : USINT;
+	TP_ZamkniTlacitkoCentr2_InitOtac : USINT;
+	TP_ZamkniTlacitkoCentr1_ZdvihVR1 : USINT;
+	TP_ZamkniTlacitkoCentr1_ZdvihVR2 : USINT;
+	TP_ZamkniTlacitkoCentr2_ZdvihVR1 : USINT;
+	TP_ZamkniTlacitkoCentr2_ZdvihVR2 : USINT;
+	TP_ZamkniTlacitkoIndukOhrevu : USINT;
+	TP_ZamkniTlacitkoRobOdlievParkov : USINT;
+	TP_ZamkniTlacitkoRobOdlievOhrev : USINT;
+	TP_ZamkniTlacitkoRobOdlievPrepl : USINT;
+	TP_ZamkniTlacitkoRobManipParkov : USINT;
+	TP_ZamkniTlacitkoTunelVyprazdni : USINT;
+	TP_ZamkniTlacitkoServis : USINT;
+	TP_ZamkniTlacitkoSetup : USINT;
+	TP_ZamkniTlacitkoVolbaProgramu : USINT;
+	TP_ZamkniTlacitkaVolbyVyroby : USINT;
+	TP_Zariadenie_TaktTime : REAL;
+	TP_ZamkniParametreUrovenOperator : USINT;
+	TP_ZamkniParametreUrovenServisak : USINT;
+	TP_ZamkniTlacitkoOFF_Centrifuga1 : USINT;
+	TP_ZamkniTlacitkoOFF_Centrifuga2 : USINT;
+	TP_ZamkniTlacitkaPocetKusovVtun : USINT;
+	TP_OtvorCentrifugu_1 : BOOL;
+	TP_OtvorCentrifugu_2 : BOOL;
+	TP_TaktTimeCyklu : REAL;
+END_VAR
+VAR RETAIN
+	TP_RobotOdliev_CasDoPreplachu : REAL; (*v sekundach*)
+END_VAR
+VAR
+	StavPrebiehaOtvorenieCentrif_1 : BOOL;
+	StavPrebiehaOtvorenieCentrif_2 : BOOL;
+	TP_ZamkniTlacitkoOtvorCentrif_1 : USINT;
+	TP_ZamkniTlacitkoOtvorCentrif_2 : USINT;
+	StavOddelovaca : USINT;
+	StavManipulatora : USINT;
+	StavStola : USINT;
+	StavCentrifugy_1 : USINT;
+	StavCentrifugy_2 : USINT;
+	StavTunela : USINT;
+	StavTunelaVstup : USINT;
+	StavRobotaOdlievania : USINT;
+	StavRobotaManipulacie : USINT;
+	StavPece : USINT;
+	StavIndukcnehoOhrevu : USINT;
+	StavZamkuRobotManipulacie : USINT;
+	StavZamkuRobotOdlievania : USINT;
+	StavZamkuVystupTunela : USINT;
+	TeplotaHlinika_FarbaGrafu : USINT;
+	OtackyCentrifugy1_FarbaGrafu : USINT;
+	OtackyCentrifugy2_FarbaGrafu : USINT;
+	TeplRotoraVnutOkruh_FarbaGrafu : USINT;
+	TeplRotoraVonkOkruh_FarbaGrafu : USINT;
+END_VAR
+(*****Komunikacia Robot Odlievania********)
+VAR
+	RobotOdliev_Centri1_NaberHlinik : BOOL;
+	RobotOdliev_Centri1_NalejHlinik : BOOL;
+	RobotOdliev_Centri2_NaberHlinik : BOOL;
+	RobotOdliev_Centri2_NalejHlinik : BOOL;
+	RobotOdliev_TeplotaHlinikaOK : BOOL;
+	RobotOdliev_ChodNadCentrifugy : BOOL;
+	RobotOdliev_Inputs_0 : UDINT;
+	RobotOdliev_Inputs_1 : UDINT;
+	RobotOdliev_Inputs_2 : UDINT;
+	RobotOdliev_Inputs_3 : UDINT;
+	RobotOdliev_Outputs_0 : UDINT;
+	RobotOdliev_Outputs_1 : UDINT;
+	RobotOdliev_Outputs_2 : UDINT;
+	RobotOdliev_Outputs_3 : UDINT;
+	RobotOdliev_Outputs_4 : UDINT;
+	RobotOdliev_Outputs_5 : UDINT;
+	RobotOdliev_Stav_MotoryON : BOOL;
+	RobotOdliev_Stav_MotoryOFF : BOOL;
+	RobotOdliev_Stav_ProgramRUN : BOOL;
+	RobotOdliev_Stav_RezimAUTOMAT : BOOL;
+	RobotOdliev_Stav_Odparkovany : BOOL;
+	RobotOdliev_Stav_RobotCS : BOOL;
+	RobotOdliev_Stav_Porucha : BOOL;
+	RobotOdliev_Stav_KritickaHladina : BOOL;
+	RobotOdliev_Stav_DoplnHlinik : BOOL;
+	RobotOdliev_Stav_NizkaHladina : BOOL;
+	RobotOdliev_Stav_Preplachnuty : BOOL;
+	RobotOdliev_Stav_PozNadCentrifug : BOOL;
+	RobotOdliev_UkonciVyrobu : BOOL;
+	RobotOdliev_PP_na_Main : BOOL;
+	RobotOdliev_ZapniMotory : BOOL;
+	RobotOdliev_VypniMotory : BOOL;
+	RobotOdliev_StartProgramu : BOOL;
+	RobotOdliev_StartProgramuMain : BOOL;
+	RobotOdliev_StopProgramu : BOOL;
+	RobotOdliev_ChodDoServisPozicie : BOOL;
+	RobotOdliev_ChodDoNahriatiaLyzic : BOOL;
+	RobotOdliev_ChodDoPreplachuLyzic : BOOL;
+	RobotOdliev_ResetCS : BOOL;
+	RobotOdliev_Stav_NalievamCentr1 : BOOL;
+	RobotOdliev_Stav_NalievamCentr2 : BOOL;
+	RobotOdliev_Stav_PripNaliatCent1 : BOOL;
+	RobotOdliev_Stav_PripNaliatCent2 : BOOL;
+	RobotOdliev_Stav_ServisnaPozicia : BOOL;
+	RobotOdliev_CisloProgramu : UDINT;
+	RobotOdliev_VylejHlinikCentr1 : BOOL;
+	RobotOdliev_VylejHlinikCentr2 : BOOL;
+	RobotOdliev_RobotCaka : BOOL;
+END_VAR
+(****Komunikacia Robot Manipulacie********)
+VAR
+	RobotMan_Stol_OdoberKusy : BOOL;
+	RobotMan_Stol_OdoberKusyNG : BOOL;
+	RobotMan_Stol_KusyOdobrate : BOOL;
+	RobotMan_Stol_BezpVzdialenost : BOOL;
+	RobotMan_Centrifug1_VlozKusy : BOOL;
+	RobotMan_Centrifug1_KusyVlozene : BOOL;
+	RobotMan_Centrifug1_OdoberKusy : BOOL;
+	RobotMan_Centrifug1_DoCentrifugy : BOOL;
+	RobotMan_Centrifug1_KusyOdobrate : BOOL;
+	RobotMan_Centrifug1_BezpVzdialen : BOOL;
+	RobotMan_Centrifug2_VlozKusy : BOOL;
+	RobotMan_Centrifug2_KusyVlozene : BOOL;
+	RobotMan_Centrifug2_OdoberKusy : BOOL;
+	RobotMan_Centrifug2_BezpVzdialen : BOOL;
+	RobotMan_Centrifug2_DoCentrifugy : BOOL;
+	RobotMan_Centrifug2_KusyOdobrate : BOOL;
+	RobotMan_Tunel_VlozKusy : BOOL;
+	RobotMan_Tunel_KusyVlozene : BOOL;
+	RobotMan_Tunel_KusyNGVlozene : BOOL;
+	RobotMan_Tunel_BezpVzdialenost : BOOL;
+	RobotMan_Tunel_KusyNG_NaMerani : BOOL;
+	RobotMan_PripravaNaCentrifugu1 : BOOL;
+	RobotMan_PripravaNaCentrifugu2 : BOOL;
+	RobotMan_PripravaNaStol : BOOL;
+	RobotMan_MimoZonyNavratu : BOOL;
+	RobotMan_Inputs_0 : UDINT;
+	RobotMan_Inputs_1 : UDINT;
+	RobotMan_Inputs_2 : UDINT;
+	RobotMan_Inputs_3 : UDINT;
+	RobotMan_Outputs_0 : UDINT;
+	RobotMan_Outputs_1 : UDINT;
+	RobotMan_Outputs_2 : UDINT;
+	RobotMan_Outputs_3 : UDINT;
+	RobotMan_Stav_MotoryON : BOOL;
+	RobotMan_Stav_MotoryOFF : BOOL;
+	RobotMan_Stav_ProgramRUN : BOOL;
+	RobotMan_Stav_RezimAUTOMAT : BOOL;
+	RobotMan_Stav_Odparkovany : BOOL;
+	RobotMan_Stav_RobotCS : BOOL;
+	RobotMan_Stav_Porucha : BOOL;
+	RobotMan_Stav_VkladamDoCentrif1 : BOOL;
+	RobotMan_Stav_VkladamDoCentrif2 : BOOL;
+	RobotMan_Stav_PripravenyCentrif1 : BOOL;
+	RobotMan_Stav_PripravenyCentrif2 : BOOL;
+	RobotMan_Stav_VypadliKusy : BOOL;
+	RobotMan_Stav_PripravenyStol : BOOL;
+	RobotMan_Stav_ServisnaPozicia : BOOL;
+	RobotMan_UkonciVyrobu : BOOL;
+	RobotMan_PP_na_Main : BOOL;
+	RobotMan_ZapniMotory : BOOL;
+	RobotMan_VypniMotory : BOOL;
+	RobotMan_StartProgramu : BOOL;
+	RobotMan_StartProgramuMain : BOOL;
+	RobotMan_StopProgramu : BOOL;
+	RobotMan_ResetCS : BOOL;
+	RobotMan_CisloProgramu : UDINT;
+	RobotMan_VyskaBalika : UDINT;
+	RobotMan_ChodDoServisPozicie : BOOL;
+END_VAR
+(******Komunikácia indukèný ohrev********)
+VAR
+	Ohrev_Inputs_0 : USINT;
+	Ohrev_Inputs_1 : USINT;
+	Ohrev_Inputs_2 : USINT;
+	Ohrev_Inputs_3 : USINT;
+	Ohrev_Inputs_4 : USINT;
+	Ohrev_Inputs_5 : USINT;
+	Ohrev_Inputs_6 : USINT;
+	Ohrev_Inputs_7 : USINT;
+	Ohrev_Inputs_8 : USINT;
+	Ohrev_Inputs_9 : USINT;
+	Ohrev_Inputs_10 : USINT;
+	Ohrev_Inputs_11 : USINT;
+	Ohrev_Outputs_0 : USINT;
+	Ohrev_Outputs_1 : USINT;
+	Ohrev_Outputs_2 : USINT;
+	Ohrev_Outputs_3 : USINT;
+	Ohrev_Outputs_4 : USINT;
+	Ohrev_Outputs_5 : USINT;
+	Ohrev_Outputs_6 : USINT;
+	Ohrev_Outputs_7 : USINT;
+	Ohrev_Outputs_8 : USINT;
+	Ohrev_Outputs_9 : USINT;
+	Ohrev_Outputs_10 : USINT;
+	Ohrev_Outputs_11 : USINT;
+	Ohrev_Status_GeneratorBezi : BOOL;
+	Ohrev_PoruchaPrepetiaInduktora : BOOL;
+	Ohrev_PoruchaTranzistorov : BOOL;
+	Ohrev_PoruchaVysokaTeplotaMenica : BOOL;
+	Ohrev_PoruchaPrietoku : BOOL;
+	Ohrev_PoruchaVystupnehoPrudu : BOOL;
+	Ohrev_Status_LimitNapatia : BOOL;
+	Ohrev_Status_LimitPrudu : BOOL;
+	Ohrev_Status_LimitVykonu : BOOL;
+	Ohrev_Status_LimitFrekvencie : BOOL;
+	Ohrev_PoruchaTeplotyVody : BOOL;
+	Ohrev_PoruchaVysokaTeplotaIndukt : BOOL;
+	Ohrev_Status_VentilOtvoreny : BOOL;
+	Ohrev_Status_AktualnyVykon : USINT;
+	Ohrev_Status_AktualnaFrekvencia : USINT;
+	Ohrev_NastavenyVykon : USINT; (*0 - 100%*)
+END_VAR
+(*********ModBus komunikácia medzi PLC***)
+VAR
+	ModBus_Input1 : UINT;
+	ModBus_Input2 : UINT;
+	ModBus_Input3 : UINT;
+	ModBus_Input4 : UINT;
+	ModBus_Input5 : UINT;
+	ModBus_Output1 : UINT;
+	ModBus_Output2 : UINT;
+	ModBus_Output3 : UINT;
+	ModBus_Output4 : UINT;
+	ModBus_Output5 : UINT;
+END_VAR

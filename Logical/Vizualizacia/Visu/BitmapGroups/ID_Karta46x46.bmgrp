@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.3.8.58 SP"?>
+<BitmapGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="ID_Karta46x46">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="12"/>
+  <Property Name="Translate" Value="False"/>
+  <BitmapLayer LanguageId="neutral">
+    <BitmapRef ID="2263" Value="None"/>
+    <BitmapRef ID="2264" Value="Source[local].Bitmap[ID_Cards46x46]"/>
+  </BitmapLayer>
+  <IndexMap>
+    <Index ID="2263" Value="0"/>
+    <Index ID="2264" Value="1"/>
+  </IndexMap>
+</BitmapGroup>

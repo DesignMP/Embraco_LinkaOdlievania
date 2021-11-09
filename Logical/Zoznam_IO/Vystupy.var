@@ -1,0 +1,63 @@
+(***********************AB7************************)
+VAR
+	doStol_OtacanieVPRED : BOOL;
+	doStol_OtacanieVZAD : BOOL;
+	doStol_ODBRZDI : BOOL;
+	doStol_ChladenieChodCerpadla : BOOL;
+	doDvereRobotMan_ZamkniDvere : BOOL;
+	doDvereRobotMan_ZelenaLED : BOOL;
+	doDvereRobotMan_CervenaLED : BOOL;
+	doDvereRobotOdliev_ZamkniDvere : BOOL;
+	doDvereRobotOdliev_ZelenaLED : BOOL;
+	doDvereRobotOdliev_CervenaLED : BOOL;
+	doMajak_CerveneSvetlo : BOOL;
+	doMajak_ZlteSvetlo : BOOL;
+	doMajak_ZeleneSvetlo : BOOL;
+	doMajak_Hukacka : BOOL;
+	doStol_OhrevResetPoruchy : BOOL;
+	doKontrolkaPORUCHA : BOOL;
+	doPecHlinik_ChodOdsavania : BOOL;
+	doRobotOdliev_ChodChladenia : BOOL;
+END_VAR
+(**********************AB8**************************)
+VAR
+	doStol_ResetPoruchy : BOOL;
+	doRobotOdliev_ChladenieGripra : BOOL;
+	doCentrifuga1_ChladenieVretena : BOOL;
+	doCentrifuga2_ChladenieVretena : BOOL;
+END_VAR
+(**********************AB9**************************)
+VAR
+	doTunel_ChodVentilatora1 : BOOL;
+	doTunel_ChodVentilatora2 : BOOL;
+	doTunel_ChodVentilatora3 : BOOL;
+	doStol_OhrevSTART : BOOL;
+END_VAR
+(*********************DB1.2************************)
+VAR
+	doVstupManipul_ZOSTUP : BOOL; (*YV-1.2*)
+	doVstupManipul_ZDVIH : BOOL; (*YV-1.1*)
+	doVstupManipul_GriperZATVOR : BOOL; (*YV-2.1*)
+	doVstupManipul_GriperOTVOR : BOOL; (*YV-2.2*)
+	doOddelovac_PrepniPozNavazania : BOOL; (*YV-3.1*)
+	doOddelovac_PrepniPozVyvazania : BOOL; (*YV-3.2*)
+END_VAR
+(********************DB4.0************************)
+VAR
+	doRobotManip_GripreOTVOR : BOOL; (*YV-4.1*)
+	doRobotManip_GripreZATVOR : BOOL; (*YV-4.2*)
+END_VAR
+(********************DB5.0************************)
+VAR
+	doTunel_VstupLista_VysunVPRED : BOOL; (*YV-5.1*)
+	doTunel_VstupLista_ZasunVZAD : BOOL; (*YV-5.2*)
+END_VAR
+(*********************DB5.1**********************)
+VAR
+	doTunel_VystupLista_VysunVPRED : BOOL; (*YV-6.1*)
+	doTunel_VystupLista_ZasunVZAD : BOOL; (*YV-6.2*)
+END_VAR
+(**********************DB5.2*********************)
+VAR
+	doTunel_Vystup_ZamkniBZ : BOOL;
+END_VAR

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.3.8.58 SP"?>
+<BitmapGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="Pads">
+  <Property Name="Description" Value="Bitmap group for input pads"/>
+  <Property Name="Index" Value="1"/>
+  <Property Name="Translate" Value="False"/>
+  <BitmapLayer LanguageId="neutral">
+    <BitmapRef ID="2219" Value="Source[local].Bitmap[Key_NumPad_1]"/>
+    <BitmapRef ID="2220" Value="Source[local].Bitmap[Key_NumPad_pressed_1]"/>
+    <BitmapRef ID="2221" Value="Source[local].Bitmap[Key_AlphaPad]"/>
+    <BitmapRef ID="2222" Value="Source[local].Bitmap[Key_AlphaPad_pressed]"/>
+    <BitmapRef ID="2223" Value="Source[local].Bitmap[Key_ListPadVer_1]"/>
+    <BitmapRef ID="2224" Value="Source[local].Bitmap[Key_ListPadVer_pressed_1]"/>
+    <BitmapRef ID="2225" Value="Source[local].Bitmap[Key_ListPadHor_1]"/>
+    <BitmapRef ID="2226" Value="Source[local].Bitmap[Key_ListPadHor_pressed_1]"/>
+    <BitmapRef ID="2227" Value="Source[local].Bitmap[Key_EditPad]"/>
+    <BitmapRef ID="2228" Value="Source[local].Bitmap[Key_EditPad_pressed]"/>
+    <BitmapRef ID="2229" Value="Source[local].Bitmap[Key_NumPadLimits]"/>
+    <BitmapRef ID="2230" Value="Source[local].Bitmap[Key_NumPadLimits_pressed]"/>
+    <BitmapRef ID="2231" Value="Source[local].Bitmap[Key_AlphaPad_lowerPressed]"/>
+    <BitmapRef ID="2232" Value="Source[local].Bitmap[Key_AlphaPad_upperPressed]"/>
+    <BitmapRef ID="2233" Value="Source[local].Bitmap[Key_AlphaPad_numericPressed]"/>
+    <BitmapRef ID="2234" Value="Source[local].Bitmap[Key_AlphaPad_numeric2Pressed]"/>
+    <BitmapRef ID="2235" Value="Source[local].Bitmap[Key_ListPadVer]"/>
+    <BitmapRef ID="2236" Value="Source[local].Bitmap[Key_ListPadVer_pressed]"/>
+    <BitmapRef ID="2237" Value="Source[local].Bitmap[Key_ListPadHor]"/>
+    <BitmapRef ID="2238" Value="Source[local].Bitmap[Key_ListPadHor_pressed]"/>
+    <BitmapRef ID="2239" Value="Source[local].Bitmap[Key_ListPadHor_pressed]"/>
+    <BitmapRef ID="2240" Value="Source[local].Bitmap[Key_EditPad_lower]"/>
+    <BitmapRef ID="2241" Value="Source[local].Bitmap[Key_EditPad_upper]"/>
+    <BitmapRef ID="2242" Value="Source[local].Bitmap[Key_EditPad_numeric]"/>
+    <BitmapRef ID="2243" Value="Source[local].Bitmap[Key_EditPad_numeric2]"/>
+    <BitmapRef ID="2244" Value="Source[local].Bitmap[Key_EditPad_lowerPressed]"/>
+    <BitmapRef ID="2245" Value="Source[local].Bitmap[Key_EditPad_numeric2Pressed]"/>
+  </BitmapLayer>
+  <IndexMap>
+    <Index ID="2219" Value="0"/>
+    <Index ID="2220" Value="1"/>
+    <Index ID="2221" Value="20"/>
+    <Index ID="2222" Value="21"/>
+    <Index ID="2223" Value="40"/>
+    <Index ID="2224" Value="41"/>
+    <Index ID="2225" Value="42"/>
+    <Index ID="2226" Value="43"/>
+    <Index ID="2227" Value="2"/>
+    <Index ID="2228" Value="3"/>
+    <Index ID="2229" Value="4"/>
+    <Index ID="2230" Value="5"/>
+    <Index ID="2231" Value="6"/>
+    <Index ID="2232" Value="7"/>
+    <Index ID="2233" Value="8"/>
+    <Index ID="2234" Value="9"/>
+    <Index ID="2235" Value="10"/>
+    <Index ID="2236" Value="11"/>
+    <Index ID="2237" Value="12"/>
+    <Index ID="2238" Value="13"/>
+    <Index ID="2239" Value="14"/>
+    <Index ID="2240" Value="15"/>
+    <Index ID="2241" Value="16"/>
+    <Index ID="2242" Value="17"/>
+    <Index ID="2243" Value="18"/>
+    <Index ID="2244" Value="19"/>
+    <Index ID="2245" Value="22"/>
+  </IndexMap>
+</BitmapGroup>

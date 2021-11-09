@@ -1,0 +1,12 @@
+(*
+QWS: 00009
+*)
+00001	00002	POE\Main\Main.gb
+00002	00172	POE\Main\CentralStopy.gb
+00003	00101	POE\Main\ZamkyOplotenia.gb
+00004	00023	POE\Main\ZonaOtocnyStol.gb
+00005	00023	POE\Main\ZonaCentrifugy.gb
+00006	00015	POE\Main\ZonaTunel.gb
+00007	00023	POE\Main\ZonaVystupy_Vzduch.gb
+00008	00023	POE\Main\ZonaOplotenieLinky.gb
+00009	00021	POE\Main\Komunikacia_StavCS_Linky.gb

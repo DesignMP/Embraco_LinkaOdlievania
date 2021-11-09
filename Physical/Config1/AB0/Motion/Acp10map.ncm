@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.3.195?>
+<NcMapping NcSwId="Acp10" DisabledNodesAreHidden="False">
+  <NcObject Name="gAxis01" ModuleId="OtocnyStol" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="gAxis01i" AcoposParameter="gAxis01a" Disabled="FALSE" ModuleDisabled="FALSE" Description="Otočný stol - manipulátor" />
+  <NcObject Name="8EIxxxMxS1x.xxxx-1_ncV_AXIS1" ModuleId="OtocnyStol" Type="ncV_AXIS" Channel="1" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="gAxis02" ModuleId="Centrifuga_1" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="gAxis02i" AcoposParameter="gAxis02a" Disabled="FALSE" ModuleDisabled="FALSE" Description="Centrifuga 1 - otáčanie" />
+  <NcObject Name="gAxis03" ModuleId="Centrifuga_1" Type="ncAXIS" Channel="2" AcoposSimulation="Off" InitParameter="gAxis03i" AcoposParameter="gAxis03a" Disabled="FALSE" ModuleDisabled="FALSE" Description="Centrifuga 1 - zdvih 1" />
+  <NcObject Name="gAxis04" ModuleId="Centrifuga_1" Type="ncAXIS" Channel="3" AcoposSimulation="Off" InitParameter="gAxis04i" AcoposParameter="gAxis04a" Disabled="FALSE" ModuleDisabled="FALSE" Description="Centrifuga 1 - zdvih 2" />
+  <NcObject Name="8EIxxxHxT1x.xxxx-1_ncV_AXIS1" ModuleId="Centrifuga_1" Type="ncV_AXIS" Channel="1" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="8EIxxxHxT1x.xxxx-1_ncV_AXIS2" ModuleId="Centrifuga_1" Type="ncV_AXIS" Channel="2" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="8EIxxxHxT1x.xxxx-1_ncV_AXIS3" ModuleId="Centrifuga_1" Type="ncV_AXIS" Channel="3" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="gAxis05" ModuleId="Centrifuga_2" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="gAxis05i" AcoposParameter="gAxis05a" Disabled="FALSE" ModuleDisabled="FALSE" Description="Centrifuga 2 - Otáčanie" />
+  <NcObject Name="gAxis06" ModuleId="Centrifuga_2" Type="ncAXIS" Channel="2" AcoposSimulation="Off" InitParameter="gAxis06i" AcoposParameter="gAxis06a" Disabled="FALSE" ModuleDisabled="FALSE" Description="Centrifuga 2 - Zdvih 1" />
+  <NcObject Name="gAxis07" ModuleId="Centrifuga_2" Type="ncAXIS" Channel="3" AcoposSimulation="Off" InitParameter="gAxis07i" AcoposParameter="gAxis07a" Disabled="FALSE" ModuleDisabled="FALSE" Description="Centrifuga 2 - Zdvih 2" />
+  <NcObject Name="8EIxxxHxT1x.xxxx-1a_ncV_AXIS1" ModuleId="Centrifuga_2" Type="ncV_AXIS" Channel="1" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="8EIxxxHxT1x.xxxx-1a_ncV_AXIS2" ModuleId="Centrifuga_2" Type="ncV_AXIS" Channel="2" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="8EIxxxHxT1x.xxxx-1a_ncV_AXIS3" ModuleId="Centrifuga_2" Type="ncV_AXIS" Channel="3" Disabled="TRUE" ModuleDisabled="FALSE" />
+</NcMapping>

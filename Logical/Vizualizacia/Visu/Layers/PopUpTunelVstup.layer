@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.3.8.58 SP"?>
+<Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="PopUpTunelVstup">
+  <Property Name="BackColor" Value="9"/>
+  <Property Name="Description" Value=""/>
+  <Property Name="Height" Value="768"/>
+  <Property Name="Left" Value="0"/>
+  <Property Name="StatusDatapoint" Value="None"/>
+  <Property Name="Top" Value="0"/>
+  <Property Name="Width" Value="1366"/>
+  <TextGroup>
+    <TextLayer LanguageId="en">
+      <Text ID="224520" Value="Vstupný odsúvač"/>
+      <Text ID="224521" Value="Reset Odsúvača"/>
+      <Text ID="224523" Value="Cancel"/>
+      <Text ID="233375" Value="Počet kusov 8"/>
+      <Text ID="233377" Value="Počet kusov 10"/>
+    </TextLayer>
+    <TextLayer LanguageId="de">
+      <Text ID="224520" Value="Text_1"/>
+      <Text ID="224521" Value=""/>
+      <Text ID="224523" Value=""/>
+      <Text ID="233375" Value=""/>
+      <Text ID="233377" Value=""/>
+    </TextLayer>
+    <IndexMap>
+      <Index ID="224520" Value="5"/>
+      <Index ID="224521" Value="6"/>
+      <Index ID="224523" Value="8"/>
+      <Index ID="233375" Value="2"/>
+      <Index ID="233377" Value="4"/>
+    </IndexMap>
+  </TextGroup>
+  <Controls>
+    <Control ClassId="0x00001004" Name="Text_1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BackColor" Value="48"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_SunkenNG]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Opaque"/>
+      <Property Name="Font" Value="Source[local].Font[Arial16_Bold_0]"/>
+      <Property Name="Height" Value="290"/>
+      <Property Name="Left" Value="345"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_TunelVstup]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="5"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="425"/>
+      <Property Name="Width" Value="290"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="Button_5">
+      <Property Name="BackColor" Value="0"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="None"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_11]"/>
+      <Property Name="Font" Value="Source[local].Font[Arial16_Bold]"/>
+      <Property Name="ForeColor" Value="51"/>
+      <Property Name="Height" Value="60"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="365"/>
+      <Property Name="PressedBackColor" Value="0"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_TunelVstup]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="6"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="455"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_11]"/>
+      <Property Name="Width" Value="250"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="Button_6">
+      <Property Name="BackColor" Value="0"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="None"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_12]"/>
+      <Property Name="Font" Value="Source[local].Font[Arial16_Bold]"/>
+      <Property Name="ForeColor" Value="10"/>
+      <Property Name="Height" Value="60"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="365"/>
+      <Property Name="PressedBackColor" Value="0"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_TunelVstup]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="8"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="640"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_12]"/>
+      <Property Name="Width" Value="250"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="Button_13">
+      <Property Name="BackColor" Value="0"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="None"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_90]"/>
+      <Property Name="Font" Value="Source[local].Font[Arial12_Bold]"/>
+      <Property Name="ForeColor" Value="10"/>
+      <Property Name="Height" Value="45"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="390"/>
+      <Property Name="Locking" Value="Datapoint &gt;= Level"/>
+      <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.TP_ZamkniTlacitkaPocetKusovVtun]"/>
+      <Property Name="LockingLevel" Value="1"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="PressedBackColor" Value="0"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_TunelVstup]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="2"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="525"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_90]"/>
+      <Property Name="Width" Value="160"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="Bitmap_1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[CheckBox]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="32"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Tunel_PocetKusovNaListe_8]"/>
+      <Property Name="Left" Value="560"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_TunelVstup]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="530"/>
+      <Property Name="Width" Value="32"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="Button_14">
+      <Property Name="BackColor" Value="0"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="None"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_91]"/>
+      <Property Name="Font" Value="Source[local].Font[Arial12_Bold]"/>
+      <Property Name="ForeColor" Value="10"/>
+      <Property Name="Height" Value="45"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="390"/>
+      <Property Name="Locking" Value="Datapoint &gt;= Level"/>
+      <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.TP_ZamkniTlacitkaPocetKusovVtun]"/>
+      <Property Name="LockingLevel" Value="1"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="PressedBackColor" Value="0"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_TunelVstup]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="4"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="580"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_91]"/>
+      <Property Name="Width" Value="160"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="Bitmap_2">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[CheckBox]"/>
+      <Property Name="BitmapIndex" Value="0"/>
+      <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="32"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Tunel_PocetKusovNaListe_10]"/>
+      <Property Name="Left" Value="560"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_TunelVstup]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="585"/>
+      <Property Name="Width" Value="32"/>
+    </Control>
+  </Controls>
+  <KeyMapping>
+    <VirtualKey Name="%embVirtualKey_11">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.TunelVstup_Reset]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="%embVirtualKey_12">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_TunelVstup]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="%embVirtualKey_90">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="8"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Tunel_PocetKusovNaListe]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="%embVirtualKey_91">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="10"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Tunel_PocetKusovNaListe]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+  </KeyMapping>
+</Layer>

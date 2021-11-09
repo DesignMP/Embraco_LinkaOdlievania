@@ -1,0 +1,8 @@
+[Header]
+Version=1
+DataSize=258
+Id=0d506d24-30cf-4cfc-b8b3-c80176e60529
+Compression=Off
+DataEncoding=None
+[Data]
+<CustomItems><CustomItem name="Channel" value="0" persist="True" /><CustomItem name="IF" value="IF1" persist="True" /><CustomItem name="ModuleId" value="42782" persist="True" /><CustomItem name="Name" value="AB2_ProfinetSlave" persist="True" /></CustomItems>

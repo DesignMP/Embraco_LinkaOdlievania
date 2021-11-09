@@ -1,0 +1,8 @@
+VAR
+	soOtocnyStol : BOOL;
+	soCentrifugy : BOOL;
+	soTunel : BOOL;
+	soVystupy_HlavnyPrivodVzduchu : BOOL;
+	soOplotenieLinky : BOOL;
+	soStavCS_HlavnejLinky : BOOL;
+END_VAR

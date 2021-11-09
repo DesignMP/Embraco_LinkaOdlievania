@@ -1,0 +1,148 @@
+(*
+T: PROGRAM Main
+FW: NO
+CI#: 80
+QSL: 23
+QVE: 23
+QVPC: 23
+QPar: 0
+QFBI: 17
+*)
+@V 1 2 0
+StavCS_Linky	1	VAR	@FB:81
+		     
+
+;
+
+@V 1 3 0
+StavCS_RobotOdlievania	2	VAR	@FB:81
+		     
+
+;
+
+@V 1 4 0
+StavCS_RobotManipulacie	3	VAR	@FB:81
+		     
+
+;
+
+@V 1 5 0
+StavCS_DokoncovaciaStanica	4	VAR	@FB:81
+		     
+
+;
+
+@V 1 6 0
+StavCS_ServisneDvere1	5	VAR	@FB:81
+		     
+
+;
+
+@V 1 7 0
+StavCS_ServisneDvere2	6	VAR	@FB:81
+		     
+
+;
+
+@V 1 8 0
+BezpecnostnyOkruh_CS	7	VAR	@FB:82
+		     
+
+;
+
+@V 1 9 0
+StavZamkuServisneDvere1	8	VAR	@FB:81
+		     
+
+;
+
+@V 1 10 0
+StavZamkuServisneDvere2	9	VAR	@FB:81
+		     
+
+;
+
+@V 1 11 0
+BezpecnostnyOkruh_Zamky	10	VAR	@FB:82
+		     
+
+;
+
+@V 1 12 0
+CasRelease_soOtocnyStol	11	VAR	@FB:21
+		     
+
+;
+
+@V 1 13 0
+CasRelease_soCentrifugy	12	VAR	@FB:21
+		     
+
+;
+
+@V 1 14 0
+CasRelease_soTunel	13	VAR	@FB:21
+		     
+
+;
+
+@V 1 15 0
+CasRelease_soVystupy_Vzduch	14	VAR	@FB:21
+		     
+
+;
+
+@V 1 16 0
+CasRelease_soOplotenieLinky	15	VAR	@FB:21
+		     
+
+;
+
+@V 1 17 0
+CasRelease_soStavCS_HlavLinky	16	VAR	@FB:21
+		     
+
+;
+
+@V 1 18 0
+StavZamkuTunela	17	VAR	@FB:81
+		     
+
+;
+
+@V 3 123 0
+__CentralStopy@0	18	VAR	@TYP:43
+		     
+
+;
+
+@V 5 20 0
+__ZonaOtocnyStol@0	19	VAR	@TYP:43
+		     
+
+;
+
+@V 6 20 0
+__ZonaCentrifugy@0	20	VAR	@TYP:43
+		     
+
+;
+
+@V 8 20 0
+__ZonaVystupy_Vzduch@0	21	VAR	@TYP:43
+		     
+
+;
+
+@V 9 22 0
+__ZonaOplotenieLinky@0	22	VAR	@TYP:43
+		     
+
+;
+
+@V 10 15 0
+__Komunikacia_StavCS_Linky@0	23	VAR	@TYP:43
+		     
+
+;
+

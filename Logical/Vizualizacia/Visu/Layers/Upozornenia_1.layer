@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.3.8.58 SP"?>
+<Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="Upozornenia_1">
+  <Property Name="BackColor" Value="7"/>
+  <Property Name="Description" Value=""/>
+  <Property Name="Height" Value="768"/>
+  <Property Name="Left" Value="0"/>
+  <Property Name="StatusDatapoint" Value="None"/>
+  <Property Name="Top" Value="0"/>
+  <Property Name="Width" Value="1366"/>
+  <TextGroup>
+    <TextLayer LanguageId="en">
+      <Text ID="222133" Value="Na linke nieje zvolený program !!!"/>
+      <Text ID="222134" Value="Indukčný ohrev nieje zapnutý !!!"/>
+      <Text ID="222135" Value="Robot manipulácie nieje prepnutý do automatického režimu  !!!"/>
+      <Text ID="222136" Value="Robot odlievania nieje prepnutý do automatického režimu  !!!"/>
+      <Text ID="233909" Value="Teplota hliníka v peci je mimo pracovný rozsah  !!!"/>
+    </TextLayer>
+    <TextLayer LanguageId="de">
+      <Text ID="222133" Value="Text_1"/>
+      <Text ID="222134" Value="Text_1"/>
+      <Text ID="222135" Value="Text_1"/>
+      <Text ID="222136" Value="Text_1"/>
+      <Text ID="233909" Value="Text_1"/>
+    </TextLayer>
+    <IndexMap>
+      <Index ID="222133" Value="0"/>
+      <Index ID="222134" Value="1"/>
+      <Index ID="222135" Value="2"/>
+      <Index ID="222136" Value="3"/>
+      <Index ID="233909" Value="4"/>
+    </IndexMap>
+  </TextGroup>
+  <Controls>
+    <Control ClassId="0x00001004" Name="Text_1">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BackColor" Value="42"/>
+      <Property Name="Border" Value="Source[local].Border[TabActive]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Opaque"/>
+      <Property Name="Font" Value="Source[local].Font[Arial16_Bold]"/>
+      <Property Name="Height" Value="50"/>
+      <Property Name="HighlightingBorder" Value="Source[local].Border[TabActive]"/>
+      <Property Name="HighlightingDatapoint" Value="Source[global].Variable[DataSource.Blikac1s]"/>
+      <Property Name="Left" Value="25"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_NezvolenyProgram]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="150"/>
+      <Property Name="Width" Value="650"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_2">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BackColor" Value="42"/>
+      <Property Name="Border" Value="Source[local].Border[TabActive]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Opaque"/>
+      <Property Name="Font" Value="Source[local].Font[Arial16_Bold]"/>
+      <Property Name="Height" Value="50"/>
+      <Property Name="HighlightingBorder" Value="Source[local].Border[TabActive]"/>
+      <Property Name="HighlightingDatapoint" Value="Source[global].Variable[DataSource.Blikac1s]"/>
+      <Property Name="Left" Value="25"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_IndukOhrevVypnut]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="1"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="205"/>
+      <Property Name="Width" Value="650"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_3">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BackColor" Value="42"/>
+      <Property Name="Border" Value="Source[local].Border[TabActive]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Opaque"/>
+      <Property Name="Font" Value="Source[local].Font[Arial16_Bold]"/>
+      <Property Name="Height" Value="50"/>
+      <Property Name="HighlightingBorder" Value="Source[local].Border[TabActive]"/>
+      <Property Name="HighlightingDatapoint" Value="Source[global].Variable[DataSource.Blikac1s]"/>
+      <Property Name="Left" Value="690"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_RobManipVypnut]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="2"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="150"/>
+      <Property Name="Width" Value="650"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_4">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BackColor" Value="42"/>
+      <Property Name="Border" Value="Source[local].Border[TabActive]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Opaque"/>
+      <Property Name="Font" Value="Source[local].Font[Arial16_Bold]"/>
+      <Property Name="Height" Value="50"/>
+      <Property Name="HighlightingBorder" Value="Source[local].Border[TabActive]"/>
+      <Property Name="HighlightingDatapoint" Value="Source[global].Variable[DataSource.Blikac1s]"/>
+      <Property Name="Left" Value="690"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_RobOdlievVypnut]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="3"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="205"/>
+      <Property Name="Width" Value="650"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_5">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="BackColor" Value="42"/>
+      <Property Name="Border" Value="Source[local].Border[TabActive]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Opaque"/>
+      <Property Name="Font" Value="Source[local].Font[Arial16_Bold]"/>
+      <Property Name="Height" Value="50"/>
+      <Property Name="HighlightingBorder" Value="Source[local].Border[TabActive]"/>
+      <Property Name="HighlightingDatapoint" Value="Source[global].Variable[DataSource.Blikac1s]"/>
+      <Property Name="Left" Value="690"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.TP_ZobrazPopUp_TeplotaHlinikaNG]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="4"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="260"/>
+      <Property Name="Width" Value="650"/>
+    </Control>
+  </Controls>
+  <KeyMapping/>
+</Layer>

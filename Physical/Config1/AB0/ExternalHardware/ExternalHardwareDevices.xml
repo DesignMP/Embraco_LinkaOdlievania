@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExternalHardware>
+  <Modules>
+    <Module ModuleID="FBD.Hilscher.PNIOGenDevDTM2.ModbusSlave" Version="0.0.0.0" OrderNumber="ModbusSlave">
+      <SourceFile OriginalFile="GSDML-V2.31-ADFweb-HD67603_embraco-20180604.xml" TranslationFile="6QDBOQLS.ext" />
+    </Module>
+    <Module ModuleID="FBD.Hilscher.PNIOGenDevDTM2.DSQC688" Version="1.12" OrderNumber="DSQC688">
+      <SourceFile OriginalFile="GSDML-V2.0-PNET-FA-20100510.xml" TranslationFile="JCZRBZ5O.ext" />
+    </Module>
+  </Modules>
+</ExternalHardware>
