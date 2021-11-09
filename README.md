@@ -1,0 +1,1 @@
+Embraco_LinkaOdlievania
