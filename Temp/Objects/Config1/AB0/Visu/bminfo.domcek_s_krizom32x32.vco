@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Bitmaps">
+    <Folder Name="POBJ">
+      <Object Name="domcek_s_krizom32x32" ClsId="0x306" Version="1" TargetIndex="447" Type="GFX" RefString="Source[local].Bitmap[domcek_s_krizom32x32]">
+        <UInt16 Name="Width">32</UInt16>
+        <UInt16 Name="Height">32</UInt16>
+        <UInt32 Name="BitsPerPixel">32</UInt32>
+        <Byte Name="Transparency">0</Byte>
+        <Byte Name="TargetFormat">2</Byte>
+        <UInt16 Name="Reserved">0</UInt16>
+        <Int32 Name="TransparentColor">0</Int32>
+        <Int32 Name="FillAreas">0</Int32>
+        <Binary Name="BitmapData" Encoding="Base64">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFtSURBVFhH7Za9SgNBFEa3ERStrCIItrbiAwhWIY2gYGsllr6A4HNY2SXWvoB1ksIXsBNrlZBO1O+EuWGyZN2Z/dNgDhwY7szudwk3mSQl2JID2XfrRtmXL/LJyZpaI5zKsXyQm07W1NirlWv5KW/kCgUHa2rscaZy1uSd/JCXFDJgjzOc5ZlKYMCG8k22KeTAGc7yTOnh9Idtl0IgnC09nOlhi6XUcF7JecMWiz+cvDOXVdmVecMWiw0n7yZjLi3Jr1rosMViw0kGWTPsyWcZO2yx2HCSReaEY8mgfMlDCjVDBllkkj35WO4lxQMKNUMGWWS+U1iXOzK2gY58dbIOxRogc4MCFGngSPIMsg7Fb2DKsoGQBi4kV63Zk9YAa3+Ps1kUbuBRWmCenM1icRvgbueceS4tkLW/99P/gMINpPl/34I0v94At9mtc3qzBVBZA0VZNvA3G9iWFEfS7vi6JIMsMmc4kWcNSZZIkm907MDCPpxjBQAAAABJRU5ErkJggg==</Binary>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>

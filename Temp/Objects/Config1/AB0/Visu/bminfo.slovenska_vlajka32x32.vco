@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Bitmaps">
+    <Folder Name="POBJ">
+      <Object Name="slovenska_vlajka32x32" ClsId="0x306" Version="1" TargetIndex="458" Type="GFX" RefString="Source[local].Bitmap[slovenska_vlajka32x32]">
+        <UInt16 Name="Width">32</UInt16>
+        <UInt16 Name="Height">32</UInt16>
+        <UInt32 Name="BitsPerPixel">32</UInt32>
+        <Byte Name="Transparency">0</Byte>
+        <Byte Name="TargetFormat">2</Byte>
+        <UInt16 Name="Reserved">0</UInt16>
+        <Int32 Name="TransparentColor">0</Int32>
+        <Int32 Name="FillAreas">0</Int32>
+        <Binary Name="BitmapData" Encoding="Base64">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHDSURBVFhH7ZbfK0NRAMfPv+If8MKUmnjgRik/nsiDbH40Q0z5Ua7xQFmSEuVHKB43FPkV07TMRFuI60d+5MEW231BXravnWPDct/m3nm43/rUOZ3T+Xw79966RI0aNUmPIAgpgUDAEAwGjUpCndRNwuHwOZIU6qYFxOhc8VD3/ynw7nvEy/XlL15vb9hmOcIKhEIhVkDo6YSLy2I87+7AXZjLxgcl+WyzHKFuops8FA2zHpy1t8BdxOFpexNvD/fwry7jpNkAV0EOhjeuoJs6+nsibpLGb4vZfQ6ctjbgsKwYx0Y9nuyb8FSVw1tbyW7BNO9FWrf974m4Pwv07+K0pR6CuRP+tRW83t3Ct7KE++kJVqB13iN9QKLECmjMdpzw3+/AxcIi9qLjg9IC6CPXJXlAosQK0Il1ZA58FY8uHY90fguNdRaYavrh6BtAZu+O9AGJQgtwbVYxr92GusF16MfdcRs4ixPmKQfouhxQN9njtGLs6o9MTeiY2WfyirF9OC1DX49FDqibuH4UoNAvwTk6CW99ddxmeZAooCz/okCe9lx6UQEibjKRkZqyoNUYbFnpRiWhTuqO/hepUaMmWSHkA5NTXd+4dwhNAAAAAElFTkSuQmCC</Binary>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>

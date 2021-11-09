@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Parameters>
+  <Connection>
+    <DeviceParameters>/IF=tcpip /LOPO=11159 /SA=1</DeviceParameters>
+    <ConnectionParameters>/COMT=2500 /RT=1000 /AM=* /SDT=5 /DAIP=192.168.1.110 /REPO=11159 /ANSL=1 /PT=11169</ConnectionParameters>
+  </Connection>
+  <AsProject>
+    <ApjFullFileName>D:\Projekty BER\Embraco_LinkaOdlievania\HlavnaLinkaNaOdlievanieRotorov_Rev1.apj</ApjFullFileName>
+    <ProjectName>HlavnaLinkaNaOdlievanieRotorov_Rev1</ProjectName>
+    <ActiveConfigurationName>Config1</ActiveConfigurationName>
+    <LicenseDataFolder>D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0</LicenseDataFolder>
+  </AsProject>
+  <General>
+    <DeleteParameterFile>false</DeleteParameterFile>
+  </General>
+</Parameters>

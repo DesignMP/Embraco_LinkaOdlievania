@@ -1,0 +1,8 @@
+$(AS_CPU_PATH)/axislib/axis.c.o:
+$(AS_PROJECT_PATH)/logical/libraries/axislib/axis.c
+$(AS_GNU_INST_PATH)/4.9/i686-elf/include/bur/plctypes.h
+$(AS_GNU_INST_PATH)/4.9/i686-elf/include/bur/plc.h
+$(AS_TEMP_PATH)/includes/axislib.h
+$(AS_TEMP_PATH)/includes/asbrstr.h
+$(AS_TEMP_PATH)/includes/ncglobal.h
+$(AS_TEMP_PATH)/includes/acp10_mc.h

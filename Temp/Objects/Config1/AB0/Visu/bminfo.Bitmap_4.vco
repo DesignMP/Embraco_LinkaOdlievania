@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Bitmaps">
+    <Folder Name="POBJ">
+      <Object Name="Bitmap_4" ClsId="0x306" Version="1" TargetIndex="235" Type="GFX" RefString="Source[local].Bitmap[Bitmap_4]">
+        <UInt16 Name="Width">32</UInt16>
+        <UInt16 Name="Height">32</UInt16>
+        <UInt32 Name="BitsPerPixel">32</UInt32>
+        <Byte Name="Transparency">0</Byte>
+        <Byte Name="TargetFormat">2</Byte>
+        <UInt16 Name="Reserved">0</UInt16>
+        <Int32 Name="TransparentColor">0</Int32>
+        <Int32 Name="FillAreas">0</Int32>
+        <Binary Name="BitmapData" Encoding="Base64">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMtSURBVFhH7ZZLSJRRGIanm46OzlWbmjHLTCNJyBJ3rloEKSEWuYkWtQiJLgsriKAMS0ps7OIFXYiMYjcEa5GRi9xkiBaKRZZWWmSOipmOM6PR13kPM3KwM7+/NLv84IFvOO/3fu9/Zhh+zXIt18LqvZ8S1llvL+pssH3tarBTKIAXPOHtXxO8uuptxUMdBeT72U2/54ZDArzgCW//muDFkrq84800O3KZfEN5IQFe8IS3f03wwpXNjVdKjf4FeMLbvyZ48QBjFeQdPKiIozCNTh5N5qCXaUTguYQA5WzogCJXz2fSufytHPQyjQg81QcYvUPeT7mKVJfuJacjnYNephGB5xIC3CbvxxxFasuy6GFFBge9TCMCT/UBXDfJO7BPkcaq/fSgPJ2DXqYRgafqALMjZeTpz1aktekY3b21k4NephGBp/oA3x3keZ+lSEtjHjlLd3DQyzQi8FQdwDdcSjN9exTpeZ5PtddTOehlGhF4qg/wrYRm3u5W5HVLLtUUbeOgl2lE4Kk+wJdicvdkKuL5cIQqLyZx0Ms0IvBUHcA7WEjTr9IX5dfkC47sbCHwVB+g/wJNtW9X5PShWDqcbeagl2lE4Kk6wEzfGZpsS1Ck5OwuupIfw0Ev04jAU32AN6foxzOrIjWX0qix0MJBL9OIwFN1AHfPcZp4YlTEM+Bgf6+tHPQyjQg81QfoPUETT2NCCjxVBcBby/S7ApY4l6Zesh9QCHB35xA8g70RrWCsZKxihLXX2Us+t2WTe+ga+UZqyOdyknf0HnnHmhjNjEeMx0HAGTRMy2YwCw94wbO9znaD7Vjj34Wd2M0/hFsslmhWll0ppvjWKlt1h9PuwpWFAnjBMyPVHGcwGExWq1XHduINGbs1qxlas9msj4qKio2IiLAbjcaNTJjA2KzX6xMZWwALmCSQvID5M78ec4nwYGwymUzxkZGR69k5e1ZLNNsZHgiAa0CDq9EiHROzGYOJBYrR6XRr2eA6DCMcCxqn1Wo3wDAAPgN2HgcNtJjBLDzghQf0PzkW46HnvwKxxN8DRAiFqwIYBNpFCOgwg3n4wC+w8K+l/3NpNH8A26toLlR2ID4AAAAASUVORK5CYII=</Binary>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>

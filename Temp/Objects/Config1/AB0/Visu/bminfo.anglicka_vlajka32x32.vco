@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Bitmaps">
+    <Folder Name="POBJ">
+      <Object Name="anglicka_vlajka32x32" ClsId="0x306" Version="1" TargetIndex="448" Type="GFX" RefString="Source[local].Bitmap[anglicka_vlajka32x32]">
+        <UInt16 Name="Width">32</UInt16>
+        <UInt16 Name="Height">32</UInt16>
+        <UInt32 Name="BitsPerPixel">32</UInt32>
+        <Byte Name="Transparency">0</Byte>
+        <Byte Name="TargetFormat">2</Byte>
+        <UInt16 Name="Reserved">0</UInt16>
+        <Int32 Name="TransparentColor">0</Int32>
+        <Int32 Name="FillAreas">0</Int32>
+        <Binary Name="BitmapData" Encoding="Base64">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKXSURBVFhH7ZbdS1NhHMeff2W33hRYXbmLIkyahWBRZHR6IXAdJiMDKTBBiIqR4I3F7gJbL2AQUjCa82W6rU3TrbnTdnLHSivc5rPWdOdsO/7ac/QM2U7r2U12sS98LsZ5nt/3c3GeZwfVU089e54Fr1cXi8WYcOQT02EZZRq6bFXZb7YxdneAedvVybzUH1Rwdncxo673yjOtPbu5OPCGCbjczGibgXmuP6RDXG8Pl+EjQCLmCvDU8xWOWaah8bbzjwhrGQjf6gZPs14heqcPgl9SmmtVWh+44cUUD8LwY/C3GyB47Qok3VMc4gfuY6/hCHzsuwm0IrUIaBe7YGtrCwqyjNElqx+PTy/C0qAFaEVoBKoVE8bDa9Dx0IdRY+8YJhsY6yzQilQToCk+N+TbFi12lwRUaER+pLIVAkJ8g75YhQjMLa/j+WUM5aQ2cyDF1+DnhwCkQ0GQJUmRUFMuQLLxWVDW/4pwSqmaZEaqmE8g3Sh6tx/z9/qhVmbPtpUE5s6f0lzzN0g38jQ3YXXQv6fpPxBYvGHCRaBWfO3HS4P8p09orqEAo5XEJl5d34RyMmJ+5xXajpSIg/j9G0jJhPJb6yVUUxCzylqCLIqQzuYr5hNId8UxJOd4xL8KuYKsDEuHQ0rZu9ajEBsaBPs0B/G0WCGwUhw4E01sHztZhsTEGCxcvQCzZ06C8MwGTyb4ypt19z1AU6ye42oXEblHqEWIQOuAG9MWq9BcxTQiLZYZjKR8AdMWq9TyZ1RNJGYbxigVCnC0xSq1CKhoihgvc8ha/Ch41XLYGHA4WPMjO9tgslVln9nG2r0B1mHqZEf0BxSc103sa9e88kxrz256rA6W55dYQRCM3slJ3c53UT311LNXQeg3S/xKK+e1FN8AAAAASUVORK5CYII=</Binary>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>

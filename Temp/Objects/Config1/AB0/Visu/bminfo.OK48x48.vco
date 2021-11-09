@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Bitmaps">
+    <Folder Name="POBJ">
+      <Object Name="OK48x48" ClsId="0x306" Version="1" TargetIndex="432" Type="GFX" RefString="Source[local].Bitmap[OK48x48]">
+        <UInt16 Name="Width">48</UInt16>
+        <UInt16 Name="Height">48</UInt16>
+        <UInt32 Name="BitsPerPixel">32</UInt32>
+        <Byte Name="Transparency">0</Byte>
+        <Byte Name="TargetFormat">2</Byte>
+        <UInt16 Name="Reserved">0</UInt16>
+        <Int32 Name="TransparentColor">0</Int32>
+        <Int32 Name="FillAreas">0</Int32>
+        <Binary Name="BitmapData" Encoding="Base64">iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANTSURBVGhD7ZlZqE1RGMevOcmUIfOYOSGFKCJRhAdTxhdEKS+EJGMhQxRSeDC9mYrMD8YSypMoXkgZQorM4++37l05uO7QPffcvXX/9av9fWefs9fa6/vW+tY6eZX6z9UMukHVYKVMG+Eb/IBHMAlSoz7wHb7AM7AT2vMhFVoANngfGD7LCuxP0A4Sr53gW18UrHwdB312JvG6CTZ2RLDyNRv0HQxWgtUCTF7Dpb6OAtkBw+hQsBKs5eCbPhOsX9oG+lcFK6FqAi/Bho7SkaH7oH9osBKoKnAMDJMrBXbUMND/FKrrSKI2gG/4LXTWkaGTYAfWBSthqgG7wcabuGMhU90hJrUJnig1gvMQF6mJ8Kf2gp/vCVaC1BUegG/+BRSWnObBa/CeXjqSon5go23YHegEhclc8J7nwUqIWoMFmmFh+NSFf6kn2IHHwfpdjWEwzAOT2wXuAlwE15DVYDmedZ0CG+9UWVNHEfLzV+D9fs8y4iq4VugrDsNvCGRNg8AffgdtdJRA0+Aj+D1HQ7x+A7dgP6yAGTAOBsJkcCS87wnUhqwozjibg1VytYU5MBcs8FpBcbs0p+e7YIdH6iirhkN8+8115EBnwWeOCVYZ5LDGWWetjhwpjkDfYJVCrpizwJnAWIx720vg0OZK5onPPQdFzXZ/yZhz6CIm4XbIWjKVUO4h4ix2QEdJZf2yC5yfp4BzdkXJtcQyxQOCXOVe1nUDHIX+wUqZGoALmh3ooCNNstq1rDCRr+tImyw9bLwM0JE2WVrEWcjtairVBT7AV7AESaUs+lI7C7nzcyF1BNyLpEpTwXLaJD6sI00aDYaNWIM1hFTJcLF8sJBsqaM0shbyiHwlLAZ3SyZQHcil3H4aPo5GqWQ1GhcQhzBef4ZrsBDKZcP9h9zk+9zxwSqF2sMSWApb4Sh4fOKQxri0MyfAw6x6kE15njQTfIYh1BGyImsTw+k02Jk4Mu/hMmyC6eCy76JTC4qTjXWz0gMmwBaIJ9m+qB1QLjKxHCVL3bhjiw+N1/qtJD3YulcIHq+468r8Trz27Mn/2jJPuctNTcG6ZQ0cgdtgow0BG1QcHhQ8BEd2PZiD1aDC5f7ZmctjlUhvMMei7eep/CO8UpWqeOXl/QRB6vPvM9M4HwAAAABJRU5ErkJggg==</Binary>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>

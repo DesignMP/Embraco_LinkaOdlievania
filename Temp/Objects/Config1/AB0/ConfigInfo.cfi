@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.10.3.60 SP"?>
+<ConfigInfo xmlns="http://br-automation.co.at/AS/BuildInfo">
+  <TaskClass
+    Name="Cyclic#1">
+    <Task
+      Name="RiadenieMe"
+      Disable="false"
+      Source="RiadenieMenicov.RiadenieMenicov"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\RiadenieMe\InverterBasic.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\RiadenieMenicov\RiadenieMenicov\InverterBasic.var" />
+    </Task>
+    <Task
+      Name="OtocnySto1"
+      Disable="false"
+      Source="Program.OtocnyStol_Manipulator"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\OtocnySto1\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\OtocnyStol_Manipulator\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\OtocnyStol_Manipulator\Variables.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\OtocnySto1\OvladanieGripra.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\OtocnySto1\OvladanieZdvihu.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\OtocnySto1\OvladaniePojazdu.st.var" />
+    </Task>
+    <Task
+      Name="Tunel"
+      Disable="false"
+      Source="Program.Tunel"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Tunel\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\Tunel\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\Tunel\Variables.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Tunel\OvladanieDopravnika.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Tunel\OvladanieVystupOdsuvaca.st.var" />
+    </Task>
+    <Task
+      Name="Serva_Prir"
+      Disable="false"
+      Source="RiadenieServ.Serva_PriradenieVstupov"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Serva_Prir\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\RiadenieServ\Serva_PriradenieVstupov\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\RiadenieServ\Serva_PriradenieVstupov\Variables.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#2">
+    <Task
+      Name="RiadenieSe"
+      Disable="false"
+      Source="RiadenieServ.RiadenieServ"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\RiadenieSe\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\RiadenieServ\RiadenieServ\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\RiadenieServ\RiadenieServ\Variables.var" />
+    </Task>
+    <Task
+      Name="Centrifuga"
+      Disable="false"
+      Source="Program.Centrifuga_1"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Centrifuga\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\Centrifuga_1\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\Centrifuga_1\Variables.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Centrifuga\PrepocetTenzometrov.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Centrifuga\OvladanieOtacania.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Centrifuga\OvladanieZdvihu1.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Centrifuga\OvladanieZdvihu2.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Centrifuga\MeranieVyskyBalika.st.var" />
+    </Task>
+    <Task
+      Name="Centrifug1"
+      Disable="false"
+      Source="Program.Centrifuga_2"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Centrifug1\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\Centrifuga_2\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\Centrifuga_2\Variables.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Centrifug1\PrepocetTenzometrov.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Centrifug1\OvladanieOtacania.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Centrifug1\OvladanieZdvihu1.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Centrifug1\OvladanieZdvihu2.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Centrifug1\MeranieVyskyBalika.st.var" />
+    </Task>
+    <Task
+      Name="OtocnyStol"
+      Disable="false"
+      Source="Program.OtocnyStol"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\OtocnyStol\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\OtocnyStol\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\OtocnyStol\Variables.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\OtocnyStol\OvladanieOtacania.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\OtocnyStol\PrepocetSnimacovTeploty.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\OtocnyStol\OvladanieIndukcnehoOhrevu.st.var" />
+    </Task>
+    <Task
+      Name="OtocnySto2"
+      Disable="false"
+      Source="Program.OtocnyStol_Oddelovac"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\OtocnySto2\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\OtocnyStol_Oddelovac\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\OtocnyStol_Oddelovac\Variables.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\OtocnySto2\OvladanieOddelovaca.st.var" />
+    </Task>
+    <Task
+      Name="Tunel_Vstu"
+      Disable="false"
+      Source="Program.Tunel_VstupnyOdsuvac"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Tunel_Vstu\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\Tunel_VstupnyOdsuvac\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\Tunel_VstupnyOdsuvac\Variables.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Tunel_Vstu\OvladanieVstupOdsuvaca.st.var" />
+    </Task>
+    <Task
+      Name="RobotManip"
+      Disable="false"
+      Source="Program.RobotManipulacie"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\RobotManip\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\RobotManipulacie\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\RobotManipulacie\Variables.var" />
+    </Task>
+    <Task
+      Name="RobotOdlie"
+      Disable="false"
+      Source="Program.RobotOdlievania"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\RobotOdlie\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\RobotOdlievania\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\RobotOdlievania\Variables.var" />
+    </Task>
+    <Task
+      Name="RFID_Prg"
+      Disable="false"
+      Source="PrihlasovaciSystem.RFID_Prg"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\RFID_Prg\RFID_Prg.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\PrihlasovaciSystem\RFID_Prg\RFID_Prg.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\PrihlasovaciSystem\RFID_Prg\RFID_Prg.var" />
+    </Task>
+    <Task
+      Name="Prihlasova"
+      Disable="false"
+      Source="PrihlasovaciSystem.PrihlasovaciSystem"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Prihlasova\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\PrihlasovaciSystem\PrihlasovaciSystem\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\PrihlasovaciSystem\PrihlasovaciSystem\Variables.var" />
+    </Task>
+    <Task
+      Name="Main"
+      Disable="false"
+      Source="Program.Main"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Main\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\Main\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\Main\Variables.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Main\ZobrazenieTlacitok.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Main\OvladanieSafety.st.var" />
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Main\PriemernyTaktime.st.var" />
+    </Task>
+    <Task
+      Name="Poruchy_Si"
+      Disable="false"
+      Source="Program.Poruchy_Signalizacie"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Poruchy_Si\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\Poruchy_Signalizacie\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Program\Poruchy_Signalizacie\Variables.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#3">
+    <Task
+      Name="KOM_MedziP"
+      Disable="false"
+      Source="Komunikacia.KOM_MedziPLC"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\KOM_MedziP\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Komunikacia\KOM_MedziPLC\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Komunikacia\KOM_MedziPLC\Variables.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#4">
+    <Task
+      Name="Blikanie20"
+      Disable="false"
+      Source="Blikace.Blikanie200ms"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Blikanie20\Blikanie200ms.st.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#5">
+    <Task
+      Name="Blikanie50"
+      Disable="false"
+      Source="Blikace.Blikanie500ms"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Blikanie50\Blikanie500ms.st.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#6">
+    <Task
+      Name="Blikanie1s"
+      Disable="false"
+      Source="Blikace.Blikanie1s"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Blikanie1s\Blikanie1s.st.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#7">
+    <Task
+      Name="Blikanie5s"
+      Disable="false"
+      Source="Blikace.Blikanie5s"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Blikanie5s\Blikanie5s.st.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#8">
+    <Task
+      Name="Komunikac1"
+      Disable="false"
+      Source="Komunikacia.KOMRobotManipulacie"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Komunikac1\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Komunikacia\KOMRobotManipulacie\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Komunikacia\KOMRobotManipulacie\Variables.var" />
+    </Task>
+    <Task
+      Name="Komunikac2"
+      Disable="false"
+      Source="Komunikacia.KOM_RobotOdlievania"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Komunikac2\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Komunikacia\KOM_RobotOdlievania\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Komunikacia\KOM_RobotOdlievania\Variables.var" />
+    </Task>
+    <Task
+      Name="KOM_Indukc"
+      Disable="false"
+      Source="Komunikacia.KOM_IndukcnyOhrev"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\KOM_Indukc\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Komunikacia\KOM_IndukcnyOhrev\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Komunikacia\KOM_IndukcnyOhrev\Variables.var" />
+    </Task>
+    <Task
+      Name="Komunikaci"
+      Disable="false"
+      Source="Komunikacia.KOMDokoncovaciaStanica"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Komunikaci\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Komunikacia\KOMDokoncovaciaStanica\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Komunikacia\KOMDokoncovaciaStanica\Variables.var" />
+    </Task>
+    <Task
+      Name="KOM_PecNaH"
+      Disable="false"
+      Source="Komunikacia.KOM_PecNaHlinik"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\KOM_PecNaH\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Komunikacia\KOM_PecNaHlinik\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Komunikacia\KOM_PecNaHlinik\Variables.var" />
+    </Task>
+    <Task
+      Name="Receptury"
+      Disable="false"
+      Source="Receptury.Receptury"
+      Language="IEC">
+      <InternalFile
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Temp\Objects\Config1\AB0\Receptury\Main.st.var" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Receptury\Receptury\Types.typ" />
+      <File
+        Path="D:\Projekty BER\Embraco_LinkaOdlievania\Logical\Receptury\Receptury\Variables.var" />
+    </Task>
+  </TaskClass>
+</ConfigInfo>

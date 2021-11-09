@@ -1,0 +1,3 @@
+$(AS_PROJECT_PATH)/Logical/Global.var
+$(AS_PROJECT_PATH)/Logical/Zoznam_IO/Vstupy.var
+$(AS_PROJECT_PATH)/Logical/Zoznam_IO/Vystupy.var

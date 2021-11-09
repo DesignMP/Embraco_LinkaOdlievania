@@ -1,0 +1,14 @@
+$(AS_PROJECT_PATH)\Physical\Config1\AB0\DTM\AB1_ProfinetMaster\AB1_ProfinetMaster.dtm
+$(AS_PROJECT_PATH)\Physical\Config1\AB0\DTM\AB1_ProfinetMaster\AB1_ProfinetMaster_IF1\AB1_ProfinetMaster_IF1.dtmdra
+$(AS_PROJECT_PATH)\Physical\Config1\AB0\DTM\AB1_ProfinetMaster\AB1_ProfinetMaster_IF1\AB1_ProfinetMaster_IF1.dtmdre
+$(AS_PROJECT_PATH)\Physical\Config1\AB0\DTM\AB1_ProfinetMaster\AB1_ProfinetMaster_IF1\AB1_ProfinetMaster_IF1.dtmdri
+$(AS_PROJECT_PATH)\Physical\Config1\AB0\DTM\AB1_ProfinetMaster\AB1_ProfinetMaster_IF1\AB1_ProfinetMaster_IF1.dtmtre
+$(AS_PROJECT_PATH)\Physical\Config1\AB0\DTM\AB1_ProfinetMaster\IndukcnyOhrev\IndukcnyOhrev.dtmdre
+$(AS_PROJECT_PATH)\Physical\Config1\AB0\DTM\AB1_ProfinetMaster\IndukcnyOhrev\IndukcnyOhrev.dtmdri
+$(AS_PROJECT_PATH)\Physical\Config1\AB0\DTM\AB1_ProfinetMaster\IndukcnyOhrev\IndukcnyOhrev.dtmtre
+$(AS_PROJECT_PATH)\Physical\Config1\AB0\DTM\AB1_ProfinetMaster\RobotManipulacie\RobotManipulacie.dtmdre
+$(AS_PROJECT_PATH)\Physical\Config1\AB0\DTM\AB1_ProfinetMaster\RobotManipulacie\RobotManipulacie.dtmdri
+$(AS_PROJECT_PATH)\Physical\Config1\AB0\DTM\AB1_ProfinetMaster\RobotManipulacie\RobotManipulacie.dtmtre
+$(AS_PROJECT_PATH)\Physical\Config1\AB0\DTM\AB1_ProfinetMaster\RobotOdlievania\RobotOdlievania.dtmdre
+$(AS_PROJECT_PATH)\Physical\Config1\AB0\DTM\AB1_ProfinetMaster\RobotOdlievania\RobotOdlievania.dtmdri
+$(AS_PROJECT_PATH)\Physical\Config1\AB0\DTM\AB1_ProfinetMaster\RobotOdlievania\RobotOdlievania.dtmtre

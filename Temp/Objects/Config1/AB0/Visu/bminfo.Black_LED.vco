@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Bitmaps">
+    <Folder Name="POBJ">
+      <Object Name="Black_LED" ClsId="0x306" Version="1" TargetIndex="41" Type="GFX" RefString="Source[local].Bitmap[Black_LED]">
+        <UInt16 Name="Width">20</UInt16>
+        <UInt16 Name="Height">20</UInt16>
+        <UInt32 Name="BitsPerPixel">32</UInt32>
+        <Byte Name="Transparency">0</Byte>
+        <Byte Name="TargetFormat">2</Byte>
+        <UInt16 Name="Reserved">0</UInt16>
+        <Int32 Name="TransparentColor">0</Int32>
+        <Int32 Name="FillAreas">0</Int32>
+        <Binary Name="BitmapData" Encoding="Base64">iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMqSURBVDhPlVRJTJNREC4/ha6xpRRKSgOkpaULUMoOZQuUsheTshQPBSKEehFPcDH1YoIhMYG7NxITiRwMcuDgQS/VEA9qNPHoTaOJhgOaqBm/eV2i2CZlksn7//dmvtlHlov6+/vlo6Ojl8bGxhyhUMiHswH/lsnJSTW/pcTyIikQCOiCweC1iYmJh+Fw+OXc3NzbmZmZVwB7CuA7w8PDfoBqWTapkoNqa2sVjY2N0Z6enjdQJIDQ0tISra2t0fLyMkUiEYIRGhgYOGtra9vp6uryzc7OFqfU/yW3211cWlp6pb6+/rPf7yeER/COFhcXaXV1VZzz8/PEhvr6+sjr9X63Wq2HQ0NDjmygkkajiZSUlHx0uVzU3NwslBA2TU1N0fT0NCGPwghCpfb2doIDZLFYyGAw3IcDHsZIQoHwqJUk6YVOp6Pq6mpyOp3k8/moo6ODEL4A7+3tJYQojHk8HqqpqSGTyURFRUVfHA7HDaRKI8C4YuwdPvmR9Hq9EGRgm81GdXV1wgCfdrtd3JvNZkI0pFKpiPWg8xzROEX1Ozs7VYWFhff4gVkul5NSqST2Fjml8vJyYYBPo9Eo7tVqtZArKChI65yiA4KMJausrLQg3GdpwDSzMO4JxjLM/+fl0ox0XIeXBhmsOiB4kk3oItza2nprcHDQJKuqqrICMJFN6CIMD28KwJaWFiOK8TibUL4Mh36NjIzERMicSFRsI5tgvoxe/JApCpcaPeSDlW/nBbkw3EoKhUKc2YqCu5/ow8NM2zBxU8LKFgDOWIiVkVvq7u4mjJUYu4WFBTE53ItarTYDWFZW9g6zfTXT2CmSmpqavGjwR9wePFI8bpubm7S3t0fHx8e0v79P29vbAhhzLIyisU9RjNvYTi7GSEKliAecB72iouIBJuQrb5p4PE4HBweUSCTo6OiIdnd3KRqNcov8htH3iGALYPacG4cfkNgGzPEGhF+Pj4//WFlZofX1dYrFYmL7YK4/QeYJWiSGZeHOCfYXSUiuFm3gQc4uYznEwTtYDnexWDewD0P8xjIsm1TJg7hivO7BRoRlZuZvvstU8z+Syf4A/peJVTOCGikAAAAASUVORK5CYII=</Binary>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>

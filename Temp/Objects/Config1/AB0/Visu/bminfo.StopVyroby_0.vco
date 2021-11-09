@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Bitmaps">
+    <Folder Name="POBJ">
+      <Object Name="StopVyroby_0" ClsId="0x306" Version="1" TargetIndex="177" Type="GFX" RefString="Source[local].Bitmap[StopVyroby_0]">
+        <UInt16 Name="Width">28</UInt16>
+        <UInt16 Name="Height">28</UInt16>
+        <UInt32 Name="BitsPerPixel">32</UInt32>
+        <Byte Name="Transparency">0</Byte>
+        <Byte Name="TargetFormat">2</Byte>
+        <UInt16 Name="Reserved">0</UInt16>
+        <Int32 Name="TransparentColor">0</Int32>
+        <Int32 Name="FillAreas">0</Int32>
+        <Binary Name="BitmapData" Encoding="Base64">iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVEhLvda9LgVRFAXgi8pPpyARGp1Oq1IoRTR6La1CvIF4ATo6ClFq9DyEQusxrG8yI+O6M+MnOTtZcXLO2mvvs2effY16bCaYC9aC3eAieApeg/ca1vac4eDy4ftjmw7mg43gKHgInoPb4DQ4CLZrWNtzhoPLhy8NWr0ms6VgL7gM7oOzYDOYDbrMGQ4uH740aHXe1sFKcBjcBOfBVqBEPzVcPnxp0KL5LairywbhOjgJ1oNffYva+PClQYsm7S/lVW8lkBXiajAV/NX40qBFk7YYlcnIR1Z3pZDdf4I1RoMWTdpiVBVTd53lY6t/u4zKsBAMdZwzHNw2jxZN2mJU/eDtaGcdNt4gBHaC/cDHnxTUnjMcXD5to0lbDLGqB+sNaetxkzWhq0CGy0G73Nb2nOHgfn6rltEWQ6xqSni4k95Zkz3Bu+A4WAwEAmt7znC6qkBbDLGq0WRadBkBtyD8WP91C2jv4UwK1pgYYlXz0Ijqs/ZtXgK3AWt7za37TAyxqiFsLg4ZQbcS6K2Gtb2hYEwMscoHLF7S4k1T/FkUf/jFR5sNGRYb3jaL/jwx2RX7AWbKUPRfDIbo4yPISinUf7yR+gyXD18atGh2Ju5ANkqg7j62DtPWk95pY85wcPnwpUFrsEpNx/nIOks7e0MermlhRJmLYG3PGQ4uH75Dnf3NZKZE3o4Ha0oYTeahIQzW9pzh4PLpuNVo9AGOiYZVoB35MQAAAABJRU5ErkJggg==</Binary>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>

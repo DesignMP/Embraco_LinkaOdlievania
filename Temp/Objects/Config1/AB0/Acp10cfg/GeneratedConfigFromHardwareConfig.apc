@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AcoposParameterConfiguration>
+  <Root Name="IF3.ST2">
+    <Group Name="SS1">
+      <Parameter Name="ENCOD_TYPE1" ID="97" Value="4" />
+    </Group>
+    <Group Name="SS2">
+      <Parameter Name="ENCOD_TYPE2" ID="97" Value="4" />
+    </Group>
+    <Group Name="SS3">
+      <Parameter Name="ENCOD_TYPE3" ID="97" Value="4" />
+    </Group>
+    <Group Name="M1" />
+    <Group Name="M2" />
+    <Group Name="M3" />
+  </Root>
+  <Root Name="IF3.ST3">
+    <Group Name="SS1">
+      <Parameter Name="ENCOD_TYPE1" ID="97" Value="4" />
+    </Group>
+    <Group Name="SS2">
+      <Parameter Name="ENCOD_TYPE2" ID="97" Value="4" />
+    </Group>
+    <Group Name="SS3">
+      <Parameter Name="ENCOD_TYPE3" ID="97" Value="4" />
+    </Group>
+    <Group Name="M1" />
+    <Group Name="M2" />
+    <Group Name="M3" />
+  </Root>
+  <Root Name="IF3.ST4" />
+  <Root Name="IF3.ST1">
+    <Group Name="SS1">
+      <Parameter Name="ENCOD_TYPE1" ID="97" Value="4" />
+    </Group>
+    <Group Name="M1" />
+  </Root>
+</AcoposParameterConfiguration>

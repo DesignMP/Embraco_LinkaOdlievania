@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BuildReasons>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\tunel\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\assl1.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\visu\visu.mak">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\riadenieme\inverterbasic.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\arconfig.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\asnxdb1.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\otocnysto1\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\acp10map.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\serva_prir\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\otocnysto1\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\serva_prir\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\riadenieme\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\tunel\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\otocnysto1\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\serva_prir\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\riadenieme\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\tunel\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\serva_prir\serva_prir.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\riadeniese\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\centrifuga\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\centrifug1\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\riadenieme\riadenieme.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\riadenieme.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\riadeniese\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\riadeniese\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\centrifuga\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\centrifuga\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\centrifug1\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\centrifug1\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\riadeniese\riadeniese.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\otocnysto1\otocnysto1.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\tunel\tunel.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\otocnystol\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\otocnystol\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\otocnystol\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\centrifuga\centrifuga.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\otocnysto2\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\otocnysto2\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\otocnysto2\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\centrifug1\centrifug1.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\tunel_vstu\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\tunel_vstu\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\tunel_vstu\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\otocnystol\otocnystol.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\robotmanip\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\otocnysto2\otocnysto2.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\robotmanip\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\robotodlie\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\robotmanip\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\robotodlie\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\robotodlie\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\tunel_vstu\tunel_vstu.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\rfid_prg\rfid_prg.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\rfid_prg\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\rfid_prg\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\otocnysto1.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\robotmanip\robotmanip.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\prihlasova\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\prihlasova\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\robotodlie\robotodlie.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\prihlasova\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\main\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\main\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\main\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\rfid_prg\rfid_prg.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\poruchy_si\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\poruchy_si\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\tunel.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\poruchy_si\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\serva_prir.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\prihlasova\prihlasova.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\kom_medzip\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\main\main.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\kom_medzip\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\blikanie20\blikanie200ms.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\kom_medzip\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\blikanie20\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\blikanie20\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\poruchy_si\poruchy_si.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\blikanie50\blikanie500ms.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\riadeniese.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\blikanie50\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\blikanie50\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\centrifuga.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\blikanie20\blikanie20.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\blikanie1s\blikanie1s.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\kom_medzip\kom_medzip.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\blikanie5s\blikanie5s.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\blikanie1s\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\blikanie5s\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\blikanie1s\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\blikanie5s\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\centrifug1.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\blikanie50\blikanie50.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\komunikac1\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\komunikac1\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\komunikac1\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\otocnystol.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\otocnysto2.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\blikanie5s\blikanie5s.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\komunikac2\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\komunikac2\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\komunikac2\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\blikanie1s\blikanie1s.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\kom_indukc\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\kom_indukc\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\kom_indukc\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\komunikac1\komunikac1.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\komunikaci\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\komunikaci\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\komunikaci\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\tunel_vstu.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\robotmanip.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\komunikac2\komunikac2.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\kom_pecnah\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\kom_pecnah\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\kom_pecnah\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\komunikaci\komunikaci.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\receptury\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\kom_indukc\kom_indukc.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\ashwac.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\receptury\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\receptury\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\robotodlie.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\rfid_prg.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\acp10cfg.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\prihlasova.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\kom_pecnah\kom_pecnah.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\ieccheck\ieccheck.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\receptury\receptury.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\sc\sequencecontrol.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\ieccheck\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\sc\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\main.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\visu.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\asnxdb2.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\poruchy_si.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\sc\sc.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\sc.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\ieccheck\ieccheck.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\ieccheck.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\axislib\axis.c.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\kom_medzip.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\blikanie20.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\blikanie50.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\blikanie1s.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\axislib\axisextension.c.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\blikanie5s.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\komunikac1.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\analog\analog.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\analog\analogout.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\rfid\tp_init.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\analog\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\rfid\tp_info.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\rfid\tp_unlock.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\rfid\tp_lock.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\rfid\tp_pwprotect.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\rfid\tp_onoff.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\rfid\tp_crc.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\komunikac2.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\rfid\tp_write.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\rfid\tp_read.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\rfid\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\axislib\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\kom_indukc.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\analog\analog.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\analog.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\komunikaci.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\rfid\rfid.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\rfid.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\kom_pecnah.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\axislib\axislib.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\axislib.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\receptury.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\acp10sys.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\udbdef.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\tcdata\tcdata.imx">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\standard.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\assafety.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\fileio.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\dataobj.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\asxml.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\runtime.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\astime.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\acp10man.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\acp10par.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\ncglobal.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\acp10_mc.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\brsystem.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\sys_lib.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\asbrstr.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\mprecipe.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\mpbase.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\mpcom.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\asepl.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\asioacc.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\asieccon.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\acp10sim.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\dvframe.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\asusb.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\asstring.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\loopconr.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\acp10etxen.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\gaxis01a.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\gaxis01i.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\gaxis02a.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\gaxis02i.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\gaxis03a.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\gaxis03i.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\gaxis04a.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\gaxis04i.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\iomap.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\sysconf.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\gaxis05a.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\gaxis05i.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\asfw.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\gaxis06a.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\gaxis06i.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\gaxis07a.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\gaxis07i.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\role.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\user.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\config.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\config_1.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\ashwd.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\tcdata\tcdata.s18d">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\ab0\tcdata.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\binaries\config1\ab0\transfer.lst">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+</BuildReasons>

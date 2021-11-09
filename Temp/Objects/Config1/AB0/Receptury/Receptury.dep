@@ -1,0 +1,9 @@
+$(AS_PROJECT_PATH)/Logical/Libraries/IecCheck/IecCheck.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/MpRecipe/MpRecipe.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/MpBase/MpBase.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/MpRecipe/MpRecipeError.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/MpRecipe/MpRecipe.typ
+$(AS_PROJECT_PATH)/Logical/Global.var
+$(AS_PROJECT_PATH)/Logical/Receptury/Receptury/Variables.var
+$(AS_PROJECT_PATH)/Logical/Global.typ
+$(AS_PROJECT_PATH)/Physical/Config1/AB0/mappServices/Config_1.mprecipexml

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Bitmaps">
+    <Folder Name="POBJ">
+      <Object Name="Manual48x48" ClsId="0x306" Version="1" TargetIndex="1508" Type="GFX" RefString="Source[local].Bitmap[Manual48x48]">
+        <UInt16 Name="Width">48</UInt16>
+        <UInt16 Name="Height">48</UInt16>
+        <UInt32 Name="BitsPerPixel">32</UInt32>
+        <Byte Name="Transparency">0</Byte>
+        <Byte Name="TargetFormat">2</Byte>
+        <UInt16 Name="Reserved">0</UInt16>
+        <Int32 Name="TransparentColor">0</Int32>
+        <Int32 Name="FillAreas">0</Int32>
+        <Binary Name="BitmapData" Encoding="Base64">iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQlSURBVGhD7ZpZ6A1RHMevNfv+Yk/KCw9SJA9eRZItxAOFB8qSfUkSoYjihSiUB2/WsqVsZUuWbPEg2ZVsIbvv54wfM9M1d+6Z8b83/b/16c7vzJ3f/H5zfufcmTm3UETdxFpxU3wV3ysMMRALMRFbohaJD4IDfwgO/lhhiIFYiInYiLGodgvLep8YJJqKSosYiIWYLL5tIiKyYsd7MZKGKtVoQYzEOocGRF1Z2VRz8KYxwi52exoYHDTQRXmKC0PXlxx4HjoqiHkZBiOcQcLJ8lADsUNwAsD3HtFY9BPDRVeRRVQKfk9hMMohrwE7X+D8kzgvmEmwn//6hC9ijfBVR4GfJxhcJU6SRb3ERDFM3BD4HCXQUGG98UKcECSAzaD0UUvB8U8xyCRLApsEzuzq2raVCSfDJujONEjzBG2Ulo/MZ+YEuIIc/1kQzF3xtwTcyX6J8UbbGTFdUHa9RVpFfHJC3wR2Co5f4KxCobXAF23hBLDjCdAWZ4VIo4hPMvFN4LDg+LHOCnRb0JamB+CI2CXslqGvKKWITzYqlQADvg4N0hZB21JnJSvik67IkgDHxxOgLU0J7XVWoOWCto3OSlbEJ5lUqgfiCdCWNoHfPtmoTcBZgWo8AWqpdgw4K1BtCTkrWRGfdMV/XULcVZ4Vz8RlMU3Yj0+aHmgo7ouTzgpUYyU0W3wTfMcg862CJIolsF88FE2cFYgk6gWbTjylvRGrnRUo9xJqId4K9i8WPERMFTyo0LZBFCshX+VeQgME+646649GCEuClwHxHvBV7iXE/Tn7KIf6NIQ0WYRLq6IJcCWLJVBXMPjYX+z5lWcA9kFVlhAaIrhP/1uQK8U90d1Z2ZR7CZkYwPadNA8bvsq9hMKy96aPRAca/oH+SQmZGomLgu+eE8zrect6YL2zklVWCZk6iceCzLfTkLN4xUksC52VrLJLyNRf2G/ATBpy1EGB3wnOSlbZJRQWvwEczIuqwTTkIF5r8qtPLGlmNO8eMK0THPdK9KQho2YI/F1yVmll6gHEjRk3bRzLzNRD+Iqx9VLgy96nlpLXII4rPDORhE9PtBVXBFfzuLDb9FLKJQHUSpCEldM4kVZ9xC3B+R8It9qSUpnHQFjNxSGBH+D1OYsYLGjExf0VixxMw7wQ5vt3RLmrOJExwLTI/Q6B+IqunyVeCxxzdfB7TRwTLF9dEPQS+/gOsxgPRjx3lKsuAj+Urrvfx8hjSmwnlojrwgLlM7zNqspmkWXgjxf4orcLqwTO817kayaoc55/YaCw5+SsOi2IeS4Gg8fWXlnCrHZNEcRKObahAdnDCYn4rlvVhCYJW1/j+Twilu/ZAdX0VwMmF8bnAWHxsS5XVNX+Z493gtuORDEn874m/HcbHBhmh9uzbCftY5vpmJmSySb2Y1co/AQVrYHf4/VAdAAAAABJRU5ErkJggg==</Binary>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>

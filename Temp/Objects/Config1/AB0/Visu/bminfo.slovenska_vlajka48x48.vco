@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Bitmaps">
+    <Folder Name="POBJ">
+      <Object Name="slovenska_vlajka48x48" ClsId="0x306" Version="1" TargetIndex="459" Type="GFX" RefString="Source[local].Bitmap[slovenska_vlajka48x48]">
+        <UInt16 Name="Width">48</UInt16>
+        <UInt16 Name="Height">48</UInt16>
+        <UInt32 Name="BitsPerPixel">32</UInt32>
+        <Byte Name="Transparency">0</Byte>
+        <Byte Name="TargetFormat">2</Byte>
+        <UInt16 Name="Reserved">0</UInt16>
+        <Int32 Name="TransparentColor">0</Int32>
+        <Int32 Name="FillAreas">0</Int32>
+        <Binary Name="BitmapData" Encoding="Base64">iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANmSURBVGhD7Zj9S1NhFMfvv+CfkkphKlhsw8oQrRgVUYRWgpWQWeBbRjPN0ixFM13ZDxmZ+UJpmjpM3VKTfCFKXU6LvOqiV5ea7ZzuuTq5m+7e6wba4n7hu+fznHOe8Zz7PNtERpEiRYoUKVKkyAshop/dbtdxLvcx62jvDADUcYBcAGgkuWOSYy6nXg6TPF3PjXXUwIQwSHLHJMFiyXo5TPJ0PTeyDL1QwEfN0gmwwq5I7pjkmMupl8MkT9dz43/WwOzEJ/za/RK/dJmARld2zOc/WyXfnCSHSZ6u50bnz8C4vgQ61SHL7jt+GH68fQPd+yKc4uzTWte7uFFmGfP0T3bMasNx6wxYCq+jSROKxh1h0BWhwp69EbhgswHFuiI1fI4a+PiwAi3TM0DryN6wWE6Kae9MQFoLG5DWimG6Nnifm81vskcbCfb5eZybmkT7wgLQ+OeXbbmBd/oy9E9tBlpH9obFctLcwjKbUppZCqizXsDwlUv8FXm5WwUDCXHw6uAemLNOQ8/+KBg8Ew9GTSifHym9BbRmo017Z/xTF09Ak90Ow5cz+Kf84Z4eppsakK2t4q7QDLA1j9Da0oSjBXn8CYyUFFH3Hj41ZxbLSbHbBkZyMsFSdAPNuVn4+/s3MF/NxLGSQhzKSOYbMJcUY2D6P9KA4woFZRjAfDPX6dvGtHMbzE5NOsXI/fq7qx7petvpBChgvF+9/EGlUa89iol3uuBBlJaPO3JPqtb2pMRYLCfFKxq4VjOIFTEnUXXuMZyIy8Og5Gd8fPv5GjwSX4jhZyux4XQiJFX0S765XBbLSTHfQMDSFSJvvWiA24ZRLtmy4rjIm9NbQd9mAbr/q+XX2wEpz1mmWBvDFmtjsUgbCzTWJyRhaf0ABLp0u+WCAaub+rDy2Cm+zlHvLYvlpDmGZYzqEFZ478mvYw9BY3Mvhud08A1E55uwo9GIvQeil+uE9d6wWE6KO9XBLEMvFHA1/ZgN6cug3jAAwwX5QH9erFa3seYaWO0EhEy/vg4W5tzVr5XFclIsqwEhC+dy6uWwWE6KRa+Qb3jxBCbcdejKwrmcejkslpNioyp4gulUhdRRwCfN7Z1p3xXix3Wj4wLlJnUob3csnMupl8NiOVHm9kx7X/r/nCJFihQpUqRI0drFMH8BeUn7Th5Bc34AAAAASUVORK5CYII=</Binary>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>

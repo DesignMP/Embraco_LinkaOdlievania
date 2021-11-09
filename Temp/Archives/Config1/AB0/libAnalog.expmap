@@ -1,0 +1,7 @@
+{
+  global:
+    Analog;
+    AnalogOut;
+  local:
+    *;
+ };

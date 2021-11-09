@@ -1,0 +1,35 @@
+<BuildOptions>
+  <BuildOption>
+    <SourceFile Value="D:/Projekty BER/Embraco_LinkaOdlievania/Physical/Config1/AB0/Cpu.sw" />
+    <Query Value="/ns:SwConfiguration/ns:TaskClass/*$$Name,Source" />
+    <Xml>
+      <Task Name="RiadenieMe" Source="RiadenieMenicov.RiadenieMenicov.prg" />
+      <Task Name="OtocnySto1" Source="Program.OtocnyStol_Manipulator.prg" />
+      <Task Name="Tunel" Source="Program.Tunel.prg" />
+      <Task Name="Serva_Prir" Source="RiadenieServ.Serva_PriradenieVstupov.prg" />
+      <Task Name="RiadenieSe" Source="RiadenieServ.RiadenieServ.prg" />
+      <Task Name="Centrifuga" Source="Program.Centrifuga_1.prg" />
+      <Task Name="Centrifug1" Source="Program.Centrifuga_2.prg" />
+      <Task Name="OtocnyStol" Source="Program.OtocnyStol.prg" />
+      <Task Name="OtocnySto2" Source="Program.OtocnyStol_Oddelovac.prg" />
+      <Task Name="Tunel_Vstu" Source="Program.Tunel_VstupnyOdsuvac.prg" />
+      <Task Name="RobotManip" Source="Program.RobotManipulacie.prg" />
+      <Task Name="RobotOdlie" Source="Program.RobotOdlievania.prg" />
+      <Task Name="RFID_Prg" Source="PrihlasovaciSystem.RFID_Prg.prg" />
+      <Task Name="Prihlasova" Source="PrihlasovaciSystem.PrihlasovaciSystem.prg" />
+      <Task Name="Main" Source="Program.Main.prg" />
+      <Task Name="Poruchy_Si" Source="Program.Poruchy_Signalizacie.prg" />
+      <Task Name="KOM_MedziP" Source="Komunikacia.KOM_MedziPLC.prg" />
+      <Task Name="Blikanie20" Source="Blikace.Blikanie200ms.prg" />
+      <Task Name="Blikanie50" Source="Blikace.Blikanie500ms.prg" />
+      <Task Name="Blikanie1s" Source="Blikace.Blikanie1s.prg" />
+      <Task Name="Blikanie5s" Source="Blikace.Blikanie5s.prg" />
+      <Task Name="Komunikac1" Source="Komunikacia.KOMRobotManipulacie.prg" />
+      <Task Name="Komunikac2" Source="Komunikacia.KOM_RobotOdlievania.prg" />
+      <Task Name="KOM_Indukc" Source="Komunikacia.KOM_IndukcnyOhrev.prg" />
+      <Task Name="Komunikaci" Source="Komunikacia.KOMDokoncovaciaStanica.prg" />
+      <Task Name="KOM_PecNaH" Source="Komunikacia.KOM_PecNaHlinik.prg" />
+      <Task Name="Receptury" Source="Receptury.Receptury.prg" />
+    </Xml>
+  </BuildOption>
+</BuildOptions>

@@ -1,0 +1,9 @@
+$(AS_PROJECT_PATH)/Logical/Libraries/AsIOAcc/AsIOAcc.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/AsIOAcc/AsIOAcc.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/IecCheck/IecCheck.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/AsEPL/AsEPL.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/AsEPL/AsEPL.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/standard/standard.fun
+$(AS_PROJECT_PATH)/Logical/RiadenieMenicov/RiadenieMenicov/InverterBasic.var
+$(AS_PROJECT_PATH)/Logical/Global.var
+$(AS_PROJECT_PATH)/Logical/Global.typ

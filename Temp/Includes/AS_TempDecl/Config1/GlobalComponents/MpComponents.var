@@ -1,0 +1,4 @@
+VAR
+	gRecipeUzivatelXmlLink : {REDUND_UNREPLICABLE} MpComIdentType; (*#1"D:\Projekty BER\Embraco_LinkaOdlievania\Physical\Config1\AB0\mappServices\Config.mprecipexml" #2"1" #3"1"*)
+	gRecipeXmlLink : {REDUND_UNREPLICABLE} MpComIdentType; (*#1"D:\Projekty BER\Embraco_LinkaOdlievania\Physical\Config1\AB0\mappServices\Config_1.mprecipexml" #2"1" #3"1"*)
+END_VAR

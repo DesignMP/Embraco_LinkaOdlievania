@@ -1,0 +1,13 @@
+$(AS_PROJECT_PATH)/Logical/Libraries/IecCheck/IecCheck.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/SC/SC.fun
+$(AS_PROJECT_PATH)/Logical/Program/OtocnyStol_Manipulator/Variables.var
+$(AS_PROJECT_PATH)/Logical/Global.var
+$(AS_PROJECT_PATH)/Logical/Zoznam_IO/Vstupy.var
+$(AS_PROJECT_PATH)/Logical/Libraries/standard/standard.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/SC/Types.typ
+$(AS_PROJECT_PATH)/Logical/Zoznam_IO/Vystupy.var
+$(AS_PROJECT_PATH)/Physical/Config1/AB0/Cpu.per
+$(AS_PROJECT_PATH)/Logical/Libraries/AxisLib/AxisLib.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/Acp10_MC/acp10_mc.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/Acp10_MC/acp10_mc.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/AxisLib/AxisLib.fun
